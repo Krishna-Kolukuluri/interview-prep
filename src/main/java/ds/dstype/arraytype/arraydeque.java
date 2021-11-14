@@ -8,7 +8,7 @@ public class arraydeque {
         ArrayDeque<String> stack = new ArrayDeque<>();
         stack.push("1st");
         stack.push("2nd");
-        
+
         stack.pop(); //removes most recently added element i.e. 2nd
         stack.getFirst(); stack.pop(); //Both removes top element.
 
