@@ -7,7 +7,7 @@ Given an array of integers nums and an integer target, return indices of the two
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 * */
-public class SumOfTwoNumsToTargetInArray {
+public class TwoSum {
     public static void main(String[] args) {
         int[] nums = new int[]{2,7,11,15};
         int[] indexes = twoNumSumToTarget(nums, 9);
