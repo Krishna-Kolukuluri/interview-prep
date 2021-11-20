@@ -1,0 +1,12 @@
+
+9
+java:S16433"Use a StringBuilder instead.(İêµ×8­Ö’şÑ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñ× üûÿÿÿÿ8Ó®£şÑ/
+K
+java:S1481-".Remove this unused "tempChars" local variable.(æñ‹£8—øĞşÑ/
+K
+java:S1481".Remove this unused "charCount" local variable.(ƒ•Ğ©8è…òıÑ/
+Z
+java:S1854"=Remove this useless assignment to local variable "charCount".(ƒ•Ğ©8è…òıÑ/
+Z
+java:S1854-"=Remove this useless assignment to local variable "tempChars".(æñ‹£8—øĞşÑ/

@@ -1,0 +1,38 @@
+
+V
+java:S1854"9Remove this useless assignment to local variable "user5".(ÂÇæš8ƒæ®…Ó/
+c
+java:S1192	"FDefine a constant instead of duplicating this literal "/pink" 5 times.(ĞôÃ8ƒæ®…Ó/
+F
+java:S1481"*Remove this unused "user2" local variable.(³„¨A8ƒæ®…Ó/
+G
+java:S1481"*Remove this unused "user3" local variable.(×ù¬¤8ƒæ®…Ó/
+G
+java:S1481"*Remove this unused "user5" local variable.(ÂÇæš8ƒæ®…Ó/
+d
+java:S1192"GDefine a constant instead of duplicating this literal "/amber" 3 times.(×ù¬¤8ƒæ®…Ó/
+c
+java:S1192	"FDefine a constant instead of duplicating this literal "/blue" 3 times.(ĞôÃ8ƒæ®…Ó/
+a
+java:S1128"?Remove this unused import 'javax.swing.event.ListDataListener'.(ŸÏÎÿÿÿÿÿ8˜‰……Ó/
+[
+java:S1854"9Remove this useless assignment to local variable "user6".(ÛŸÁşÿÿÿÿ8ƒæ®…Ó/
+V
+java:S1854"9Remove this useless assignment to local variable "user4".(»†ÿ¤8ƒæ®…Ó/
+y	java:S127."XRefactor the code in order to not assign to this loop counter from within the loop body.(ÊÖİóøÿÿÿÿ8ºíç„Ó/
+e
+java:S1192	"HDefine a constant instead of duplicating this literal "/orange" 5 times.(ĞôÃ8ƒæ®…Ó/
+y	java:S127/"XRefactor the code in order to not assign to this loop counter from within the loop body.(Şªäøÿÿÿÿ8‚Ã²…Ó/
+V
+java:S1854"9Remove this useless assignment to local variable "user3".(×ù¬¤8ƒæ®…Ó/
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(€¾È–ûÿÿÿÿ8‚Ã²…Ó/
+G
+java:S1481"*Remove this unused "user4" local variable.(»†ÿ¤8ƒæ®…Ó/
+U
+java:S1854"9Remove this useless assignment to local variable "user2".(³„¨A8ƒæ®…Ó/
+c
+java:S1192"FDefine a constant instead of duplicating this literal "/plum" 3 times.(×ù¬¤8ƒæ®…Ó/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8‚Ã²…Ó/
+L
+java:S1481"*Remove this unused "user6" local variable.(ÛŸÁşÿÿÿÿ8ƒæ®…Ó/

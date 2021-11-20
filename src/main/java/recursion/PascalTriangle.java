@@ -16,13 +16,11 @@ public class PascalTriangle {
 
         return Arrays.asList(arr);
     }
-
     public List<Integer> getRowRec(int rowIndex) {
         List<Integer> res = new ArrayList<>(rowIndex + 1);
         calc(rowIndex, res);
         return res;
     }
-
     private void calc(int rowIndex, List<Integer> res) {
         if (rowIndex == 0) {
             res.add(0, 1);
