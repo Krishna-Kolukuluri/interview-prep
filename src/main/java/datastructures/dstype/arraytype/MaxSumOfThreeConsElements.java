@@ -2,10 +2,11 @@ package datastructures.dstype.arraytype;
 
 public class MaxSumOfThreeConsElements {
     public static void main(String[] args) {
-
+        int result = maxSumTwoNoOverlap(new int[]{6,1,4,6,3,2,7,4}, 2, 3);
+        System.out.println(result);
     }
     //Elements are positive numbers
-    public int maxSumTwoNoOverlap(int[] A, int L, int M) {
+    public static int maxSumTwoNoOverlap(int[] A, int L, int M) {
         if (A == null || A.length == 0) {
             return 0;
         }

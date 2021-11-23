@@ -336,7 +336,7 @@ implementation of union find, this depth could be NN. If this was the case for a
 However, remember those optimizations we did? Those keep the tree depths very shallow.
 It turns out that find(...) amortizes to O(α(N)), where α is the Inverse Ackermann Function.
 The incredible thing about this function is that it grows so slowly that NN will never go higher than 4 in the universe
-as we know it! So while in "practice" it is effectively O(1), in "theory" it is not.
+as we know it! So while in "concepts" it is effectively O(1), in "theory" it is not.
 
 Actually proving this upper bound on the depth is a very advanced proof, which I'd certainly hope you'd never
 need to do in an interview! If you're interested though, I recommend looking in a good algorithm's text book or paper.

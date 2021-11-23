@@ -21,15 +21,11 @@ public class MaxNumConsecutiveOnes {
             if(num == 1){
                 count = count + 1;
                 if(numsCapacity == nums.length){
-                    if(count > maxCount) {
-                        maxCount = count;
-                    }
+                    maxCount = Math.max(maxCount, count);
                 }
             }
             else{
-                if(count > maxCount){
-                    maxCount = count;
-                }
+                maxCount = Math.max(maxCount, count);
                 count = 0;
             }
         }

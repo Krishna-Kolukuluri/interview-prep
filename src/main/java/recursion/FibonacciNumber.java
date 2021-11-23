@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class FibonacciNumber {
     HashMap<Integer, Integer> cache = new HashMap<Integer, Integer>();
+    //Memoization with recursion
     public int fib(int n) {
         if (cache.containsKey(n)) {
             return cache.get(n);

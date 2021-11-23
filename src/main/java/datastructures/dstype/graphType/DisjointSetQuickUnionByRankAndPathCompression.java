@@ -70,7 +70,7 @@ Time Complexity
                  Union-find Constructor	Find	   Union	    Connected
 Time Complexity	 O(N)     	            O(α(N))	   O(α(N))	    O(α(N))
 
-Note: NN is the number of vertices in the graph. α refers to the Inverse Ackermann function. In practice,
+Note: NN is the number of vertices in the graph. α refers to the Inverse Ackermann function. In concepts,
 we assume it's a constant. In other words,O(α(N)) is regarded as O(1) on average.
 
 For the union-find constructor, we need to create two arrays of size NN each.

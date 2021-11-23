@@ -52,7 +52,7 @@ class UnionPathCompression{
 
 /*
 Time Complexity
-Time complexities shown below are for the average case, since the worst-case scenario is rare in practice.
+Time complexities shown below are for the average case, since the worst-case scenario is rare in concepts.
 
 Union-find Constructor	Find	Union	Connected
 Time Complexity	O(N)	O(logN)	O(logN)	O(logN)
