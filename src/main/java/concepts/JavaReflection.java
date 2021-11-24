@@ -3,7 +3,7 @@ package concepts;
 import java.lang.reflect.*;
 
 public class JavaReflection {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         GoatEntryPoint goatEntryPoint = new GoatEntryPoint();
         BirdEntryPoint birdEntryPoint = new BirdEntryPoint();
         try {
@@ -11,6 +11,7 @@ public class JavaReflection {
             //goatEntryPoint.inspectObject();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            throw e;
         }
         EntryPoint entryPoint = new EntryPoint();
         entryPoint.inspectObject();

@@ -6,7 +6,10 @@ import java.util.concurrent.ThreadFactory;
 public class ThreadFactoryExample {
     public static void main(String[] args) {
         CustomThread customThread = new CustomThread();
+        //Starts a new thread and runs the thread
         customThread.start();
+        //Doesn't stat new thread instead it runs on the same thread, which defeats the purpose of declaring new thread.
+        //customThread.run();
         Task task = new Task();
         task.run();
     }
