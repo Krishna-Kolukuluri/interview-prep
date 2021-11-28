@@ -1,4 +1,4 @@
-package datastructures.dstype;
+package datastructures.dstype.arraytype;
 
 
 import datastructures.models.DVD;
