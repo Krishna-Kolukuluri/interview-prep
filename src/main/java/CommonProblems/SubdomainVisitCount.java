@@ -21,6 +21,7 @@ Given an array of count-paired domains cpdomains, return an array of the count-p
 *
 * */
 public class SubdomainVisitCount {
+
     public List<String> subdomainVisits(String[] cpdomains) {
         Map<String, Integer> counts = new HashMap();
         for (String domain: cpdomains) {
