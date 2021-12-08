@@ -45,8 +45,8 @@ public class SubdomainVisitCount {
 *
 Complexity Analysis
 
-Time Complexity: O(N)O(N), where NN is the length of cpdomains, and assuming the length of cpdomains[i] is fixed.
+Time Complexity: O(N), where N is the length of cpdomains, and assuming the length of cpdomains[i] is fixed.
 
-Space Complexity: O(N)O(N), the space used in our count.
+Space Complexity: O(N), the space used in our count.
 *
 * */

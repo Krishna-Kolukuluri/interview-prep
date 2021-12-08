@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class AvailableSlots {
+public class AvailableMeetingSlots {
     public static void main(String[] args) {
         List<List<Integer>> usedSlots = new ArrayList<>();
         List<Integer> tempSlot = new ArrayList<Integer>(Arrays.asList(1,3));

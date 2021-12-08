@@ -1,11 +1,24 @@
 package dynamicprogramming;
+/*
+*
+You want to schedule a list of jobs in d days. Jobs are dependent (i.e To work on the i-th job, you have to finish all
+* the jobs j where 0 <= j < i).
 
+You have to finish at least one task every day. The difficulty of a job schedule is the sum of difficulties of each day
+* of the d days. The difficulty of a day is the maximum difficulty of a job done in that day.
+
+Given an array of integers jobDifficulty and an integer d. The difficulty of the i-th job is jobDifficulty[i].
+
+Return the minimum difficulty of a job schedule. If you cannot find a schedule for the jobs return -1.
+*
+* */
 public class MinimumDifficultyJobSchedule {
     public static void main(String[] args) {
         JobSchedule jobSchedule = new JobSchedule();
         int[] jobs = new int[]{6,5,4,3,2,1};
         int days = 2;
         int result = jobSchedule.minDifficulty(jobs, days);
+        System.out.println(result);
 
     }
 }
