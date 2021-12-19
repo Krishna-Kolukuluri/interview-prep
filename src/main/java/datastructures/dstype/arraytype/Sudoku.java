@@ -2,11 +2,11 @@ package datastructures.dstype.arraytype;
 
 import java.util.HashSet;
 
-//Validate Sudoku board is valid.
-//If Row, Column and 3x3 box i.e. (r/3,c/3) box are valid then only Sudoku board is in valid state.
+//Validate SudokuSolver board is valid.
+//If Row, Column and 3x3 box i.e. (r/3,c/3) box are valid then only SudokuSolver board is in valid state.
 public class Sudoku {
     public boolean isSudokuBoardValid(char[][] board){
-        // number of columns and number of rows in Sudoku board
+        // number of columns and number of rows in SudokuSolver board
         int N = 9;
 
         //Create Array of HashSet for each row, column and 9 blocks(3x3) blocks to keep track of numbers already seen in
