@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/*
+Longest Common Subsequence.
+* */
 public class LongestContSequence {
     public static void main(String[] args) {
         String[] user0 = new String[] {"/start", "/green", "/blue", "/pink", "/register", "/orange", "/one/two"};

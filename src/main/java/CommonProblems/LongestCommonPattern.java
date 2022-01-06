@@ -5,6 +5,7 @@ import java.util.List;
 
 /*
 *
+Longest Common Subsequence.
 * Longest repeating pattern for two users
 Two patterns are given, one for each user. Find the longest repeating pattern for both users.
 User1: ["hi", "bye", "hello", "leetcode", "start", "end"]
