@@ -1,16 +1,0 @@
-
-{
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Šù‘÷ıÿÿÿÿ8­ˆƒ‚Ò/
-P
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Ò†àÒ/
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Î‘îÒ/
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û’öÇ8²œñÒ/
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Î‘îÒ/
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(°‘‘şÿÿÿÿ8«¦‚Ò/
-v
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(°İ«É8­ˆƒ‚Ò/
-{
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¶Œùüıÿÿÿÿ8­ˆƒ‚Ò/

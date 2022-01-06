@@ -1,16 +1,0 @@
-
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÞžïˆÓ/
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÞžïˆÓ/
-?
-java:S1659""Declare "mMax" on a separate line.(âé²»8ÞžïˆÓ/
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÞžïˆÓ/
-P
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ÞžïˆÓ/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÏ„¡ýÿÿÿÿ8ÞžïˆÓ/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÏ„¡ýÿÿÿÿ8ÞžïˆÓ/
-ž
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8¯ÿé†Ó/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÏ„¡ýÿÿÿÿ8ÞžïˆÓ/

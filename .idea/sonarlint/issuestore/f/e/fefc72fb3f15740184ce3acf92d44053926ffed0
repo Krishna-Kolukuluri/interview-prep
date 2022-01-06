@@ -1,11 +1,0 @@
-
-J
-java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8©‰úÒ/
-r	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æò’½ùÿÿÿÿ8Ü„¾Ò/
-r	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æò’½ùÿÿÿÿ8Ü„¾Ò/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åù ÷ıÿÿÿÿ8…øÒ/
-r	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æò’½ùÿÿÿÿ8Ü„¾Ò/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åù ÷ıÿÿÿÿ8…øÒ/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åù ÷ıÿÿÿÿ8…øÒ/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åù ÷ıÿÿÿÿ8…øÒ/
-r	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æò’½ùÿÿÿÿ8Ü„¾Ò/
