@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 /*
 *
 Given an array of arrays, where each array contains two numbers - the first number being a parent and the second number
-being a child of a tree -, and two nodes - node1 and node2 - return an array of all common anscestors.
+being a child of a tree -, and two nodes - node1 and node2 - return an array of all common ancestors.
 *
 * */
 public class CommonAncestors {

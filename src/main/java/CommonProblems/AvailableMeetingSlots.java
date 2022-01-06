@@ -14,6 +14,19 @@ public class AvailableMeetingSlots {
         usedSlots.add(tempSlot);
         tempSlot = new ArrayList<Integer>(Arrays.asList(9,10));
         usedSlots.add(tempSlot);
+//        List<List<Integer>> result = getAvailableSlots(usedSlots);
+//        for(List<Integer> slot: result){
+//            System.out.println(slot.get(0) + " - " + slot.get(1));
+//        }
+        Integer[][] p1Meetings = {
+                {1230, 1300},
+                { 845,  900},
+                {1300, 1500}
+        };
+        usedSlots = new ArrayList<>();
+        for (Integer[] slot: p1Meetings){
+            usedSlots.add(Arrays.asList(slot));
+        }
         List<List<Integer>> result = getAvailableSlots(usedSlots);
         for(List<Integer> slot: result){
             System.out.println(slot.get(0) + " - " + slot.get(1));
@@ -34,10 +47,10 @@ public class AvailableMeetingSlots {
         for(int index = 1; index < usedSlots.size(); index++){
           List<Integer> currentSlot = usedSlots.get(index);
           if(overlapped(tempSlot, currentSlot)){
-              int aSlotStart = Math.min(currentSlot.get(0), tempSlot.get(0));
-              int aSlotEnd = Math.max(currentSlot.get(1), tempSlot.get(1));
-              tempSlot.add(0, aSlotStart);
-              tempSlot.add(1, aSlotEnd);
+              Integer aSlotStart = Math.min(currentSlot.get(0), tempSlot.get(0));
+              Integer aSlotEnd = Math.max(currentSlot.get(1), tempSlot.get(1));
+              tempSlot.set(0, aSlotStart);
+              tempSlot.set(1, aSlotEnd);
           }
           else{
               distinctUsedSlots.add(tempSlot);
