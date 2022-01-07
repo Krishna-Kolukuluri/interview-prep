@@ -1,5 +1,6 @@
 package datastructures.dstype.heapType;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 /*
@@ -38,6 +39,15 @@ public class MeetingRoomsII {
         }
         return endMinHeap.size();
     }
+    public boolean canAttendMeetings(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        for (int i = 0; i < intervals.length - 1; i++) {
+            if (intervals[i][1] > intervals[i + 1][0]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
 class Meeting{
     int start;
@@ -51,5 +61,11 @@ class Meeting{
     }
     public int getEnd(){
         return this.end;
+    }
+    public void setStart(int start){
+        this.start = start;
+    }
+    public void setEnd(int end){
+        this.end = end;
     }
 }
