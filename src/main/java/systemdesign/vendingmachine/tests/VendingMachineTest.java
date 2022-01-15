@@ -14,8 +14,7 @@ import systemdesign.vendingmachine.service.VendingMachineImpl;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class VendingMachineTest {
     private static VendingMachine vendingMachine;
@@ -54,7 +53,7 @@ public class VendingMachineTest {
         List<Coin> change = bucket.getSecond();
 
         assertEquals(Item.SODA, item);
-        assertTrue(!change.isEmpty());
+        assertFalse(change.isEmpty());
         assertEquals(50 - Item.SODA.getPrice(), getTotal(change));
     }
 
@@ -97,7 +96,7 @@ public class VendingMachineTest {
 
     @Test(expected = SoldOutException.class)
     public void testReset(){
-        VendingMachine machine = new VendingMachineFactory().createVendingMachine();
+        VendingMachine machine = VendingMachineFactory.createVendingMachine();
         machine.reset();
         machine.selectItemAndGetPrice(Item.PEPSI);
     }

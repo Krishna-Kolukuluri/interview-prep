@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>systemdesign.vendingmachine.exceptions</OriginalElement>
+  <nodes>
+    <node x="516.5" y="420.5">systemdesign.vendingmachine.service.PaymentService</node>
+    <node x="126.55681089743553" y="33.0">systemdesign.vendingmachine.model.Item</node>
+    <node x="967.9068108974357" y="0.0">systemdesign.vendingmachine.model.Coin</node>
+    <node x="304.5" y="409.0">systemdesign.vendingmachine.model.Inventory</node>
+    <node x="1151.2911858974353" y="464.0">systemdesign.vendingmachine.exceptions.NotSufficientChangeException</node>
+    <node x="60.5" y="464.5">systemdesign.vendingmachine.service.InventoryService</node>
+    <node x="1377.0134615384611" y="1489.0">systemdesign.vendingmachine.service.VendingMachineFactory</node>
+    <node x="708.7109775641022" y="676.0">systemdesign.vendingmachine.service.PaymentServiceImpl</node>
+    <node x="1055.7109775641022" y="764.5">systemdesign.vendingmachine.exceptions.SoldOutException</node>
+    <node x="944.9717948717946" y="1030.0">systemdesign.vendingmachine.service.VendingMachineImpl</node>
+    <node x="1496.0177083333328" y="453.0">systemdesign.vendingmachine.model.Bucket</node>
+    <node x="1643.0177083333328" y="743.0">systemdesign.vendingmachine.service.VendingMachine</node>
+    <node x="89.51250000000005" y="720.0">systemdesign.vendingmachine.service.InventoryServiceImpl</node>
+    <node x="791.9027243589742" y="111.5">systemdesign.vendingmachine.service.CommonService</node>
+    <node x="1261.7109775641022" y="742.0">systemdesign.vendingmachine.exceptions.NotFullPaidException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.service.PaymentServiceImpl">
+      <point x="-24.84615384615381" y="-204.5" />
+      <point x="1081.6256410256408" y="960.0" />
+      <point x="872.2109775641022" y="960.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentServiceImpl" target="systemdesign.vendingmachine.model.Item">
+      <point x="-72.66666666666674" y="-127.0" />
+      <point x="799.5443108974355" y="626.0" />
+      <point x="505.99999999999994" y="626.0" />
+      <point x="505.99999999999994" y="359.0" />
+      <point x="234.49431089743553" y="359.0" />
+      <point x="29.4375" y="116.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachine" target="systemdesign.vendingmachine.model.Item">
+      <point x="-40.375" y="-60.0" />
+      <point x="1764.1427083333328" y="656.0" />
+      <point x="1795.1484775641022" y="656.0" />
+      <point x="1795.1484775641022" y="339.0" />
+      <point x="273.7443108974355" y="339.0" />
+      <point x="68.6875" y="116.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentServiceImpl" target="systemdesign.vendingmachine.model.Coin">
+      <point x="36.33333333333326" y="-127.0" />
+      <point x="908.5443108974355" y="626.0" />
+      <point x="1032.902724358974" y="626.0" />
+      <point x="1032.902724358974" y="389.0" />
+      <point x="1015.3068108974355" y="389.0" />
+      <point x="-31.600000000000023" y="149.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachine" target="systemdesign.vendingmachine.service.CommonService">
+      <point x="40.375" y="-60.0" />
+      <point x="1844.3051282051279" y="329.0" />
+      <point x="924.9027243589742" y="329.0" />
+      <point x="57.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentServiceImpl" target="systemdesign.vendingmachine.service.CommonService">
+      <point x="0.0" y="-127.0" />
+      <point x="872.2109775641022" y="656.0" />
+      <point x="854.0" y="656.0" />
+      <point x="854.0" y="379.0" />
+      <point x="886.9027243589742" y="379.0" />
+      <point x="19.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachine" target="systemdesign.vendingmachine.model.Coin">
+      <point x="121.125" y="-60.0" />
+      <point x="1925.6427083333328" y="656.0" />
+      <point x="1939.6249999999998" y="656.0" />
+      <point x="1939.6249999999998" y="319.0" />
+      <point x="1110.1068108974357" y="319.0" />
+      <point x="63.200000000000045" y="149.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.service.InventoryService">
+      <point x="-74.53846153846155" y="-204.5" />
+      <point x="1031.933333333333" y="980.0" />
+      <point x="394.3568108974356" y="980.0" />
+      <point x="394.3568108974356" y="636.0" />
+      <point x="228.5" y="636.0" />
+      <point x="56.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.service.VendingMachine">
+      <point x="149.0769230769231" y="-204.5" />
+      <point x="1255.5487179487177" y="1010.0" />
+      <point x="1723.7677083333328" y="1010.0" />
+      <point x="-80.75" y="60.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentService" target="systemdesign.vendingmachine.model.Item">
+      <point x="-109.0" y="-82.0" />
+      <point x="571.0" y="349.0" />
+      <point x="254.11931089743553" y="349.0" />
+      <point x="49.0625" y="116.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.InventoryService" target="systemdesign.vendingmachine.model.Item">
+      <point x="-56.0" y="-38.0" />
+      <point x="116.5" y="389.0" />
+      <point x="214.86931089743553" y="389.0" />
+      <point x="9.8125" y="116.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineFactory" target="systemdesign.vendingmachine.service.VendingMachine">
+      <point x="68.0" y="-27.0" />
+      <point x="1581.0134615384611" y="1464.0" />
+      <point x="1885.2677083333328" y="1464.0" />
+      <point x="80.75" y="60.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.model.Bucket">
+      <point x="99.38461538461547" y="-204.5" />
+      <point x="1205.85641025641" y="990.0" />
+      <point x="1559.0177083333328" y="990.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.model.Coin">
+      <point x="124.23076923076928" y="-204.5" />
+      <point x="1230.7025641025639" y="1000.0" />
+      <point x="1632.5177083333328" y="1000.0" />
+      <point x="1632.5177083333328" y="389.0" />
+      <point x="1078.5068108974356" y="389.0" />
+      <point x="31.600000000000023" y="149.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.model.Item">
+      <point x="-149.0769230769231" y="-204.5" />
+      <point x="957.3948717948715" y="1010.0" />
+      <point x="0.0" y="1010.0" />
+      <point x="0.0" y="349.0" />
+      <point x="136.36931089743553" y="349.0" />
+      <point x="-68.6875" y="116.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.exceptions.NotFullPaidException">
+      <point x="24.84615384615381" y="-204.5" />
+      <point x="1131.3179487179484" y="960.0" />
+      <point x="1379.2109775641022" y="960.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentServiceImpl" target="systemdesign.vendingmachine.exceptions.NotSufficientChangeException">
+      <point x="109.0" y="-127.0" />
+      <point x="981.2109775641022" y="646.0" />
+      <point x="1196.6245192307688" y="646.0" />
+      <point x="-90.66666666666669" y="38.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineFactory" target="systemdesign.vendingmachine.service.VendingMachineImpl">
+      <point x="-68.0" y="-27.0" />
+      <point x="1445.0134615384611" y="1464.0" />
+      <point x="1106.4717948717946" y="1464.0" />
+      <point x="0.0" y="204.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentServiceImpl" target="systemdesign.vendingmachine.model.Inventory">
+      <point x="-145.33333333333337" y="-127.0" />
+      <point x="726.877644230769" y="646.0" />
+      <point x="423.875" y="646.0" />
+      <point x="23.875" y="93.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.exceptions.NotSufficientChangeException">
+      <point x="49.69230769230762" y="-204.5" />
+      <point x="1156.1641025641022" y="970.0" />
+      <point x="1507.2109775641022" y="970.0" />
+      <point x="1507.2109775641022" y="656.0" />
+      <point x="1377.957852564102" y="656.0" />
+      <point x="90.66666666666674" y="38.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.exceptions.SoldOutException">
+      <point x="0.0" y="-204.5" />
+      <point x="1106.4717948717946" y="950.0" />
+      <point x="1148.7109775641022" y="950.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachine" target="systemdesign.vendingmachine.model.Bucket">
+      <point x="-121.125" y="-60.0" />
+      <point x="1683.3927083333328" y="656.0" />
+      <point x="1601.0177083333328" y="656.0" />
+      <point x="42.0" y="49.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.service.PaymentService">
+      <point x="-49.69230769230762" y="-204.5" />
+      <point x="1056.779487179487" y="970.0" />
+      <point x="519.7777243589742" y="970.0" />
+      <point x="519.7777243589742" y="656.0" />
+      <point x="598.25" y="656.0" />
+      <point x="-81.75" y="82.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.InventoryServiceImpl" target="systemdesign.vendingmachine.service.InventoryService">
+      <point x="0.0" y="-83.0" />
+      <point x="201.51250000000005" y="636.0" />
+      <point x="116.5" y="636.0" />
+      <point x="-56.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.InventoryService" target="systemdesign.vendingmachine.service.CommonService">
+      <point x="56.0" y="-38.0" />
+      <point x="228.5" y="369.0" />
+      <point x="810.9027243589742" y="369.0" />
+      <point x="-57.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.InventoryServiceImpl" target="systemdesign.vendingmachine.model.Item">
+      <point x="-89.60000000000014" y="-83.0" />
+      <point x="111.91249999999991" y="656.0" />
+      <point x="22.0" y="656.0" />
+      <point x="22.0" y="369.0" />
+      <point x="175.61931089743553" y="369.0" />
+      <point x="-29.4375" y="116.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentService" target="systemdesign.vendingmachine.model.Coin">
+      <point x="109.0" y="-82.0" />
+      <point x="789.0" y="389.0" />
+      <point x="983.7068108974356" y="389.0" />
+      <point x="-63.200000000000045" y="149.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentService" target="systemdesign.vendingmachine.service.CommonService">
+      <point x="0.0" y="-82.0" />
+      <point x="680.0" y="379.0" />
+      <point x="848.9027243589742" y="379.0" />
+      <point x="-19.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.InventoryServiceImpl" target="systemdesign.vendingmachine.model.Inventory">
+      <point x="44.799999999999955" y="-83.0" />
+      <point x="246.3125" y="646.0" />
+      <point x="328.375" y="646.0" />
+      <point x="-71.625" y="93.5" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.VendingMachineImpl" target="systemdesign.vendingmachine.service.InventoryServiceImpl">
+      <point x="-99.38461538461536" y="-204.5" />
+      <point x="1007.0871794871791" y="990.0" />
+      <point x="201.51250000000005" y="990.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="systemdesign.vendingmachine.service.PaymentServiceImpl" target="systemdesign.vendingmachine.service.PaymentService">
+      <point x="-36.33333333333337" y="-127.0" />
+      <point x="835.877644230769" y="616.0" />
+      <point x="761.75" y="616.0" />
+      <point x="81.75" y="82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7513846153846153" x="1150.8377262720155" y="703.1256510855997" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
