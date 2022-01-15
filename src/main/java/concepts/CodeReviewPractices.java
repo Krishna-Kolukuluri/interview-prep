@@ -101,7 +101,7 @@ public void hello() throws SpecificException1, SpecificException2 { //Correct wa
 
 }
 
-Use the try-catch block for exception handling with appropriate actions taken in the catch block. Also, use a finally
+Use the try-catch block for exceptions handling with appropriate actions taken in the catch block. Also, use a finally
 * block to release resources, such as database connections, in the finally block. This allows you to close the resource gracefully.
 
 7. Does the Code Have Unnecessary Comments?

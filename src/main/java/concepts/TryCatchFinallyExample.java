@@ -17,7 +17,7 @@ public class TryCatchFinallyExample {
         }
         catch (Exception ex){
             System.out.println(ex.getMessage());
-            //In case of exception This return will not have any effect as its getting overwritten by finally block return statement.
+            //In case of exceptions This return will not have any effect as its getting overwritten by finally block return statement.
             return initialVal;
         }
         finally {
