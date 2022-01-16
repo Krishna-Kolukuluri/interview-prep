@@ -5,10 +5,12 @@ import java.util.stream.Collectors;
 
 public class UserLogPaypal {
     public static void main(String[] args) {
-        int maximumTime = 30;
-        List<String> logs = new ArrayList<>(Arrays.asList("12 10 sign-in", "5 10 sign-in",
+        int maximumTime = 100;
+/*        List<String> logs = new ArrayList<>(Arrays.asList("12 10 sign-in", "5 10 sign-in",
                                                           "5 100 sign-out", "12 20 sign-out",
-                                                          "8 20 sign-in", "8 50 sign-out"));
+                                                          "8 20 sign-in", "8 50 sign-out"));*/
+        List<String> logs = new ArrayList<>(Arrays.asList("60 12 sign-in",
+                "80 20 sign-out","10 20 sign-in", "60 20 sign-out"));
         System.out.println(processEvents(logs, maximumTime));
     }
     private static List<String> processEvents(List<String> logs, int maximumTime){
@@ -38,7 +40,8 @@ public class UserLogPaypal {
         List<Integer> userIds = new ArrayList<>();
 
         for(Log log: userEntries.values()){
-            if(log.getDuration() <=maximumTime){
+            System.out.println(log.getDuration());
+            if( log.getDuration() >=0 &&  log.getDuration() <maximumTime){
                 userIds.add(log.getUserId());
             }
         }
@@ -54,7 +57,7 @@ class Log{
 
     }
     private int userId;
-    private int login = 0;
+    private long login = Integer.MAX_VALUE;
 
     public Integer getUserId() {
         return userId;
@@ -68,15 +71,15 @@ class Log{
         this.login = login;
     }
 
-    public int getLogOut() {
+    public long getLogOut() {
         return logOut;
     }
 
-    public void setLogOut(Integer logOut) {
+    public void setLogOut(long logOut) {
         this.logOut = logOut;
     }
 
-    public Integer getDuration() {
+    public long getDuration() {
         return this.logOut - this.login;
     }
 
@@ -84,7 +87,7 @@ class Log{
         this.action = action;
     }
 
-    private int logOut = Integer.MAX_VALUE;
+    private long logOut = Integer.MAX_VALUE;
     private int duration;
     private String action;
 

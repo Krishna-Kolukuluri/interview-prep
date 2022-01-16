@@ -2,7 +2,9 @@ package systemdesign.coffeemachine.service;
 
 import systemdesign.coffeemachine.model.DrinkType;
 import systemdesign.coffeemachine.model.Ingredient;
-
+/*
+ * Implementing Strategy design pattern
+ * */
 import java.util.Map;
 
 public class Cappuccino extends DrinkImpl {
