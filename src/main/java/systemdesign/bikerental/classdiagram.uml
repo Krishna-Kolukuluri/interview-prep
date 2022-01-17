@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>systemdesign.bikerental.exception.BikeNotAvailableException</OriginalElement>
+  <nodes>
+    <node x="1804.0" y="1701.0">systemdesign.bikerental.exception.PaymentDeclinedException</node>
+    <node x="701.0" y="1827.0">systemdesign.bikerental.service.BikeServiceImpl</node>
+    <node x="2602.507217261905" y="1129.0">systemdesign.bikerental.service.SafetyLock</node>
+    <node x="2688.3199732142866" y="302.5">systemdesign.bikerental.model.Person</node>
+    <node x="1507.7572172619052" y="678.5">systemdesign.bikerental.model.Bill</node>
+    <node x="509.53425892857194" y="1118.0">systemdesign.bikerental.service.BikeSearch</node>
+    <node x="706.5" y="1701.0">systemdesign.bikerental.service.BikeService</node>
+    <node x="1730.7572172619052" y="612.5">systemdesign.bikerental.model.ReservationStatus</node>
+    <node x="488.0" y="258.0">systemdesign.bikerental.model.BikeStatus</node>
+    <node x="3004.507217261905" y="1129.0">systemdesign.bikerental.service.ChildCarrier</node>
+    <node x="341.0" y="302.5">systemdesign.bikerental.model.BikeLog</node>
+    <node x="1247.6478422619052" y="656.5">systemdesign.bikerental.service.Notification</node>
+    <node x="222.0" y="1701.0">systemdesign.bikerental.model.PaymentStatus</node>
+    <node x="695.0" y="324.5">systemdesign.bikerental.model.ParkingRack</node>
+    <node x="2185.367708333333" y="678.5">systemdesign.bikerental.service.RentalInsurance</node>
+    <node x="0.0" y="324.5">systemdesign.bikerental.service.BikeLogService</node>
+    <node x="1612.4927083333332" y="1568.5">systemdesign.bikerental.service.BikeReservationServiceImpl</node>
+    <node x="772.1175922619054" y="1129.0">systemdesign.bikerental.service.RoadsideAssistance</node>
+    <node x="1036.502008928572" y="678.5">systemdesign.bikerental.service.AdditionalService</node>
+    <node x="984.1175922619053" y="1117.5">systemdesign.bikerental.service.SMSNotification</node>
+    <node x="2689.5700892857144" y="678.5">systemdesign.bikerental.service.Equipment</node>
+    <node x="85.25" y="679.0">systemdesign.bikerental.service.BikeLogServiceImpl</node>
+    <node x="198.125" y="0.0">systemdesign.bikerental.model.BikeLogType</node>
+    <node x="1195.1175922619054" y="1117.5">systemdesign.bikerental.service.EmailNotification</node>
+    <node x="1446.4927083333332" y="1408.5">systemdesign.bikerental.service.BikeReservationService</node>
+    <node x="3214.2927083333334" y="1557.0">systemdesign.bikerental.model.Receptionist</node>
+    <node x="2390.507217261905" y="1129.0">systemdesign.bikerental.service.LiabilityInsurance</node>
+    <node x="1976.7572172619052" y="679.0">systemdesign.bikerental.model.AdditionalRider</node>
+    <node x="1511.0" y="1701.0">systemdesign.bikerental.exception.BikeNotAvailableException</node>
+    <node x="2089.0" y="1701.0">systemdesign.bikerental.exception.LocationClosedException</node>
+    <node x="953.261160714286" y="247.0">systemdesign.bikerental.model.BikeType</node>
+    <node x="3474.7927083333334" y="1129.0">systemdesign.bikerental.service.BikeRentalSystemServiceImpl</node>
+    <node x="3173.4449732142866" y="324.5">systemdesign.bikerental.model.BikeRentalLocation</node>
+    <node x="3276.7927083333334" y="1084.5">systemdesign.bikerental.model.Account</node>
+    <node x="2803.507217261905" y="1129.0">systemdesign.bikerental.service.SafetyHelmet</node>
+    <node x="503.78425892857194" y="1386.0">systemdesign.bikerental.service.BikeInventory</node>
+    <node x="3176.7927083333334" y="623.5">systemdesign.bikerental.model.AccountStatus</node>
+    <node x="2186.507217261905" y="1129.0">systemdesign.bikerental.service.PersonalInsurance</node>
+    <node x="2756.5699732142866" y="22.5">systemdesign.bikerental.model.Address</node>
+    <node x="1157.0" y="1701.0">systemdesign.bikerental.model.BarCodeReader</node>
+    <node x="2890.5700892857144" y="679.0">systemdesign.bikerental.model.BikeRentalSystem</node>
+    <node x="3171.5427083333334" y="1397.0">systemdesign.bikerental.model.Member</node>
+    <node x="914.0" y="1701.0">systemdesign.bikerental.model.BillItemType</node>
+    <node x="456.0" y="2252.0">systemdesign.bikerental.service.CashTransaction</node>
+    <node x="1551.7572172619052" y="324.5">systemdesign.bikerental.model.BillItem</node>
+    <node x="1354.0" y="1701.0">systemdesign.bikerental.model.BarCode</node>
+    <node x="220.0" y="2252.0">systemdesign.bikerental.service.CreditCardTransaction</node>
+    <node x="646.0" y="568.0">systemdesign.bikerental.model.Bike</node>
+    <node x="1567.1177083333332" y="986.0">systemdesign.bikerental.service.BikeReservation</node>
+    <node x="3553.5427083333334" y="690.0">systemdesign.bikerental.service.BikeRentalSystemService</node>
+    <node x="0.0" y="2241.0">systemdesign.bikerental.service.CheckTransaction</node>
+    <node x="223.0" y="2070.0">systemdesign.bikerental.service.Payment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="systemdesign.bikerental.service.BikeInventory" target="systemdesign.bikerental.service.BikeSearch">
+      <point x="0.0" y="-60.5" />
+      <point x="640.284258928572" y="1366.0" />
+      <point x="623.534258928572" y="1366.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeLogServiceImpl" target="systemdesign.bikerental.model.BikeLogType">
+      <point x="80.0" y="-38.0" />
+      <point x="325.25" y="548.0" />
+      <point x="330.5" y="548.0" />
+      <point x="330.5" y="227.0" />
+      <point x="273.125" y="227.0" />
+      <point x="-25.0" y="93.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Member" target="systemdesign.bikerental.model.Account">
+      <point x="54.0" y="-49.5" />
+      <point x="3333.5427083333334" y="1366.0" />
+      <point x="3321.2927083333334" y="1366.0" />
+      <point x="-44.5" y="71.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeRentalSystemServiceImpl" target="systemdesign.bikerental.model.BikeRentalLocation">
+      <point x="-73.5" y="-27.0" />
+      <point x="3548.2927083333334" y="966.0" />
+      <point x="3543.0427083333334" y="966.0" />
+      <point x="3543.0427083333334" y="508.0" />
+      <point x="3293.4449732142866" y="508.0" />
+      <point x="24.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.CheckTransaction" target="systemdesign.bikerental.service.Payment">
+      <point x="0.0" y="-49.5" />
+      <point x="100.0" y="2216.0" />
+      <point x="258.0" y="2216.0" />
+      <point x="-70.0" y="60.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservationServiceImpl" target="systemdesign.bikerental.service.BikeReservationService">
+      <point x="-103.66666666666674" y="-38.0" />
+      <point x="1664.3260416666667" y="1532.0" />
+      <point x="1601.9927083333332" y="1532.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Bike" target="systemdesign.bikerental.model.ParkingRack">
+      <point x="0.0" y="-149.0" />
+      <point x="-34.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeSearch" target="systemdesign.bikerental.model.Bike">
+      <point x="0.0" y="-38.0" />
+      <point x="623.534258928572" y="966.0" />
+      <point x="695.8" y="966.0" />
+      <point x="-33.200000000000045" y="149.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Member" target="systemdesign.bikerental.service.BikeReservation">
+      <point x="-54.0" y="-49.5" />
+      <point x="3225.5427083333334" y="1346.0" />
+      <point x="1764.6177083333332" y="1346.0" />
+      <point x="79.0" y="170.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.CashTransaction" target="systemdesign.bikerental.service.Payment">
+      <point x="0.0" y="-38.5" />
+      <point x="556.0" y="2216.0" />
+      <point x="398.0" y="2216.0" />
+      <point x="70.0" y="60.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Receptionist" target="systemdesign.bikerental.model.Account">
+      <point x="62.25" y="-49.5" />
+      <point x="3401.0427083333334" y="1532.0" />
+      <point x="3398.0427083333334" y="1532.0" />
+      <point x="3398.0427083333334" y="1366.0" />
+      <point x="3410.2927083333334" y="1366.0" />
+      <point x="44.5" y="71.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.AdditionalRider" target="systemdesign.bikerental.model.Person">
+      <point x="-42.0" y="-38.0" />
+      <point x="2018.7572172619052" y="538.0" />
+      <point x="2703.0699732142866" y="538.0" />
+      <point x="-44.25" y="60.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.model.Bike">
+      <point x="-111.09375" y="-170.0" />
+      <point x="1574.5239583333332" y="956.0" />
+      <point x="762.2" y="956.0" />
+      <point x="33.200000000000045" y="149.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.BikeLog" target="systemdesign.bikerental.model.BikeLogType">
+      <point x="-31.75" y="-60.0" />
+      <point x="372.75" y="217.0" />
+      <point x="323.125" y="217.0" />
+      <point x="25.0" y="93.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.Payment" target="systemdesign.bikerental.model.PaymentStatus">
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="159.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeLogService" target="systemdesign.bikerental.model.BikeLogType">
+      <point x="0.0" y="-38.0" />
+      <point x="160.0" y="227.0" />
+      <point x="223.125" y="227.0" />
+      <point x="-75.0" y="93.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.model.ReservationStatus">
+      <point x="7.40625" y="-170.0" />
+      <point x="1693.0239583333332" y="886.0" />
+      <point x="1787.2572172619052" y="886.0" />
+      <point x="-56.5" y="104.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.SafetyHelmet" target="systemdesign.bikerental.service.Equipment">
+      <point x="0.0" y="-27.0" />
+      <point x="2894.007217261905" y="966.0" />
+      <point x="2816.2700892857147" y="966.0" />
+      <point x="36.200000000000045" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeRentalSystemServiceImpl" target="systemdesign.bikerental.service.BikeRentalSystemService">
+      <point x="73.5" y="-27.0" />
+      <point x="3695.2927083333334" y="966.0" />
+      <point x="3700.5427083333334" y="966.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.service.RentalInsurance">
+      <point x="66.65625" y="-170.0" />
+      <point x="1752.2739583333332" y="926.0" />
+      <point x="2207.117708333333" y="926.0" />
+      <point x="-65.25" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Bike" target="systemdesign.bikerental.model.BikeType">
+      <point x="47.428571428571445" y="-149.0" />
+      <point x="776.4285714285716" y="538.0" />
+      <point x="998.261160714286" y="538.0" />
+      <point x="-45.0" y="115.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Account" target="systemdesign.bikerental.model.AccountStatus">
+      <point x="-66.75" y="-71.5" />
+      <point x="3299.0427083333334" y="966.0" />
+      <point x="3229.2927083333334" y="966.0" />
+      <point x="-52.5" y="93.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.PersonalInsurance" target="systemdesign.bikerental.service.RentalInsurance">
+      <point x="0.0" y="-27.0" />
+      <point x="2278.507217261905" y="936.0" />
+      <point x="2294.117708333333" y="936.0" />
+      <point x="21.75" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.RoadsideAssistance" target="systemdesign.bikerental.service.AdditionalService">
+      <point x="0.0" y="-27.0" />
+      <point x="868.1175922619054" y="966.0" />
+      <point x="1067.1686755952387" y="966.0" />
+      <point x="-61.33333333333326" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeRentalSystemService" target="systemdesign.bikerental.model.BikeRentalLocation">
+      <point x="0.0" y="-27.0" />
+      <point x="3700.5427083333334" y="498.0" />
+      <point x="3341.4449732142866" y="498.0" />
+      <point x="72.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.SafetyLock" target="systemdesign.bikerental.service.Equipment">
+      <point x="0.0" y="-27.0" />
+      <point x="2693.007217261905" y="966.0" />
+      <point x="2780.0700892857144" y="966.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.CreditCardTransaction" target="systemdesign.bikerental.service.Payment">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeLogServiceImpl" target="systemdesign.bikerental.service.BikeLogService">
+      <point x="-80.0" y="-38.0" />
+      <point x="165.25" y="548.0" />
+      <point x="160.0" y="548.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.BikeRentalLocation" target="systemdesign.bikerental.model.Address">
+      <point x="-48.0" y="-38.0" />
+      <point x="3221.4449732142866" y="227.0" />
+      <point x="2842.8199732142866" y="227.0" />
+      <point x="17.25" y="71.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Bike" target="systemdesign.bikerental.model.BikeLog">
+      <point x="-71.14285714285711" y="-149.0" />
+      <point x="657.8571428571429" y="548.0" />
+      <point x="404.5" y="548.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Account" target="systemdesign.bikerental.model.Person">
+      <point x="22.25" y="-71.5" />
+      <point x="3388.0427083333334" y="966.0" />
+      <point x="3397.2927083333334" y="966.0" />
+      <point x="3397.2927083333334" y="528.0" />
+      <point x="2762.0699732142866" y="528.0" />
+      <point x="14.75" y="60.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Receptionist" target="systemdesign.bikerental.model.Member">
+      <point x="-62.25" y="-49.5" />
+      <point x="3276.5427083333334" y="1532.0" />
+      <point x="3279.5427083333334" y="1532.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.service.Notification">
+      <point x="-51.84375" y="-170.0" />
+      <point x="1633.7739583333332" y="916.0" />
+      <point x="1367.0228422619052" y="916.0" />
+      <point x="23.875" y="60.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.model.AdditionalRider">
+      <point x="37.03125" y="-170.0" />
+      <point x="1722.6489583333332" y="906.0" />
+      <point x="1997.7572172619052" y="906.0" />
+      <point x="-63.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeServiceImpl" target="systemdesign.bikerental.service.BikeService">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.service.Equipment">
+      <point x="96.28125" y="-170.0" />
+      <point x="1781.8989583333332" y="946.0" />
+      <point x="2707.6700892857143" y="946.0" />
+      <point x="-72.40000000000009" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.service.AdditionalService">
+      <point x="-81.46875" y="-170.0" />
+      <point x="1604.1489583333332" y="936.0" />
+      <point x="1128.502008928572" y="936.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.LiabilityInsurance" target="systemdesign.bikerental.service.RentalInsurance">
+      <point x="0.0" y="-27.0" />
+      <point x="2486.507217261905" y="936.0" />
+      <point x="2337.617708333333" y="936.0" />
+      <point x="65.25" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeInventory" target="systemdesign.bikerental.model.Bike">
+      <point x="91.0" y="-60.5" />
+      <point x="731.284258928572" y="1366.0" />
+      <point x="748.034258928572" y="1366.0" />
+      <point x="748.034258928572" y="966.0" />
+      <point x="729.0" y="966.0" />
+      <point x="0.0" y="149.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Person" target="systemdesign.bikerental.model.Address">
+      <point x="29.5" y="-60.0" />
+      <point x="2776.8199732142866" y="227.0" />
+      <point x="2808.3199732142866" y="227.0" />
+      <point x="-17.25" y="71.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservationServiceImpl" target="systemdesign.bikerental.model.AdditionalRider">
+      <point x="103.66666666666652" y="-38.0" />
+      <point x="1871.6593749999997" y="1532.0" />
+      <point x="2136.882217261905" y="1532.0" />
+      <point x="2136.882217261905" y="916.0" />
+      <point x="2123.757217261905" y="916.0" />
+      <point x="63.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.BikeRentalSystem" target="systemdesign.bikerental.model.BikeRentalLocation">
+      <point x="-54.75" y="-38.0" />
+      <point x="2945.3200892857144" y="538.0" />
+      <point x="3197.4449732142866" y="538.0" />
+      <point x="-72.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Bike" target="systemdesign.bikerental.model.BikeStatus">
+      <point x="-47.428571428571445" y="-149.0" />
+      <point x="681.5714285714284" y="538.0" />
+      <point x="534.75" y="538.0" />
+      <point x="-46.75" y="104.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.EmailNotification" target="systemdesign.bikerental.service.Notification">
+      <point x="0.0" y="-38.5" />
+      <point x="1290.6175922619054" y="966.0" />
+      <point x="1319.2728422619052" y="966.0" />
+      <point x="-23.875" y="60.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.ChildCarrier" target="systemdesign.bikerental.service.Equipment">
+      <point x="0.0" y="-27.0" />
+      <point x="3095.007217261905" y="956.0" />
+      <point x="2852.4700892857145" y="956.0" />
+      <point x="72.40000000000009" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservationService" target="systemdesign.bikerental.model.AdditionalRider">
+      <point x="77.75" y="-38.0" />
+      <point x="1679.7427083333332" y="1366.0" />
+      <point x="2081.757217261905" y="1366.0" />
+      <point x="21.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservation" target="systemdesign.bikerental.model.Bill">
+      <point x="-22.21875" y="-170.0" />
+      <point x="1663.3989583333332" y="896.0" />
+      <point x="1558.5072172619052" y="896.0" />
+      <point x="-50.75" y="38.5" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservationServiceImpl" target="systemdesign.bikerental.service.BikeReservation">
+      <point x="0.0" y="-38.0" />
+      <point x="1767.9927083333332" y="1356.0" />
+      <point x="1685.6177083333332" y="1356.0" />
+      <point x="0.0" y="170.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.BikeReservationService" target="systemdesign.bikerental.service.BikeReservation">
+      <point x="-77.75" y="-38.0" />
+      <point x="1524.2427083333332" y="1366.0" />
+      <point x="1606.6177083333332" y="1366.0" />
+      <point x="-79.0" y="170.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.model.Bill" target="systemdesign.bikerental.model.BillItem">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="systemdesign.bikerental.service.SMSNotification" target="systemdesign.bikerental.service.Notification">
+      <point x="0.0" y="-38.5" />
+      <point x="1079.6175922619054" y="966.0" />
+      <point x="1271.5228422619052" y="966.0" />
+      <point x="-71.625" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="130.66666666666674" y="903.4999999999995" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
