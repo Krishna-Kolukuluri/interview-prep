@@ -3,106 +3,202 @@
   <ID>JAVA</ID>
   <OriginalElement>systemdesign.elevator.exception.ElevatorOutOfServiceException</OriginalElement>
   <nodes>
-    <node x="74.69459706959708" y="193.0">systemdesign.elevator.model.Request</node>
-    <node x="472.7362637362637" y="882.0">systemdesign.elevator.Elevator</node>
-    <node x="-276.35451007326014" y="287.6674107142857">systemdesign.elevator.exception.ElevatorOutOfServiceException</node>
-    <node x="0.0" y="981.0">systemdesign.elevator.exception.FloorNotServicedException</node>
-    <node x="0.0" y="0.0">systemdesign.elevator.model.Direction</node>
-    <node x="54.603914835164744" y="567.0">systemdesign.elevator.service.ElevatorServiceImpl</node>
-    <node x="360.694597069597" y="396.0">systemdesign.elevator.service.ElevatorService</node>
-    <node x="238.47355769230765" y="11.0">systemdesign.elevator.model.UserLocation</node>
+    <node x="54.32495915032678" y="233.0">systemdesign.elevator.model.FloorNumButton</node>
+    <node x="0.0" y="1595.0">systemdesign.elevator.exception.UnderMaintenanceException</node>
+    <node x="595.2200824774355" y="1496.0">systemdesign.elevator.Elevator</node>
+    <node x="971.5534158107689" y="0.0">systemdesign.elevator.exception.ElevatorOutOfServiceException</node>
+    <node x="207.05498171490825" y="0.0">systemdesign.elevator.model.Direction</node>
+    <node x="602.2624591503268" y="612.0">systemdesign.elevator.service.ElevatorService</node>
+    <node x="649.8049817149083" y="11.0">systemdesign.elevator.model.UserLocation</node>
+    <node x="558.3063141923437" y="311.0">systemdesign.elevator.model.Request</node>
+    <node x="30.75" y="989.5">systemdesign.elevator.service.ElevatorController</node>
+    <node x="313.06383247743554" y="278.0">systemdesign.elevator.model.AuxButton</node>
+    <node x="139.82495915032678" y="612.5">systemdesign.elevator.model.UserCommand</node>
+    <node x="1296.553415810769" y="0.0">systemdesign.elevator.exception.FloorNotServicedException</node>
+    <node x="490.4625641923438" y="845.0">systemdesign.elevator.service.ElevatorServiceImpl</node>
+    <node x="263.5638324774355" y="1292.0">systemdesign.elevator.service.ElevatorControllerImpl</node>
   </nodes>
   <notes />
   <edges>
     <edge source="systemdesign.elevator.model.Request" target="systemdesign.elevator.model.UserLocation">
       <point x="33.125" y="-71.5" />
-      <point x="240.31959706959708" y="173.0" />
-      <point x="263.7235576923076" y="173.0" />
-      <point x="-75.75" y="60.5" />
+      <point x="723.9313141923437" y="213.0" />
+      <point x="733.9716483815748" y="213.0" />
+      <point x="-16.83333333333337" y="60.5" />
     </edge>
-    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.service.ElevatorServiceImpl">
-      <point x="-37.25" y="-27.0" />
-      <point x="509.9862637362637" y="852.0" />
-      <point x="178.60391483516474" y="852.0" />
-      <point x="0.0" y="127.5" />
+    <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.model.AuxButton">
+      <point x="-82.66666666666663" y="-193.5" />
+      <point x="531.7958975256772" y="815.0" />
+      <point x="487.0625" y="815.0" />
+      <point x="487.0625" y="552.0" />
+      <point x="484.06383247743554" y="552.0" />
+      <point x="76.0" y="104.5" />
     </edge>
-    <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.model.UserLocation">
-      <point x="70.85714285714286" y="-127.5" />
-      <point x="249.4610576923076" y="537.0" />
-      <point x="350.1945970695971" y="537.0" />
-      <point x="350.1945970695971" y="173.0" />
-      <point x="364.7235576923076" y="173.0" />
-      <point x="25.25" y="60.5" />
+    <edge source="systemdesign.elevator.service.ElevatorControllerImpl" target="systemdesign.elevator.model.AuxButton">
+      <point x="-31.333333333333258" y="-72.0" />
+      <point x="373.2304991441022" y="1252.0" />
+      <point x="404.3249591503268" y="1252.0" />
+      <point x="404.3249591503268" y="592.0" />
+      <point x="408.06383247743554" y="592.0" />
+      <point x="0.0" y="104.5" />
     </edge>
     <edge source="systemdesign.elevator.service.ElevatorService" target="systemdesign.elevator.model.Request">
-      <point x="0.0" y="-60.5" />
-      <point x="472.194597069597" y="376.0" />
-      <point x="229.2779304029304" y="376.0" />
-      <point x="22.083333333333314" y="71.5" />
+      <point x="0.0" y="-71.5" />
+      <point x="713.7624591503268" y="592.0" />
+      <point x="707.3688141923437" y="592.0" />
+      <point x="16.5625" y="71.5" />
     </edge>
     <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.service.ElevatorService">
-      <point x="106.28571428571428" y="-127.5" />
-      <point x="284.889629120879" y="547.0" />
-      <point x="416.444597069597" y="547.0" />
-      <point x="-55.75" y="60.5" />
-    </edge>
-    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.model.Direction">
-      <point x="-62.083333333333314" y="-27.0" />
-      <point x="485.1529304029304" y="862.0" />
-      <point x="37.182097069597035" y="862.0" />
-      <point x="37.182097069597035" y="173.0" />
-      <point x="18.100000000000023" y="173.0" />
-      <point x="-72.39999999999998" y="71.5" />
-    </edge>
-    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.model.UserLocation">
-      <point x="62.083333333333314" y="-27.0" />
-      <point x="609.319597069597" y="862.0" />
-      <point x="616.194597069597" y="862.0" />
-      <point x="616.194597069597" y="173.0" />
-      <point x="415.2235576923076" y="173.0" />
-      <point x="75.75" y="60.5" />
-    </edge>
-    <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.model.Direction">
-      <point x="-70.8571428571428" y="-127.5" />
-      <point x="107.74677197802194" y="537.0" />
-      <point x="59.18209706959706" y="537.0" />
-      <point x="59.18209706959706" y="173.0" />
-      <point x="90.5" y="173.0" />
+      <point x="55.111111111111086" y="-193.5" />
+      <point x="669.5736753034548" y="805.0" />
+      <point x="713.7624591503268" y="805.0" />
       <point x="0.0" y="71.5" />
     </edge>
-    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.service.ElevatorService">
-      <point x="-12.416666666666629" y="-27.0" />
-      <point x="534.8195970695971" y="862.0" />
-      <point x="527.944597069597" y="862.0" />
-      <point x="55.75" y="60.5" />
+    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.model.Direction">
+      <point x="-63.85714285714289" y="-27.0" />
+      <point x="605.8629396202927" y="1476.0" />
+      <point x="0.0" y="1476.0" />
+      <point x="0.0" y="163.0" />
+      <point x="218.36748171490825" y="163.0" />
+      <point x="-79.1875" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.service.ElevatorControllerImpl">
+      <point x="31.0" y="193.5" />
+      <point x="645.4625641923437" y="1272.0" />
+      <point x="529.8971658107689" y="1272.0" />
+      <point x="125.33333333333343" y="-72.0" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorControllerImpl" target="systemdesign.elevator.model.Direction">
+      <point x="-125.3333333333332" y="-72.0" />
+      <point x="279.2304991441023" y="1272.0" />
+      <point x="11.0" y="1272.0" />
+      <point x="11.0" y="173.0" />
+      <point x="240.99248171490825" y="173.0" />
+      <point x="-56.5625" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorControllerImpl" target="systemdesign.elevator.model.Request">
+      <point x="31.333333333333428" y="-72.0" />
+      <point x="435.8971658107689" y="1272.0" />
+      <point x="451.5749591503268" y="1272.0" />
+      <point x="451.5749591503268" y="572.0" />
+      <point x="607.9938141923437" y="572.0" />
+      <point x="-82.8125" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.service.ElevatorControllerImpl">
+      <point x="-42.571428571428555" y="-27.0" />
+      <point x="627.148653906007" y="1466.0" />
+      <point x="334.0638324774355" y="1466.0" />
+      <point x="-70.5" y="72.0" />
+    </edge>
+    <edge source="systemdesign.elevator.model.UserCommand" target="systemdesign.elevator.model.AuxButton">
+      <point x="66.875" y="-71.0" />
+      <point x="313.6999591503268" y="592.0" />
+      <point x="332.06383247743554" y="592.0" />
+      <point x="-76.0" y="104.5" />
+    </edge>
+    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.service.ElevatorServiceImpl">
+      <point x="0.0" y="-27.0" />
+      <point x="669.7200824774355" y="1272.0" />
+      <point x="707.4625641923437" y="1272.0" />
+      <point x="93.0" y="193.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorControllerImpl" target="systemdesign.elevator.service.ElevatorServiceImpl">
+      <point x="62.666666666666686" y="-72.0" />
+      <point x="467.23049914410217" y="1252.0" />
+      <point x="521.4625641923437" y="1252.0" />
+      <point x="-93.0" y="193.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorControllerImpl" target="systemdesign.elevator.service.ElevatorController">
+      <point x="-93.99999999999989" y="-72.0" />
+      <point x="310.5638324774356" y="1262.0" />
+      <point x="164.75" y="1262.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.model.UserLocation">
+      <point x="110.22222222222217" y="-193.5" />
+      <point x="724.6847864145659" y="825.0" />
+      <point x="887.5534158107689" y="825.0" />
+      <point x="887.5534158107689" y="213.0" />
+      <point x="801.3049817149083" y="213.0" />
+      <point x="50.5" y="60.5" />
+    </edge>
+    <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.model.UserLocation">
+      <point x="63.85714285714289" y="-27.0" />
+      <point x="733.5772253345784" y="1476.0" />
+      <point x="920.5534158107689" y="1476.0" />
+      <point x="920.5534158107689" y="203.0" />
+      <point x="834.9716483815748" y="203.0" />
+      <point x="84.16666666666663" y="60.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.model.Direction">
+      <point x="-27.555555555555543" y="-193.5" />
+      <point x="586.9070086367883" y="795.0" />
+      <point x="524.5638324774355" y="795.0" />
+      <point x="524.5638324774355" y="183.0" />
+      <point x="331.49248171490825" y="183.0" />
+      <point x="33.9375" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.model.UserCommand" target="systemdesign.elevator.model.FloorNumButton">
+      <point x="-40.125" y="-71.0" />
+      <point x="206.69995915032678" y="572.0" />
+      <point x="110.07495915032678" y="572.0" />
+      <point x="-55.75" y="149.5" />
     </edge>
     <edge source="systemdesign.elevator.model.Request" target="systemdesign.elevator.model.Direction">
       <point x="-99.375" y="-71.5" />
-      <point x="107.81959706959708" y="173.0" />
-      <point x="126.69999999999999" y="173.0" />
-      <point x="36.19999999999999" y="71.5" />
+      <point x="591.4313141923437" y="173.0" />
+      <point x="354.11748171490825" y="173.0" />
+      <point x="56.5625" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.model.UserCommand" target="systemdesign.elevator.model.UserLocation">
+      <point x="40.125" y="-71.0" />
+      <point x="286.9499591503268" y="592.0" />
+      <point x="302.56383247743554" y="592.0" />
+      <point x="302.56383247743554" y="213.0" />
+      <point x="700.3049817149083" y="213.0" />
+      <point x="-50.5" y="60.5" />
+    </edge>
+    <edge source="systemdesign.elevator.model.UserCommand" target="systemdesign.elevator.model.Direction">
+      <point x="-66.875" y="-71.0" />
+      <point x="179.94995915032678" y="582.0" />
+      <point x="43.82495915032678" y="582.0" />
+      <point x="43.82495915032678" y="193.0" />
+      <point x="286.24248171490825" y="193.0" />
+      <point x="-11.3125" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorController" target="systemdesign.elevator.model.UserCommand">
+      <point x="0.0" y="-49.0" />
+      <point x="164.75" y="825.0" />
+      <point x="193.32495915032678" y="825.0" />
+      <point x="-53.5" y="71.0" />
     </edge>
     <edge source="systemdesign.elevator.Elevator" target="systemdesign.elevator.model.Request">
-      <point x="37.25" y="-27.0" />
-      <point x="584.4862637362637" y="852.0" />
-      <point x="605.194597069597" y="852.0" />
-      <point x="605.194597069597" y="356.0" />
-      <point x="317.6112637362637" y="356.0" />
-      <point x="110.41666666666663" y="71.5" />
+      <point x="42.571428571428555" y="-27.0" />
+      <point x="712.2915110488641" y="1466.0" />
+      <point x="909.5534158107689" y="1466.0" />
+      <point x="909.5534158107689" y="572.0" />
+      <point x="806.7438141923437" y="572.0" />
+      <point x="115.9375" y="71.5" />
+    </edge>
+    <edge source="systemdesign.elevator.service.ElevatorControllerImpl" target="systemdesign.elevator.model.UserCommand">
+      <point x="-62.66666666666657" y="-72.0" />
+      <point x="341.8971658107689" y="1252.0" />
+      <point x="309.25" y="1252.0" />
+      <point x="309.25" y="825.0" />
+      <point x="300.3249591503268" y="825.0" />
+      <point x="53.5" y="71.0" />
     </edge>
     <edge source="systemdesign.elevator.service.ElevatorServiceImpl" target="systemdesign.elevator.model.Request">
-      <point x="35.428571428571445" y="-127.5" />
-      <point x="214.0324862637362" y="537.0" />
-      <point x="181.3904304029304" y="537.0" />
-      <point x="181.3904304029304" y="376.0" />
-      <point x="185.11126373626374" y="376.0" />
-      <point x="-22.083333333333343" y="71.5" />
+      <point x="27.555555555555543" y="-193.5" />
+      <point x="642.0181197478994" y="775.0" />
+      <point x="591.7624591503268" y="775.0" />
+      <point x="591.7624591503268" y="592.0" />
+      <point x="674.2438141923437" y="592.0" />
+      <point x="-16.5625" y="71.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8690591658583899" x="474.0" y="495.5" />
-  <SelectedNodes>
-    <node>systemdesign.elevator.exception.ElevatorOutOfServiceException</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="0.34122211445198836" x="-368.98607978221617" y="800.6492325184764" />
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

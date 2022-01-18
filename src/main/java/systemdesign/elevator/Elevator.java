@@ -3,12 +3,15 @@ package systemdesign.elevator;
 import systemdesign.elevator.model.Direction;
 import systemdesign.elevator.model.Request;
 import systemdesign.elevator.model.UserLocation;
+import systemdesign.elevator.service.ElevatorControllerImpl;
 import systemdesign.elevator.service.ElevatorService;
 import systemdesign.elevator.service.ElevatorServiceImpl;
 
 public class Elevator {
     public static void main(String[] args) {
-        ElevatorService elevator = new ElevatorServiceImpl(0);
+        ElevatorServiceImpl elevator = ElevatorServiceImpl.getInstance();
+        ElevatorControllerImpl elevatorController = new ElevatorControllerImpl(elevator);
+        elevatorController.startElevator();
 
         Request upRequest1 = new Request(elevator.getCurrentFloor(), 5, Direction.UP, UserLocation.INSIDE_ELEVATOR);
         Request upRequest2 = new Request(elevator.getCurrentFloor(), 3, Direction.UP, UserLocation.INSIDE_ELEVATOR);
@@ -29,6 +32,6 @@ public class Elevator {
         elevator.sendDownRequest(downRequest2);
 
 
-        elevator.runElevator();
+        //elevator.runElevator();
     }
 }

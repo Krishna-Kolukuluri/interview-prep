@@ -1,5 +1,6 @@
 package systemdesign.elevator.service;
 
+import systemdesign.elevator.model.AuxButton;
 import systemdesign.elevator.model.Direction;
 import systemdesign.elevator.model.Request;
 import systemdesign.elevator.model.UserLocation;
@@ -9,24 +10,53 @@ import java.util.PriorityQueue;
 public class ElevatorServiceImpl implements ElevatorService{
     int currentFloor;
     Direction direction;
+
+    public AuxButton getAuxButton() {
+        return auxButton;
+    }
+
+    public void setAuxButton(AuxButton auxButton) {
+        this.auxButton = auxButton;
+    }
+
+    AuxButton auxButton;
     PriorityQueue<Request> upQueue;
     PriorityQueue<Request> downQueue;
-    public int getCurrentFloor() {
-        return currentFloor;
-    }
-    public void setCurrentFloor(int currentFloor) {
-        this.currentFloor = currentFloor;
-    }
-
-
-    public ElevatorServiceImpl(int currentFloor){
-        this.setCurrentFloor(currentFloor);
+    boolean running = false;
+    private static ElevatorServiceImpl elevatorService;
+    private ElevatorServiceImpl(){
+        this.setCurrentFloor(0);
         this.direction = Direction.IDLE;
+        this.auxButton = AuxButton.OPEN_DOORS;
         //Min Heap
         upQueue = new PriorityQueue<>((a, b) -> a.getDesiredFloor() - b.getDesiredFloor());
         //Map Heap
         downQueue = new PriorityQueue<>((a, b) -> b.getDesiredFloor() - a.getDesiredFloor());
     }
+    public static ElevatorServiceImpl getInstance(){
+        if(elevatorService == null){
+            synchronized (ElevatorControllerImpl.class){
+                if(elevatorService == null){
+                    elevatorService = new ElevatorServiceImpl();
+                }
+            }
+        }
+        return elevatorService;
+    }
+
+    public void setCurrentFloor(int currentFloor) {
+        this.currentFloor = currentFloor;
+    }
+    public int getCurrentFloor() {
+        return currentFloor;
+    }
+
+    @Override
+    public boolean stopElevator() {
+
+        return false;
+    }
+
 
     @Override
     public void sendUpRequest(Request request) {
@@ -55,8 +85,6 @@ public class ElevatorServiceImpl implements ElevatorService{
         System.out.println("Append down request going to floor " + request.getDesiredFloor() + ".");
 
     }
-
-
 
     private void processDownRequest(){
         while (!downQueue.isEmpty()){
@@ -89,12 +117,20 @@ public class ElevatorServiceImpl implements ElevatorService{
 
     @Override
     public void runElevator() {
-        if(this.direction == Direction.UP || this.direction == Direction.IDLE){
-            processUpRequest();
-            processDownRequest();
-        }else{
-            processDownRequest();
-            processUpRequest();
+        while (running){
+            if(this.direction == Direction.UP || this.direction == Direction.IDLE){
+                processUpRequest();
+                processDownRequest();
+            }else{
+                processDownRequest();
+                processUpRequest();
+            }
         }
+    }
+
+    @Override
+    public void run() {
+        running =  true;
+        runElevator();
     }
 }
