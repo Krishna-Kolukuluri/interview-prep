@@ -1,5 +1,8 @@
 package systemdesign.elevator.service;
 
+import systemdesign.elevator.exception.ElevatorOutOfServiceException;
+import systemdesign.elevator.exception.FloorNotServicedException;
+import systemdesign.elevator.exception.UnderMaintenanceException;
 import systemdesign.elevator.model.AuxButton;
 import systemdesign.elevator.model.Direction;
 import systemdesign.elevator.model.Request;
@@ -52,14 +55,14 @@ public class ElevatorServiceImpl implements ElevatorService{
     }
 
     @Override
-    public boolean stopElevator() {
+    public boolean stopElevator() throws FloorNotServicedException {
 
         return false;
     }
 
 
     @Override
-    public void sendUpRequest(Request request) {
+    public void sendUpRequest(Request request) throws ElevatorOutOfServiceException, UnderMaintenanceException {
         // If the request is sent from out side of the elevator,
         // we need to stop at the current floor of the requester
         // to pick him up, and then go the the desired floor.
@@ -73,7 +76,7 @@ public class ElevatorServiceImpl implements ElevatorService{
     }
 
     @Override
-    public void sendDownRequest(Request request) {
+    public void sendDownRequest(Request request) throws ElevatorOutOfServiceException, UnderMaintenanceException {
         // If the request is sent from out side of the elevator,
         // we need to stop at the current floor of the requester
         // to pick him up, and then go the the desired floor.
@@ -116,7 +119,7 @@ public class ElevatorServiceImpl implements ElevatorService{
     }
 
     @Override
-    public void runElevator() {
+    public void runElevator() throws ElevatorOutOfServiceException, UnderMaintenanceException {
         while (running){
             if(this.direction == Direction.UP || this.direction == Direction.IDLE){
                 processUpRequest();

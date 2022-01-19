@@ -1,5 +1,8 @@
 package systemdesign.elevator.service;
 
+import systemdesign.elevator.exception.ElevatorOutOfServiceException;
+import systemdesign.elevator.exception.FloorNotServicedException;
+import systemdesign.elevator.exception.UnderMaintenanceException;
 import systemdesign.elevator.model.AuxButton;
 import systemdesign.elevator.model.Direction;
 import systemdesign.elevator.model.Request;
@@ -12,20 +15,33 @@ public class ElevatorControllerImpl implements ElevatorController{
     }
     @Override
     public void processUserRequest(UserCommand command) {
+
         int desiredFloor;
-        if(command.getButtonPressed().equals(AuxButton.FLOOR)){
-            desiredFloor = command.getFloorNumButton().getFloorNum();
+        try {
+            if(command.getButtonPressed().equals(AuxButton.FLOOR)){
+                desiredFloor = command.getFloorNumButton().getFloorNum();
+            }
+            else{
+                desiredFloor = elevator.getCurrentFloor();
+            }
+            Request request = new Request(elevator.getCurrentFloor(), desiredFloor, command.getCommandDirection(), command.getUserRequestedFrom());
+            if(command.getCommandDirection().equals(Direction.UP)){
+                elevator.upQueue.offer(request);
+            }
+            else if(command.getCommandDirection().equals(Direction.DOWN)){
+                elevator.downQueue.offer(request);
+            }
         }
-        else{
-            desiredFloor = elevator.getCurrentFloor();
+        catch (FloorNotServicedException floorNotServicedException){
+            System.out.println(floorNotServicedException);
         }
-        Request request = new Request(elevator.getCurrentFloor(), desiredFloor, command.getCommandDirection(), command.getUserRequestedFrom());
-        if(command.getCommandDirection().equals(Direction.UP)){
-            elevator.upQueue.offer(request);
+        catch (UnderMaintenanceException underMaintenanceException){
+            System.out.println(underMaintenanceException);
         }
-        else if(command.getCommandDirection().equals(Direction.DOWN)){
-            elevator.downQueue.offer(request);
+        catch (ElevatorOutOfServiceException outOfServiceException){
+            System.out.println(outOfServiceException);
         }
+
     }
 
     @Override
@@ -37,5 +53,6 @@ public class ElevatorControllerImpl implements ElevatorController{
     @Override
     public void stopElevator() {
         elevator.running = false;
+        throw new UnderMaintenanceException();
     }
 }
