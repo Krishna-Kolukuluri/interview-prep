@@ -1,5 +1,17 @@
 package datastructures.dstype.arraytype;
+/*
+*https://leetcode.com/problems/valid-sudoku/
+Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
 
+Each row must contain the digits 1-9 without repetition.
+Each column must contain the digits 1-9 without repetition.
+Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+Note:
+
+A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+Only the filled cells need to be validated according to the mentioned rules.
+*
+* */
 import java.util.HashSet;
 
 //Validate SudokuSolver board is valid.
@@ -47,5 +59,16 @@ public class Sudoku {
         return true;
     }
 }
+/*
+Complexity Analysis
+
+Let NN be the board length, which is 9 in this question. Note that since the value of NN is fixed, the time and space
+complexity of this algorithm can be interpreted as O(1). However, to better compare each of the presented approaches,
+we will treat NN as an arbitrary value in the complexity analysis below.
+
+Time complexity: O(N^2) because we need to traverse every position in the board, and each of the four check steps is an O(1) operation.
+
+Space complexity: O(N^2) because we need to create 3N arrays each with size N to store all previously seen numbers for all rows, columns, and boxes.
+* */
 
 
