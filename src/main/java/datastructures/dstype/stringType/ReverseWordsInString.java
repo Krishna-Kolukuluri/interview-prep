@@ -8,7 +8,7 @@ only have a single space separating the words. Do not include any extra spaces.
 * */
 public class ReverseWordsInString {
     public static void main(String[] args) {
-        reverseWordsOrder("Let's take LeetCode contest");
+        System.out.println(reverseWordsOrder("Let's take LeetCode contest")); // contest LeetCode take Let's
     }
     public static String reverseWordsOrder(String s){
         String[] words = s.split(" ");
@@ -21,3 +21,7 @@ public class ReverseWordsInString {
         return sb.toString().trim();
     }
 }
+/*
+Time complexity: O(N), where N is a number of characters in the input string.
+Space complexity: O(N), to store the result of split by spaces.
+* */

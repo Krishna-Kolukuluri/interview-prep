@@ -2,7 +2,7 @@ package datastructures.dstype.stringType;
 
 public class ReverseWordsInStringII {
     public static void main(String[] args) {
-        reverseWords("Let's take LeetCode contest");
+        System.out.println(reverseWords("Let's take LeetCode contest")); //s'teL ekat edoCteeL tsetnoc
     }
     public static String reverseWords(String s){
         String[] words = s.split(" ");
