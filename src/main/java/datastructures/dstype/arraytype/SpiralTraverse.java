@@ -4,10 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
+https://leetcode.com/problems/spiral-matrix/
 Given an m x n matrix, return all elements of the matrix in spiral order.
 * */
 public class SpiralTraverse {
-    public List<Integer> spiralOrder(int[][] matrix) {
+    public static void main(String[] args) {
+        int[][] matrix = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println(spiralOrder(matrix));
+    }
+    public static List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<>();
         int rows = matrix.length;
         int columns = matrix[0].length;
@@ -49,7 +54,7 @@ public class SpiralTraverse {
     }
     /*
     Complexity Analysis
-    Let MM be the number of rows and NN be the number of columns.
+    Let M be the number of rows and N be the number of columns.
     Time complexity: O(M⋅N). This is because we visit each element once.
     Space complexity: O(1). This is because we don't use other data structures.
     Remember that we don't include the output array in the space complexity.
