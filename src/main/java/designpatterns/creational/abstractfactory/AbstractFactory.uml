@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpatterns.creational.abstractfactory.Computer</OriginalElement>
+  <nodes>
+    <node x="231.25" y="0.0">designpatterns.creational.abstractfactory.Computer</node>
+    <node x="29.25" y="90.0">designpatterns.creational.abstractfactory.PC</node>
+    <node x="0.0" y="170.0">designpatterns.creational.abstractfactory.PCFactory</node>
+    <node x="171.25" y="90.0">designpatterns.creational.abstractfactory.ComputerAbstractFactory</node>
+    <node x="343.5" y="170.0">designpatterns.creational.abstractfactory.ServerFactory</node>
+    <node x="212.2628205128205" y="250.0">designpatterns.creational.abstractfactory.TestAbstractFactory</node>
+    <node x="426.0833333333333" y="90.0">designpatterns.creational.abstractfactory.Server</node>
+    <node x="140.0" y="170.0">designpatterns.creational.abstractfactory.ComputerFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpatterns.creational.abstractfactory.PC" target="designpatterns.creational.abstractfactory.Computer">
+      <point x="0.0" y="-15.0" />
+      <point x="61.25" y="60.0" />
+      <point x="255.25" y="60.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.abstractfactory.Server" target="designpatterns.creational.abstractfactory.Computer">
+      <point x="0.0" y="-15.0" />
+      <point x="474.0833333333333" y="60.0" />
+      <point x="319.25" y="60.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.abstractfactory.ServerFactory" target="designpatterns.creational.abstractfactory.ComputerAbstractFactory">
+      <point x="-50.66666666666663" y="-15.0" />
+      <point x="368.83333333333337" y="150.0" />
+      <point x="364.5833333333333" y="150.0" />
+      <point x="77.33333333333331" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.abstractfactory.PCFactory" target="designpatterns.creational.abstractfactory.ComputerAbstractFactory">
+      <point x="40.0" y="-15.0" />
+      <point x="100.0" y="150.0" />
+      <point x="209.91666666666666" y="150.0" />
+      <point x="-77.33333333333333" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="261.5" y="140.0" />
+  <SelectedNodes>
+    <node>designpatterns.creational.abstractfactory.Computer</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

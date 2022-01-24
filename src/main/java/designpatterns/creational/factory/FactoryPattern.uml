@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpatterns.creational.factory.FactoryMethodExample</OriginalElement>
+  <nodes>
+    <node x="116.0" y="90.0">designpatterns.creational.factory.Male</node>
+    <node x="70.79166666666669" y="170.0">designpatterns.creational.factory.PersonFactory</node>
+    <node x="0.0" y="90.0">designpatterns.creational.factory.Female</node>
+    <node x="113.29166666666667" y="0.0">designpatterns.creational.factory.Person</node>
+    <node x="77.29166666666669" y="250.0">designpatterns.creational.factory.FactoryMethodExample</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpatterns.creational.factory.PersonFactory" target="designpatterns.creational.factory.Female">
+      <point x="-50.66666666666666" y="-15.0" />
+      <point x="96.12500000000003" y="145.0" />
+      <point x="48.0" y="145.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.factory.FactoryMethodExample" target="designpatterns.creational.factory.PersonFactory">
+      <point x="-52.0" y="-15.0" />
+      <point x="129.29166666666669" y="225.0" />
+      <point x="146.79166666666669" y="225.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.factory.Male" target="designpatterns.creational.factory.Person">
+      <point x="20.0" y="-15.0" />
+      <point x="176.0" y="70.0" />
+      <point x="169.29166666666669" y="70.0" />
+      <point x="8.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.factory.PersonFactory" target="designpatterns.creational.factory.Person">
+      <point x="50.66666666666666" y="-15.0" />
+      <point x="197.45833333333334" y="145.0" />
+      <point x="215.23958333333334" y="145.0" />
+      <point x="215.23958333333334" y="70.0" />
+      <point x="185.29166666666669" y="70.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.factory.Female" target="designpatterns.creational.factory.Person">
+      <point x="24.0" y="-15.0" />
+      <point x="72.0" y="60.0" />
+      <point x="137.29166666666669" y="60.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.factory.FactoryMethodExample" target="designpatterns.creational.factory.Person">
+      <point x="52.0" y="-15.0" />
+      <point x="233.29166666666669" y="225.0" />
+      <point x="235.20833333333334" y="225.0" />
+      <point x="235.20833333333334" y="60.0" />
+      <point x="201.29166666666669" y="60.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="designpatterns.creational.factory.PersonFactory" target="designpatterns.creational.factory.Male">
+      <point x="0.0" y="-15.0" />
+      <point x="146.79166666666669" y="145.0" />
+      <point x="156.0" y="145.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="104.0" y="15.0" />
+  <SelectedNodes>
+    <node>designpatterns.creational.factory.FactoryMethodExample</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

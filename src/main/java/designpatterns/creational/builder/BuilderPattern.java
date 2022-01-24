@@ -1,17 +1,22 @@
-package designpatterns.creational;
-
+package designpatterns.creational.builder;
+/*
+* Builder pattern solves the issue with large number of optional parameters and inconsistent state by providing a way to
+* build the object step-by-step and provide a method that will actually return the final Object.
+* */
 public class BuilderPattern {
     static class Coffee {
+        private String type;
+        private boolean sugar;
+        private boolean milk;
+        private String size;
         private Coffee(Builder builder) {
             this.type = builder.type;
             this.sugar = builder.sugar;
             this.milk = builder.milk;
             this.size = builder.size;
         }
-        private String type;
-        private boolean sugar;
-        private boolean milk;
-        private String size;
+
+        //Builder class for Coffee.
         public static class Builder {
             private String type;
             private boolean sugar;
