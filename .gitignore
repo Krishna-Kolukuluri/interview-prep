@@ -1,6 +1,6 @@
 target/
 .idea/.name
-.idea
+.idea/
 .idea\sonarlint\
 *.class
 .idea/sonarlint/issuestore/
