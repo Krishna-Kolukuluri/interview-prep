@@ -1,7 +1,6 @@
 target/
 .idea/.name
 .idea/
-.idea\sonarlint\
 *.class
 .idea/sonarlint/issuestore/
 .idea/sonarlint/issuestore/0/4/0462198aaf1ae8b4d70fdd05137cc114c7bbf7ef
