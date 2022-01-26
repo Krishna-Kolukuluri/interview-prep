@@ -29,7 +29,7 @@ public class AddStrings {
         //This gives ASCII values of digit 1 which is 49.
         int test = '1';
         System.out.println(test);
-        System.out.println(add("5456", "7700089"));
+        System.out.println(add("1", "5"));
     }
 
     public static String add(String num1, String num2){
@@ -38,6 +38,8 @@ public class AddStrings {
         StringBuilder result = new StringBuilder();
         int carry = 0;
         int digitCount = 0;
+        num1 = num1.replace(",","");
+        num2 = num2.replace(",","");
         while (index1>=0 || index2 >=0){
             //The ASCII values for digits (0 to 9) are (48 to 57). so to get the exact integer value of a particular
             // character in the given string we use this logic num1.charAt(p1) - '0'
@@ -45,8 +47,16 @@ public class AddStrings {
                 result.append(",");
                 digitCount = 0;
             }
-            int val1 = index1>=0?num1.charAt(index1) - '0' : 0;
-            int val2 = index2>=0?num2.charAt(index2) - '0' : 0;
+            int val1 = 0;
+            int val2 = 0;
+            if(num1.charAt(index1) != ','){
+                val1 = index1>=0?num1.charAt(index1) - '0' : 0;
+            }
+            if(num2.charAt(index2) != ','){
+                val2 = index2>=0?num2.charAt(index2) - '0' : 0;
+            }
+            //int val1 = index1>=0?num1.charAt(index1) - '0' : 0;
+            //int val2 = index2>=0?num2.charAt(index2) - '0' : 0;
             int val = (val1 + val2 + carry) % 10;
             carry = (val1 + val2 + carry) / 10;
             result.append(val);
