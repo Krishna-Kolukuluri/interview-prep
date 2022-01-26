@@ -1,3 +1,4 @@
+target/
 .idea/.name
 .idea
 .idea\sonarlint\
@@ -46,4 +47,3 @@ target/classes/uml/LibraryManagement.drawio
 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
 .idea/sonarlint/issuestore/0/4/0462198aaf1ae8b4d70fdd05137cc114c7bbf7ef
-target/*.*
