@@ -1,0 +1,106 @@
+Kubernetes:  Deploying and scaling containers.Container Orchestration S/w. Automating
+deployment,scaling and management of containerized application.
+Docker-deployfile.yml
+If you have distributed application we need efficient communication between them 
+seemlesly to build redundancy for each component.In order to achieve it we need to
+containerize we create new pods of each component and application picks which pod to
+communicate with -That's where K8s comes into picture.
+yaml file contians
+  Node:kubelet communicate with master,runs pods
+  Pod:Runs 1+ Containers,exists on node
+  Service:Handles requests,usually a LB
+  Deployment:Defines desired state-K8S handles the rest.
+  Spec:
+    Containers:
+      name: docker-k8s-demo
+      image:deepthijava/docker-demo
+      ports:
+        containerPort:8080
+  cmd: kubectl apply -f docker-k8s-demo.yml -This will deploy container to cloud
+  
+  
+  
+  Docker: Containerize(Package) application -[App+libs+etc]
+  Open platform for devs and sys adimin to build ship and run distributed apps 
+  whether on laptops.datacenter VM's or the cloud
+  Package s/w in a format that can run isolated on a shared OS.
+  Docker file-Build process for an image contains all commands necessary to build
+  the image and run your application)
+    from java:8
+    expose 8080
+    add target/docker-demo.jar docker-demo.jar
+    entrypoint ["jave","-jar","docker-demo.jar"]
+    
+  Create image command: docker build -t docker-demo
+  see images command: docker images
+  push docker image: 
+      docker tag docker-demo deepthijava/docker-demo
+      docker push deepthijava/docker-demo
+  Run and pull image
+    docker run -p 8080:8080 deepthijave/docker-demo
+    
+   Microservices: Collection of softwares that are highly maintainable and testable,
+   loosely coupled,independently deployed,organized around business capabilities,
+   owned by small team
+   Separate business logic functions,communicate via well defined API's-usually http
+   
+   Jenkins: Github webhook is used to push commit events to jenkins
+   Github plugin: configured in jenkins-config system
+   Github Ip's to be whitelisted on AWS Jenkins Security group
+   Jenkins github config servers-Here do the config setup
+   
+   Update jenkins version: 
+   Backup previous version war file by loggin in to Bitvise
+      cmd: sudo -cp /../../
+   Manage prepare mode-Restart jenkins
+        cmd: sudo service stop
+             sudo service start
+    Then update jave version 
+        sudo apt-get update
+        sudo apt-get install openjdk-8-jdk
+        
+  Ansible:- Secrets vault management in vault.yml
+  
+   @RequestMapping(method="GET" value="\url" produces="application/json")
+   @PreAuthorize(hasAuthority("ROLE ADMIN))
+   @postAuthorize(hasPermission(return obj,:hasMatchingSubscriber" etc))
+   Create custom annotation: 
+        @Target({Type,field,Annotation-type})
+        @Retention(RUNTIME)
+        @Constraint(validatedBy=EmailValidator.class)-On variable
+        
+       Example:  public @interface validEmail(){ //This created @ValidEmail Annotation
+          String message() default "Invalid email";
+          class<?>[] groups() default{};
+          class<? extendspayload>[] payload()
+          }
+          
+  HTTP Response Status:
+  1xx -Info Response
+  2xx-Success
+  3xx-Redirection
+  4xx-Client Error
+    400-Bad Req
+    401-Unauthorized
+    404-Not found
+    408-Req Timeout
+    440-Login timeout
+    495-SSL
+   5xx-Server error
+    500-Internal Server Error
+    502-Bad Gateway
+    503-Service unavailable
+    504-Gateway timeout
+ 
+        
+ Reflection API: (Manipulate classes and everything in class)       
+  API which is used to examine or modify methods,classes,interfaces at runtime.
+  Reflection gives us info about class to which an obj belongs and also the methods 
+    of that class and which can be executed using obj
+  We can invoke methods at runtime irrespective of the access specifier used in them.
+  Adv: Extensibility feature(Appl can make use of external user defined classes
+              by creating instance of extensibility obj using qualified names)
+       Debugging and testing tools-Debuggers use to examine private methods of class
+  DisAdv: Performance overhead
+          Exposure of internals-(code breaks abstraction)
+   
