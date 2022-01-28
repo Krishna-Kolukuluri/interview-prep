@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpatterns.structural.composite.Triangle</OriginalElement>
+  <nodes>
+    <node x="231.0" y="79.0">designpatterns.structural.composite.DrawingShape</node>
+    <node x="200.6875" y="0.0">designpatterns.structural.composite.Shape</node>
+    <node x="124.0" y="79.0">designpatterns.structural.composite.Circle</node>
+    <node x="0.0" y="79.0">designpatterns.structural.composite.Triangle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpatterns.structural.composite.DrawingShape" target="designpatterns.structural.composite.Shape" relationship="REALIZATION">
+      <point x="-36.75" y="-14.5" />
+      <point x="267.75" y="59.0" />
+      <point x="167.5" y="59.0" />
+      <point x="167.5" y="49.0" />
+      <point x="223.4375" y="49.0" />
+      <point x="-22.75" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.composite.DrawingShape" target="designpatterns.structural.composite.Shape" relationship="TO_MANY">
+      <point x="36.75" y="-14.5" />
+      <point x="341.25" y="49.0" />
+      <point x="268.9375" y="49.0" />
+      <point x="22.75" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.composite.Circle" target="designpatterns.structural.composite.Shape" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="167.5" y="49.0" />
+      <point x="223.4375" y="49.0" />
+      <point x="-22.75" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.composite.Triangle" target="designpatterns.structural.composite.Shape" relationship="REALIZATION">
+      <point x="0.0" y="-14.5" />
+      <point x="52.0" y="59.0" />
+      <point x="167.5" y="59.0" />
+      <point x="167.5" y="49.0" />
+      <point x="223.4375" y="49.0" />
+      <point x="-22.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="189.0" y="54.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
