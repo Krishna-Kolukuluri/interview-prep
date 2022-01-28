@@ -1,9 +1,14 @@
 package datastructures.dstype.stringType;
 /*
+https://leetcode.com/problems/integer-to-roman/
 Given an integer, convert it to a roman numeral.
 Constraints: 1 <= num <= 3999
 * */
 public class NumberToRomanExample {
+    public static void main(String[] args) {
+        NumberToRoman numberToRoman = new NumberToRoman();
+        System.out.println(numberToRoman.convert(58));
+    }
 }
 class NumberToRoman{
     //Constant Space i.e. number of Roman literals(Special cases) i.e. takes hit with Time complexity

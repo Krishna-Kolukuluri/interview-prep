@@ -1,5 +1,13 @@
 package recursion;
-
+/*
+https://leetcode.com/problems/merge-two-sorted-lists/
+* You are given the heads of two sorted linked lists list1 and list2.
+Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.
+Return the head of the merged linked list.
+*
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+* */
 public class MergeSortedLinkedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2){
         if(l1 == null){
@@ -16,7 +24,16 @@ public class MergeSortedLinkedLists {
             return l2;
         }
     }
+/*
+Complexity Analysis:
+Time complexity : O(n + m)O(n+m)
+    Because each recursive call increments the pointer to l1 or l2 by one (approaching the dangling null at the end of each list),
+    there will be exactly one call to mergeTwoLists per element in each list. Therefore, the time complexity is linear in the combined size of the lists.
 
+Space complexity : O(n + m)O(n+m)
+    The first call to mergeTwoLists does not return until the ends of both l1 and l2 have been reached, so n + mn+m stack
+    frames consume O(n + m)O(n+m) space.
+* */
     public ListNode mergeSortedLinkedLists(ListNode l1, ListNode l2){
         ListNode preHead = new ListNode(-1);
         ListNode prev = preHead;

@@ -1,8 +1,15 @@
 package amazon.arrayandstrings;
 
 import java.util.*;
+/*
+* Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-public class ValidParantheses {
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+* */
+public class ValidParentheses {
     // Input: s = "()[]{}"
     // Output: true
     
@@ -12,7 +19,7 @@ public class ValidParantheses {
     private HashMap<Character, Character> mappings;
 
     // Initialize hash map with mappings. This simply makes the code easier to read.
-    public ValidParantheses() {
+    public ValidParentheses() {
         this.mappings = new HashMap<Character, Character>();
         this.mappings.put(')', '(');
         this.mappings.put('}', '{');

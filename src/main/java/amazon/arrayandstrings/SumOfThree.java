@@ -4,7 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+/*
+*
+* https://leetcode.com/problems/3sum/solution/
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k,
+* and nums[i] + nums[j] + nums[k] == 0.
 
+Notice that the solution set must not contain duplicate triplets.
+* */
 public class SumOfThree {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
@@ -27,5 +34,9 @@ public class SumOfThree {
             seen.add(nums[j]);
         }
     }
-
+/*
+* Time Complexity: O(n^2).twoSum is O(n), and we call it nn times.
+    Sorting the array takes O(nlogn), so overall complexity is O(nlogn+n^2). This is asymptotically equivalent to O(n^2).
+Space Complexity: O(n) for the hashset.
+* */
 }

@@ -2,7 +2,7 @@ package amazon.DynamicProgramming;
 
 import java.util.*;
 
-public class GenerateParanthesis {
+public class GenerateParenthesis {
     
     //Closure Algorithm: O(4^n/sqrt n)
     public static List<String> generateParenthesis_Closure(int n) {
@@ -27,7 +27,6 @@ public class GenerateParanthesis {
         generateAll(new char[2 * n], 0, combinations);
         return combinations;
     }
-
     public static void generateAll(char[] current, int pos, List<String> result) {
         if (pos == current.length) {
             if (valid(current))
@@ -39,7 +38,6 @@ public class GenerateParanthesis {
             generateAll(current, pos+1, result);
         }
     }
-
     public static boolean valid(char[] current) {
         int balance = 0;
         for (char c: current) {
@@ -52,9 +50,7 @@ public class GenerateParanthesis {
     
     public static void main(String args[]){
         List<String> p = generateParenthesis(3);
-        for(String s:p){
-            System.out.println(s);
-        }
+        System.out.println(p);
     }
 
 }
