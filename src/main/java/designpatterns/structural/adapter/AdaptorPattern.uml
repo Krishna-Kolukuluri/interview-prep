@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpatterns.structural.adapter.AdaptorPattern</OriginalElement>
+  <nodes>
+    <node x="21.5" y="81.0">designpatterns.structural.adapter.SocketAdapter</node>
+    <node x="102.37708333333336" y="245.0">designpatterns.structural.adapter.AdaptorPattern</node>
+    <node x="250.94166666666672" y="164.0">designpatterns.structural.adapter.SocketAdapterImpl2</node>
+    <node x="195.12708333333336" y="-108.0">designpatterns.structural.adapter.Volt</node>
+    <node x="258.7229166666667" y="83.0">designpatterns.structural.adapter.Socket</node>
+    <node x="52.94166666666672" y="164.0">designpatterns.structural.adapter.SocketAdapterImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpatterns.structural.adapter.Socket" target="designpatterns.structural.adapter.Volt" relationship="CREATE">
+      <point x="0.0" y="-14.5" />
+      <point x="305.7229166666667" y="60.0" />
+      <point x="340.58333333333337" y="60.0" />
+      <point x="340.58333333333337" y="50.0" />
+      <point x="252.87708333333336" y="50.0" />
+      <point x="19.25" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl" target="designpatterns.structural.adapter.SocketAdapter" relationship="REALIZATION">
+      <point x="-59.33333333333334" y="-14.5" />
+      <point x="82.60833333333338" y="142.0" />
+      <point x="90.98541666666672" y="142.0" />
+      <point x="90.98541666666672" y="132.0" />
+      <point x="132.5" y="132.0" />
+      <point x="37.0" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl" target="designpatterns.structural.adapter.Socket" relationship="GENERALIZATION">
+      <point x="59.333333333333314" y="-14.5" />
+      <point x="201.27500000000003" y="132.0" />
+      <point x="274.3895833333334" y="132.0" />
+      <point x="-31.333333333333314" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.AdaptorPattern" target="designpatterns.structural.adapter.SocketAdapterImpl" relationship="CREATE">
+      <point x="38.0" y="-14.5" />
+      <point x="216.37708333333336" y="224.0" />
+      <point x="262.87708333333336" y="224.0" />
+      <point x="262.87708333333336" y="214.0" />
+      <point x="141.94166666666672" y="214.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapter" target="designpatterns.structural.adapter.Volt" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.5" />
+      <point x="95.5" y="60.0" />
+      <point x="43.48541666666671" y="60.0" />
+      <point x="43.48541666666671" y="50.0" />
+      <point x="214.37708333333336" y="50.0" />
+      <point x="-19.25" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl2" target="designpatterns.structural.adapter.Socket" relationship="TO_ONE">
+      <point x="0.0" y="-14.5" />
+      <point x="343.9416666666667" y="142.0" />
+      <point x="305.7229166666667" y="142.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl2" target="designpatterns.structural.adapter.Volt" relationship="CREATE">
+      <point x="62.0" y="-14.5" />
+      <point x="405.9416666666667" y="142.0" />
+      <point x="385.2229166666667" y="142.0" />
+      <point x="385.2229166666667" y="132.0" />
+      <point x="398.08333333333337" y="132.0" />
+      <point x="398.08333333333337" y="60.0" />
+      <point x="340.58333333333337" y="60.0" />
+      <point x="340.58333333333337" y="50.0" />
+      <point x="252.87708333333336" y="50.0" />
+      <point x="19.25" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.AdaptorPattern" target="designpatterns.structural.adapter.Volt" relationship="DEPENDENCY">
+      <point x="-38.0" y="-14.5" />
+      <point x="140.37708333333336" y="224.0" />
+      <point x="27.62708333333336" y="224.0" />
+      <point x="27.62708333333336" y="214.0" />
+      <point x="0.0" y="214.0" />
+      <point x="0.0" y="60.0" />
+      <point x="43.48541666666671" y="60.0" />
+      <point x="43.48541666666671" y="50.0" />
+      <point x="214.37708333333336" y="50.0" />
+      <point x="-19.25" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.AdaptorPattern" target="designpatterns.structural.adapter.SocketAdapterImpl2" relationship="CREATE">
+      <point x="38.0" y="-14.5" />
+      <point x="216.37708333333336" y="224.0" />
+      <point x="262.87708333333336" y="224.0" />
+      <point x="262.87708333333336" y="214.0" />
+      <point x="343.9416666666667" y="214.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.AdaptorPattern" target="designpatterns.structural.adapter.SocketAdapter" relationship="DEPENDENCY">
+      <point x="-38.0" y="-14.5" />
+      <point x="140.37708333333336" y="224.0" />
+      <point x="27.62708333333336" y="224.0" />
+      <point x="27.62708333333336" y="214.0" />
+      <point x="42.44166666666672" y="214.0" />
+      <point x="42.44166666666672" y="142.0" />
+      <point x="58.5" y="142.0" />
+      <point x="-37.0" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl" target="designpatterns.structural.adapter.Volt" relationship="CREATE">
+      <point x="0.0" y="-14.5" />
+      <point x="141.94166666666672" y="132.0" />
+      <point x="186.29375000000002" y="132.0" />
+      <point x="186.29375000000002" y="60.0" />
+      <point x="340.58333333333337" y="60.0" />
+      <point x="340.58333333333337" y="50.0" />
+      <point x="252.87708333333336" y="50.0" />
+      <point x="19.25" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl2" target="designpatterns.structural.adapter.SocketAdapter" relationship="REALIZATION">
+      <point x="-62.0" y="-14.5" />
+      <point x="281.9416666666667" y="142.0" />
+      <point x="90.98541666666672" y="142.0" />
+      <point x="90.98541666666672" y="132.0" />
+      <point x="132.5" y="132.0" />
+      <point x="37.0" y="14.5" />
+    </edge>
+    <edge source="designpatterns.structural.adapter.SocketAdapterImpl2" target="designpatterns.structural.adapter.Socket" relationship="CREATE">
+      <point x="62.0" y="-14.5" />
+      <point x="405.9416666666667" y="142.0" />
+      <point x="385.2229166666667" y="142.0" />
+      <point x="385.2229166666667" y="132.0" />
+      <point x="337.05625000000003" y="132.0" />
+      <point x="31.333333333333314" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="218.5" y="137.0" />
+  <SelectedNodes>
+    <node>designpatterns.structural.adapter.Socket</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
