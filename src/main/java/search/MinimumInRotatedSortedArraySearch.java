@@ -13,8 +13,21 @@ You must write an algorithm that runs in O(log n) time.
 * */
 public class MinimumInRotatedSortedArraySearch {
     public static void main(String[] args) {
-
+        System.out.println(findRotatedIndex(new int[]{4,5,6,7,0,1,2}));
     }
+    /*
+    * Complexity Analysis:
+        Time complexity: O(logN).
+        Space complexity: O(1)
+    * */
+        /*
+        * Binary search:
+        The problem is to implement a search in O(logN) time that gives an idea to use a binary search.
+        The algorithm is quite straightforward :
+        Find a rotation index rotation_index, i.e. index of the smallest element in the array. Binary search works just perfect here.
+        rotation_index splits array in two parts. Compare nums[0] and target to identify in which part one has to look for target.
+        Perform a binary search in the chosen part of the array.
+        * */
     public static int findRotatedIndex(int nums[]){
         int left = 0;
         int right = nums.length - 1;

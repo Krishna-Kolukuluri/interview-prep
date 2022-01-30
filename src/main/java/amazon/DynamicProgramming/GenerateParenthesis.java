@@ -1,8 +1,22 @@
 package amazon.DynamicProgramming;
 
 import java.util.*;
+/*
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
+Example 1:
+Input: n = 3
+Output: ["((()))","(()())","(())()","()(())","()()()"]
+
+Example 2:
+Input: n = 1
+Output: ["()"]
+* */
 public class GenerateParenthesis {
+    public static void main(String args[]){
+        List<String> p = generateParenthesis(3);
+        System.out.println(p);
+    }
     
     //Closure Algorithm: O(4^n/sqrt n)
     public static List<String> generateParenthesis_Closure(int n) {
@@ -47,10 +61,9 @@ public class GenerateParenthesis {
         }
         return (balance == 0);
     }
-    
-    public static void main(String args[]){
-        List<String> p = generateParenthesis(3);
-        System.out.println(p);
-    }
-
+    /*
+    * Complexity Analysis
+        Time Complexity : O(2^{2n} * n). For each of 2^{2n} sequences, we need to create and validate the sequence, which takes O(n) work.
+        Space Complexity : O(2^{2n} * n). Naively, every sequence could be valid.
+    * */
 }
