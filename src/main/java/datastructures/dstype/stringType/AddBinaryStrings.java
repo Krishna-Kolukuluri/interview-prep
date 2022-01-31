@@ -2,7 +2,7 @@ package datastructures.dstype.stringType;
 
 import java.math.BigInteger;
 
-/*
+/* https://leetcode.com/problems/add-binary/
 Given two binary strings a and b, return their sum as a binary string.
 */
 public class AddBinaryStrings {
@@ -18,6 +18,8 @@ public class AddBinaryStrings {
         Current carry is left-shifted AND of x and y: carry = (x & y) << 1.
         Job is done, prepare the next loop: x = answer, y = carry.
         Return x in the binary form.
+        * 1 bit left-shift << equal to (x & y)*2
+        * 1 bit right-shift >> equal to (x & y)/2
     *
     * */
     public String addBinary(String a, String b) {

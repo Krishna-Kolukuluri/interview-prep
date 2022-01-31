@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
+https://leetcode.com/problems/plus-one/solution/
 You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the
 integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer
 does not contain any leading 0's.
@@ -68,6 +69,15 @@ public class LargeIntegerPlusOne {
         digits[0] = 1;
         return digits;
     }
+    /*
+    * Complexity Analysis:
+        Let N be the number of elements in the input list
+        Time complexity: \O(N) since it's not more than one pass along the input list.
+        Space complexity: O(N)
+            Although we perform the operation in-place (i.e. on the input list itself), in the worst scenario, we would need
+            to allocate an intermediate space to hold the result, which contains the N+1N+1 elements. Hence, the overall space
+            complexity of the algorithm is O(N).
+    * */
 
 
 }

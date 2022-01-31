@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /*
 *
-total Number of ways to climb Nth step if only allowed to climb 1 or 2 steps at a time.
+total Number of ways to climb Nth step if only allowed climbing 1 or 2 steps at a time.
 *
 * */
 public class ClimbingStairs {

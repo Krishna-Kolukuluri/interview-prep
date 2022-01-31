@@ -46,15 +46,16 @@ public class MergeIntervals {
         }
         return merged.toArray(new int[merged.size()][]);
     }
-}
-/*
-*
-Complexity Analysis
-Time complexity : O(nlogn)
-Other than the sort invocation, we do a simple linear scan of the list, so the runtime is dominated by the O(nlogn) complexity of sorting.
+    /*
+    *
+    Complexity Analysis
+    Time complexity : O(nlogn)
+    Other than the sort invocation, we do a simple linear scan of the list, so the runtime is dominated by the O(nlogn) complexity of sorting.
 
-Space complexity : O(logN) (or O(n))
-If we can sort intervals in place, we do not need more than constant additional space, although the sorting itself takes
-O(logn) space. Otherwise, we must allocate linear space to store a copy of intervals and sort that.
-*
-* */
+    Space complexity : O(logN) (or O(n))
+    If we can sort intervals in place, we do not need more than constant additional space, although the sorting itself takes
+    O(logn) space. Otherwise, we must allocate linear space to store a copy of intervals and sort that.
+    *
+    * */
+}
+
