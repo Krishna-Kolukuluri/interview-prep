@@ -4,9 +4,11 @@ import java.util.HashMap;
 
 //Logger Rate Limiter
 /*
+https://leetcode.com/problems/logger-rate-limiter/
+https://leetcode.com/problems/logger-rate-limiter/solution/
 Problem Statement:
 Design a logger system that receives a stream of messages along with their timestamps. Each unique message should only
-be printed at most every 10 seconds (i.e. a message printed at timestamp t will prevent other identical messages from
+be printed at-most every 10 seconds (i.e. a message printed at timestamp t will prevent other identical messages from
 being printed until timestamp t + 10).
 
 All messages will come in chronological order. Several messages may arrive at the same timestamp.
@@ -21,9 +23,9 @@ public class LoggerRateLimiter {
 
     }
     public LoggerRateLimiter(){
-
+        timeTrackingMap = new HashMap<>();
     }
-    HashMap<String, Integer> timeTrackingMap = new HashMap<>();
+    HashMap<String, Integer> timeTrackingMap;
     public boolean shouldPrintMessage(int timestamp, String message){
         if(timeTrackingMap.containsKey(message)){
            if(timestamp > timeTrackingMap.get(message)+10){
