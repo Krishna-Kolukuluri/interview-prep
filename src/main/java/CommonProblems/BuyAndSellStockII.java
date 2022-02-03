@@ -49,7 +49,7 @@ public class BuyAndSellStockII {
     }
     /*
     * Complexity Analysis
-        Time complexity : O(n)O(n). Single pass.
-        Space complexity: O(1)O(1). Constant space needed.
+        Time complexity : O(n). Single pass.
+        Space complexity: O(1). Constant space needed.
     * */
 }
