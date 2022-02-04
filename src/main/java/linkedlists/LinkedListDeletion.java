@@ -14,13 +14,13 @@ public class LinkedListDeletion {
         }
     }
     public static void main(String args[]) {
-        LinkedListDeletion linkedlist = new LinkedListDeletion();
-        linkedlist.insertAtBegin(new Node(5));
-        linkedlist.insertAtBegin(new Node(10));
-        linkedlist.insertAtBegin(new Node(6));
-        linkedlist.insertAtBegin(new Node(15));
-        System.out.println(linkedlist.deleteNode(linkedlist.head, 6));
-        linkedlist.printList();
+        LinkedListDeletion linkedList = new LinkedListDeletion();
+        linkedList.insertAtBegin(new Node(5));
+        linkedList.insertAtBegin(new Node(10));
+        linkedList.insertAtBegin(new Node(6));
+        linkedList.insertAtBegin(new Node(15));
+        System.out.println(linkedList.deleteNode(linkedList.head, 6));
+        linkedList.printList();
         
     }
     

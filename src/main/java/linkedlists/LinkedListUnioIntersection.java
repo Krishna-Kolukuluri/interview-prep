@@ -21,7 +21,6 @@ public class LinkedListUnioIntersection {
    static Node unionLinkedLists(Node node1,Node node2){
        Node unionnode=null;;
        while(true){
-           
            if (node1 == null) {
                unionnode.next = node2;
                break;
@@ -30,24 +29,20 @@ public class LinkedListUnioIntersection {
                unionnode.next = node1;
                break;
            }
-           if(unionnode == null)
+           if(unionnode == null){
                unionnode=node1;
-           else
+           }else {
                unionnode.next=node1;
+           }
            node1=node1.next;
        }
-        
-        return unionnode;
-        
+       return unionnode;
     }
     
   static Node sortedMerge(Node headA, Node headB) {
-
        Node dummyNode = new Node(0);
-
        Node tail = dummyNode;
        while (true) {
-
            if (headA == null) {
                tail.next = headB;
                break;

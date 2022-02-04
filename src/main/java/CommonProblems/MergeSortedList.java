@@ -28,6 +28,7 @@ public class MergeSortedList {
             System.out.println(log.message + "-" + log.timeStamp);
         }
     }
+    //Merge sorted lists
     public static List<LogMessage> mergeLogs(List<LogMessage> logOneList, List<LogMessage> logTwoList){
         List<LogMessage> result = new ArrayList<>();
         int idxOne = 0;

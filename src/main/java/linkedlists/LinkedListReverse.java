@@ -33,7 +33,7 @@ public class LinkedListReverse {
         linkedlist.printList(newlist);
     }
 
-    Node reverse(Node node) {
+    public Node reverse(Node node) {
         Node next = null, prev = null, data = node;
         while (data != null) {
             next = data.next;
