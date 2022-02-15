@@ -22,10 +22,11 @@ public class LoggerRateLimiter {
     public static void main(String[] args) {
 
     }
+    private HashMap<String, Integer> timeTrackingMap;
     public LoggerRateLimiter(){
         timeTrackingMap = new HashMap<>();
     }
-    HashMap<String, Integer> timeTrackingMap;
+
     public boolean shouldPrintMessage(int timestamp, String message){
         if(timeTrackingMap.containsKey(message)){
            if(timestamp > timeTrackingMap.get(message)+10){

@@ -1,6 +1,3 @@
-
-
-
 The book Java Generics and Collections has this information (pages: 188, 211, 222, 240).
 
 List implementations:
