@@ -63,3 +63,194 @@
 
 11.Tell Me about yourself?
 
+12.	Success stories:
+    a.	KDF: Really went well
+        i.	Identifying Problem
+        ii.	Proposing Solution
+        iii.	Delivering it in time with agreed SLA
+        iv.	Collaborated with consumers and producers of this data
+        v.	Helped save $$ by freeing up resource by automating process which are done 80% manually vs 90% automation
+        vi.	Reduced time to market for new features by 80% i.e., 45 days to 2 weeks release cycle
+        vii.	Standardized framework across all FROPS in the domain.
+    b.	Flow Risk/Difficult project & success
+        i.	Breaking down monolith to microservice
+        ii.	Different microservices
+        iii.	Containerizing services
+        iv.	Reduce latency and effective architecture to manage high traffic scenario
+        v.	Phased our approach 6 months to 18 months
+        vi.	Early feedback from involved team
+        vii.	Collaboration among various team and stake holders
+    c.	Artemis
+        i.	Virtualizing building brand new team
+        ii.	Taking ownership of the product from another team in DB while they are struggling to run it successfully
+    d.	Flowrisk
+        i.	Added graph feature across all the reports in the app to support/help traders make/find out----- quickly
+            than going throw rows of data
+        ii.	Also introduced tow-dimensional correlation reports to help the draw report against relevant fields.
+        iii.These two features are proposed by me which provided edge to traders to see the data in 2D graph help
+            them spend less time figuring outline.
+    e.	Hiring:
+        i.	 An EM lived & retained talented people in my team & also helped DB Cary center in hiring for various teams
+            via tech-day or grad day interviews
+        ii.	Had experience in building teams from ground up
+        iii.	Taking over team and optimizing effectively
+        iv.	Providing training & career progression opportunities
+    f.	Migration:
+        i.	Migrating applications from physical to Azure cloud virtual servers for Artemis & DB Canvas
+        ii.	Saved 100K$ by migrating to bank also utilizing hardware more effectively.
+        iii.	Reduced complexity of server footprint across multiple services
+    g.	Improving project perception:
+        i.	Onboarding/bringing projects from offshore to onshore & streamline process & reduce complexity.
+        ii.	Hire brand new team & train them on application business use cases
+        iii.	Turning around a project that had bad reputation for missing deadlines & having production support issues.
+13.	Conflict: With peer cross functional
+    a.	Rearchitected effort of backend trinity
+    b.	Creating separate microservice for authorization VS Having each microservice to have wrapper to make calls to
+        authorization/service
+    c.	I proposed robust solution to create standalone microservice for authentication/authorization with data cache to
+        support downtime by authentication/authorization providers
+    d.	Enable ‘OAuth2’ authentication by all intra service communication.
+14.	Conflict within team:
+    a.	Conflict b/w team members
+    b.	Brewed while reviewing each other code and each one has diff philosophies
+    c.	Identified the conflict while observing their interactions/conversations in team meetings and talked to each one
+        of them separately and learned about what’s happening
+    d.	After couple of meetings with each one of them then got to root cause of the problem and creating standard working
+        protocol for meeting/code reviews/scrum to eliminated friction point in team
+    e.	Then brought both of them to same [age by talking to them separately in group meetings to short out all diff opinions
+    f.	In the end ---------- everyone seems to like new process in place.
+15.	Difficult reportee:
+    a.	Not on time to meetings
+    b.	Missing deadlines
+    c.	No communication
+    d.	Reaching out as manager to understand what is happening
+    e.	Provide feedback on what is being observed in team and extend gaudiness or support if need
+    f.	No improvement/after seeing some issues with personal space, I enquired carefully about personal space, he/she
+        opened which helped me to help him/her by moving meetings around after discussing change of timings in team
+    g.	After these changes he respected/valued everyone in the team then he came around and was back on track like before
+16.	How do you deal with low performance?
+    a.	Understand which area he is struggling
+    b.	Speak to him about same on weekly one on one
+    c.	Learn if there are any concerns/problems that he wants to discuss with me
+    d.	If he is lacking or needs help with tech-stuff provide resource and guidance on improving his/her skills
+    e.	Checking him on his/her progress frequently and extending help
+    f.	If his problems are related to personal space cautiously approach and offer his/her help/assistance as manager
+        to see provide support
+    g.	Keep providing continuous constructive feedback which help him to cause correct if needed
+    h.	Yes, it happened in my team I had to put a resource under PIP-Performance improvement plan.
+17.	Describe a project in the past that was behind schedule and provide concrete steps that you took to remedy the situation:
+    a.	Cache manager: Talk about static code vulnerabilities project (401K flows ranging from cross site --------- SQL injection)
+    b.	It was behind schedule which published to auditors
+    c.	Initially I assigned 3 resources to address them, with the approach they took it require more hands on the deck
+        to meet deadlines.
+    d.	After couple sprints into release cycle, looking at number of closed flows no where closer to where they should
+        be at that stage of the projects
+    e.	I called for meeting with the team
+    f.	Discussed about their approach then figured out the problem they are having
+    g.	Suggesting/developed a filter/regulat validation which eliminates the need for changing hundreds of files with
+        simple implementation of filter HTML encoder which filters out essentially all 35K+ CSS vulnerabilities.
+    h.	That kept the team back on track with initially published timelines for closing these flows in code.
+18.	Why MS:
+    a.	I can’t think of any company other than MS that made +ve impact across the globe & every human being one way or
+        other in last 30 years
+    b.	MS even touched me in my college days that inspired me to be a software engineer
+    c.	I started my career with MS tech stack
+    d.	On the other side in recent years the growth mindset and embracing the changes adopting/leading from front in
+        certain areas excited me when I think of MS.
+19.	Tell me about yourself:
+    a.	I’m S/w engineer with 14+ years’ experience in building/managing s/w products for financial institutions using
+        various technologies i.e., primarily Java/python & c#.Net.
+    b.	In my current role I’m building/supporting trading & risk applications for DB fixed income corporation using
+        Java/python/angular/spring boot
+    c.	Responsible for 3 applications at tech lead/engineering manager capacity
+    d.	Have 9/12 people reporting to me who are working on these three applications
+    e.	I am very adoptable to new technologies and technology agnostic
+    f.	I am curious about new technologies and have appetite for constantly learning new tech & making my applications
+        more efficient
+    g.	I have +ve and never give-up attitude which helped in my career constantly deliver projects on time.
+20.	What is your favorite MS product and how would you improve it?
+    a.	Product: outlook.com email, calendar board
+    b.	Search based on attachment size
+    c.	Allowing user to categorize new senders based on their input
+    d.	This will help better ML model on this data directly coming from users than data mining
+    e.	No more missing emails due to algo classifying an email as spam or junk which happens lot of people on monthly basis.
+    f.	Board: Few default options for boards auto resizing of board based in screen size.
+21.	How open are you to new ideas?
+    a.	Open to new ideas and even encourage every one in my team to come up with something new that will help improve
+        the application or add new feature in the application.
+    b.	One such example is adding graph/plot support in flowrisk application proposed by one of our team members.
+        I quickly realized the potential of it and provided him needed resources to come up with POC.
+    c.	Another instance is in KDF regression application where I proposed hashing solution to meet/exceed SLA set forth
+        by business by using less resources(server)
+    d.	Another instance to help flowrisk users with head start for their day by rebooting applications automatically on
+        their machines to capture real-time data to be ready by the time traders start their day.
+22.	Tell me about a time you learned from your mistake
+    a.	Estimated timelines for onboarding EM business onto new trinity platform was incorrect due to a mistake in
+        analysis stage of complexity products supported/traded by EM desks
+    b.	Find a MVP or work with EM desk heads to see how flexible are their timelines given other migrations in pipeline.
+    c.	Had few meetings with team looked at all features in flight for upcoming release and worked product owner of
+        cross functional team, collaboratively/collectively decided reprioritize couple items & repurposed some additional
+        resource to work on EM task.
+    d.	Sent for early feedback from EM business and was able to onboard EM business onto trinity on time & within
+        another week was able to release reprioritized items to prod
+    e.	Lessons learned, break down features/tasks as granular as possible then start analyzing if any assumptions are
+        made get them verified by business even if I’m the SME of the application.
+23.	What has been your biggest accomplishment so far?
+    a.	Talk about trinity redesign
+    b.	Talk about flowrisk application/journey to microservices and solving latency problems/making system distributed
+        and highly available
+    c.	Helping FIC business by reducing cost by 10 million year by designing a framework to automate manual task done
+        by desk analysis and support folk for these applications.
+24.	Tell me about a time you had to drive a feature through?
+    a.	Talk about gap in release cycle between risk engine and trinity flowrisk
+    b.	Proposed solution ie KDF system to solve the problem or gap
+    c.	Collaboration with for teams, upstream support teams and product owners and business stake holders
+    d.	Successfully delivered project in 6 months to 8 months
+    e.	Saved hundreds of man hours thus by saving lot of $$$ to bank and delivering features to desk on time which in
+        turn helped trading desk with trading confidently and hedge better
+    f.	Constant communication was key between all involved parties in successfully delivering this application/feature.
+    g.	/this feature/appl is also helping reduce pressure/workload on SL1/SL2/SL3 support teams.
+25.	Did you ever fire someone? Did you ever put someone on PIP? Why?
+    a.	No, I never had fire anyone, but I’ve worked with one of the reportee/resource on improving his/her performance.
+    b.	Reason for PIP was continuously not able to complete task assigned to him/her and when he/she does complete,
+        they caused bugs at testing phase instance at prod stage.
+    c.	Also, not punctual to meetings or team activities.
+    d.	Worked with on one-n-one basis to understand his concerns at work with him if any provide guidance and plan on
+        improving his/her performance both with team and deliverable KPI’s
+    e.	After few weeks observed improvement in his/her performance but there was still work to do, I further reconstructed
+        his PIP plan according to new resulting which eventually paid off.
+    f.	Problem was he is new to finance space and tech stack we are working with and complex nature of application did
+        even help him to get hold of code/architecture.
+26.	How you will be an asset in supporting the career development of those working under you?
+    a.	I believe in a leader who leads by example and not just take decisions but works for his/her team and listens to
+        them.ie leader not only a great decision maker but should also great listener.
+    b.	That is how I operate my team on 1-1’s. I listen to them, ask for their aspirations then will device a plan
+        together to make it happen.
+    c.	I constantly provide constructively feedback and help him/her be on the correct trajectory to reach their goal.
+    d.	Provide visibility whenever possible so that they will standout in wider organization which will help them with
+        much needed exposure which will go long way in career development.
+    e.	With this approach I was able to promote 3 of my direct repositories in last few years.
+27.	How would disagree with your manager?
+    a.	This happened with me and my manager on couple occasions where we had contrasting opinions on how to approach a
+        particular initiative
+    b.	Or talk about racing resources and promotions from pool of resources and comparison to my employee to others in his org.
+    c.	Example: Enabling two factor authentications on legacy application
+    i.	I listened to what he had to say about his version and applications which are on that path
+    ii.	Then requested listen to approach I’m proposing explained gaps b/w both and assumptions in both options and risks.
+    iii.Solving care business need if he willing to get business on board with risked gaps then I said I was okay.
+        If not it will be a risk which I’m not comfortable to take as it will bite us back at later stage for sure based
+        requirements.
+    iv.	I’ll go with evidence when I’m disagreeing with manager or anyone for that matter even if they still see merit in
+        their approach, I might be missing anything they are seeing.
+17.	Tell me about a time you made an unpopular decision?
+    a.	Making everyone part of support rotation/team.
+    b.	Prior to this there used to one primary and one secondary support persons for production support.
+    c.	This model proved unsuccessful and heavily dependent on one/two resources. No direct communication with users to
+        devs who are creating their applications.
+    d.	Team was not happy to be kept support rotation initially due to after hours support if there is any issue in app
+        in EM/Asia time zones.
+    e.	Tried to explain benefits of get Infront of users and access to users for career development i.e., promotions
+        after couple iterations team got hold of new process and they started seeing positive side of it and long-term
+        benefits to team they finally happy with my decision as couple user recommendations played huge role in getting
+        my resource prompted.
+
