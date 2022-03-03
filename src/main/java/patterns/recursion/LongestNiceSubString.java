@@ -49,13 +49,14 @@ public class LongestNiceSubString {
         int breakIndex = -1;
         for(char c : s.toCharArray()){
             //(char)91 = '['
-            //Less than 91 all upper case letters
+            //Less than 91 all upper case letter found
             if(c < (char)91){
                 if(charCMap.get(c) != charCMap.get(toLowerCase(c))) {
                     breakIndex = s.indexOf(c);
                     break;
                 }
             } else {
+                //lower case letter found
                 if(charCMap.get(c) != charCMap.get(toUpperCase(c))) {
                     breakIndex = s.indexOf(c);
                     break;

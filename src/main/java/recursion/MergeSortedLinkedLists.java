@@ -9,6 +9,16 @@ Input: list1 = [1,2,4], list2 = [1,3,4]
 Output: [1,1,2,3,4,4]
 * */
 public class MergeSortedLinkedLists {
+    /*
+    Complexity Analysis:
+    Time complexity : O(n + m)
+        Because each recursive call increments the pointer to l1 or l2 by one (approaching the dangling null at the end of each list),
+        there will be exactly one call to mergeTwoLists per element in each list. Therefore, the time complexity is linear in the combined size of the lists.
+
+    Space complexity : O(n + m)
+        The first call to mergeTwoLists does not return until the ends of both l1 and l2 have been reached, so n + mn+m stack
+        frames consume O(n + m) space.
+    * */
     public ListNode mergeTwoLists(ListNode l1, ListNode l2){
         if(l1 == null){
             return l2;
@@ -24,16 +34,16 @@ public class MergeSortedLinkedLists {
             return l2;
         }
     }
-/*
-Complexity Analysis:
-Time complexity : O(n + m)O(n+m)
-    Because each recursive call increments the pointer to l1 or l2 by one (approaching the dangling null at the end of each list),
-    there will be exactly one call to mergeTwoLists per element in each list. Therefore, the time complexity is linear in the combined size of the lists.
 
-Space complexity : O(n + m)O(n+m)
-    The first call to mergeTwoLists does not return until the ends of both l1 and l2 have been reached, so n + mn+m stack
-    frames consume O(n + m)O(n+m) space.
-* */
+
+    /*
+    * Complexity Analysis:
+    Time complexity : O(n + m)
+    Because exactly one of l1 and l2 is incremented on each loop iteration, the while loop runs for a number of iterations
+    equal to the sum of the lengths of the two lists. All other work is constant, so the overall complexity is linear.
+    Space complexity : O(1)
+    The iterative approach only allocates a few pointers, so it has a constant overall memory footprint.
+    * */
     public ListNode mergeSortedLinkedLists(ListNode l1, ListNode l2){
         ListNode preHead = new ListNode(-1);
         ListNode prev = preHead;
