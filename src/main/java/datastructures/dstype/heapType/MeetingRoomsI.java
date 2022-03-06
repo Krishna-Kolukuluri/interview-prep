@@ -22,10 +22,11 @@ public class MeetingRoomsI {
         System.out.println(canAttendMeeting(intervals));
     }
     private static boolean canAttendMeetings(int[][] intervals){
-        //Creating minHeap
+
         if(intervals.length <2){
             return true;
         }
+        //Creating minHeap
         PriorityQueue<Meeting> minHeap = new PriorityQueue<>((A,B) -> {
             if(A.start == B.start){
                 return A.end - B.end;
