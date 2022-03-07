@@ -137,7 +137,8 @@ class ThreadPoolExecutorExample{
 class ScheduledThreadPoolExecutorExample{
     public void getScheduledThreadPool() throws InterruptedException {
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(5);
-        executor.schedule(() -> System.out.println("Scheduled 1 tasks with initial delay of 500ms ->Hello World"), 500, TimeUnit.MILLISECONDS);
+        executor.schedule(() -> System.out.println("Scheduled 1 tasks with initial delay of 500ms ->Hello World"),
+                500, TimeUnit.MILLISECONDS);
 
         CountDownLatch lock = new CountDownLatch(3);
         executor = Executors.newScheduledThreadPool(5);
