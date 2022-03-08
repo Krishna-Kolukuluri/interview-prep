@@ -104,3 +104,46 @@ yaml file contians
   DisAdv: Performance overhead
           Exposure of internals-(code breaks abstraction)
    
+   Kafka Messaging Service - https://www.tutorialspoint.com/apache_kafka/apache_kafka_introduction.htm
+   
+   Threads,Thread pool and Executor Service
+   https://www.w3schools.com/java/java_threads.asp
+   https://howtodoinjava.com/java/multi-threading/java-thread-pool-executor-example/
+   
+   Finally-When finally will not be executed
+   https://www.tutorialspoint.com/is-finally-block-always-get-executed-in-java
+   
+   Production Debugging
+   https://www.toptal.com/qa/7-debugging-techniques-prod
+   Tips:
+   1)Use hypothesis
+   2)Reproduce in local
+   3)Print Statements
+   4)Debugging
+   
+   
+   Design Patterns https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
+   1)Singleton
+   2)Facade
+   3)Observer
+   4)Strategy
+   5)MVC
+   6)Composite
+   
+   
+   Garbage Collection
+   https://www.geeksforgeeks.org/garbage-collection-java/
+  Types of Garbage Collection
+  What is the young generation?
+    The Young Generation is where all new objects are allocated and aged. When the 
+    young generation fills up, this causes a minor garbage collection. A young generation
+    full of dead objects is collected very quickly. Some survived objects are aged and 
+    eventually move to the old generation.
+What is the old generation?
+  The Old Generation is used to store long surviving objects. Typically, a threshold is 
+  set for young generation object and when that age is met, the object gets moved to the old generation. 
+  Eventually the old generation needs to be collected. This event is called a major garbage collection
+What is the permanent generation?
+  The Permanent generation contains metadata required by the JVM to describe the classes and methods used 
+  in the application. The permanent generation is populated by the JVM at runtime based on classes in use 
+  by the application.
