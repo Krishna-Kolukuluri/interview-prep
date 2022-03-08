@@ -1,6 +1,11 @@
 package concepts;
 
 //Immutable class: all variables are declared final and with readonly methods.
+/*
+* If we need to share state between different threads, we can create thread-safe classes by making them immutable
+* a class instance is immutable when its internal state can't be modified after it has been constructed.
+* The easiest way to create an immutable class in Java is by declaring all the fields private and final and not providing setters:
+* */
 public class Immutability {
     private final double rate;
     private final String rateType;
