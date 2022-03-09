@@ -1,0 +1,77 @@
+1. Customer Obsession:
+    1.1. Situation: -> Traders and Flowrisk users spending lot of time in creating reports and layouts with reports
+                       everytime Flowrisk GUI gets relaunched/restarted, when they switch machines or travel to different location
+    1.2. Task: -> Enable Traders/BookRunners be able to create, save and edit Flowrisk workspaces with customized reports
+                  for sharing with colleagues and/or porting their workspaces to different machine whenever they needed.
+    1.3. Action: -> Designed and developed Workspace feature in Flowrisk, It is broken down into following components
+                 -> Workspace Module(UI):
+                    -> Offline, xml file based to share with colleagues via NFS or saved locally.
+                    -> Mobile, Customized to mobile use cases while traders on the go(these are persistent)
+                    -> Persistent, Saved to DB for sharing across different devices of user
+                 -> Workspace Service:
+                    -> Retrieve and store locally everytime client gets launched, if there are difference
+                       between local version and DB version for consistency.
+                    -> Spring boot based REST API with GET, POST, PUT, PATCH and DELETE endpoints.
+                 -> User Workspace DB Model: DB tables on MySQL database.
+    1.4. Result: -> Saved at-least 15 to 20 minutes of each trader time everyday.
+                 -> Opened new possibilities for collaboration between Traders by sharing their Ideas via workspaces with custom layout.
+                 -> Increased product usability, by reducing tedious, manual and repetitive tasks.
+                 -> Traders spending more time consuming the data and analyzing it.
+
+2. Invent and Simplify:
+    Invent: Flowrisk Mobile UI
+    2.1. Situation: -> Providing Traders access to Flowrisk application while they are on the go i.e. via mobile devices
+    2.2. Task: -> Making Flowrisk accessible via  Black Berry Workplace(BB Workspace)
+    2.3. Action: -> With minimal code changes created mobile device first reports for Traders consumption while they are
+                    on the go Also, created bootstrap wrappers to provide mobile native UI screen layout.
+                 -> Enabled single sign on functional to streamline user logon process onto application, which eliminated
+                    users/traders to punch in their credentials as long as they are logged into BB Workspace
+    2.4. Result: -> Early access to Risk & PnL reports for their favorite books/portfolios providing them head-start to
+                    their trading session while still they are in commute(especially for traders in NYC/LDN/SYD/SGP/TOK/MUB).
+                 -> During volatile days, having early access helped them to take appropriate action on certain portfolios,
+                    which gave material advantage in avoiding potential loss or make profit.
+
+    Invent/Simplify: KDF/Application(Trinity, Kannon, Flowrisk) Support
+    2.1. Situation: -> Eliminating manual steps involved in FORP produced Data validation & Providing straight through
+                       process for SL1/SL2/SL3 application support.
+                    -> Retain historical data validation data for audit requirements.
+    2.2. Task: -> Create a platform/application where BAs, Regression Users, Book Runners, Desk Heads and Application
+                  support personal could logon to create, customize, schedule, act on results and triage production
+                  queries or issues from trading desks.
+    2.3. Action: -> Designed and Developed Kannon Data Feeds automation framework( GUI + Distributed Microservices + HDFS +
+                    Database(Cassandra + MySQL)).
+                 -> KDF UI: Users to create tasks/jobs, view and act on results from these jobs.
+                 -> KDF Services: REST API based service to interact with GUI to DB and other microservices to check and
+                    complete jobs on schedule or adhoc jobs
+                 -> KDF Storage: My SQL DB for storing configurations and active job/task results (~3 months data) and
+                    Cassandra for Historical  data, NFS for storing reports.
+    2.4. Result: -> Closed audit gap, with retaining historical data in KDF Store.
+                 -> With Automation and efficiency, around 10 regression Engineers were moved to different projects which
+                    saved atleast 1.5m USD per year
+                 -> With newly introduced data tracking feature across multiple applications in KDF, support requests
+                    that requires developers attention got reduced by 70%, Hence, by reducing SLA for production support
+                    tickets and making systems fully functional with at-most support.
+
+3. Ownership: Behavioural
+    3.1. Situation: Inefficient Server Infrastructure usage in Trinity application
+    3.2. Task: Reduce Server infrastructure foot print and maximize resource utilization, there by reducing cost.
+    3.3. Action: -> Converted all Trinity services into containerized and deployed on Kubernetes cluster, which is hosted
+                    DB private cloud.
+                 -> Able to co-host multiple micro services(Authentication, Authorization and Static Data) which doesn't
+                    require too many resource there by efficiently using cluster resources.
+                 -> Maintaining different cluster sizes across different regions based on load/capacity estimations, which
+                    saved server resources.
+                 -> Instead of having regional services/duplication for common data services like Auth, Authentication
+                    Hosted all on UK cluster.
+    3.4. Result: -> all the above optimizations, helped save lot of money to bank, in hundreds of thousands of $ in support
+                    and maintenance costs. with small increase in complexity of application.
+                 -> Directly going with containerization of application over virtual servers, enabled application to auto
+                    scale services during heavy traffic load i.e. during peak trade volumes.
+
+4. Are Right, A Lot:
+    4.1. Situation:
+    4.2. Task:
+    4.3. Action:
+    4.4. Result:
+
+5. Learn and Be Curious:
