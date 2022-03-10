@@ -43,6 +43,13 @@ docker run -p 8080:8080 deepthijava/docker-demo
   loosely coupled,independently deployed,organized around business capabilities,
   owned by small team
   Separate business logic functions,communicate via well defined API's-usually http
+  
+  Distributed Systems: It is a collection of separate and independent software/hardware 
+   components, called nodes,that are networked and work together
+    coherently by coordinating and communicating through message passing or events to fulfill one end goal.
+    Nodes could be unstructured or highly structured,depending on the system requirements. 
+    And the complexities of the system are hidden to end user,
+    making the whole system appear as a single computer to it users.
    
    
    @RequestMapping(method="GET" value="\url" produces="application/json")
@@ -102,7 +109,8 @@ of that class and which can be executed using obj
    8)Pair Program
    
    Slow Prod Application: Check ELB and see if there are any instances down,
-   Logs: Check Application logs /SSH to Application server and look for logs [grep -i -C5 ‘error’ junglediskserver.log | less]
+   Logs: Check Application logs /SSH to Application server and look for logs 
+   [grep -i -C5 ‘error’ junglediskserver.log | less]
      
 summary of disk usage: df -h
 run in specific drives for size: sudo du -sh *
@@ -130,7 +138,8 @@ Validate Fix: Business will validate the fix
 
 
 Ansible:- Configuration Management Tool
-(without ansible Task need to repeated multiple times as we increase servers)Code is written once for installation and deployed to multiple areas
+(without ansible Task need to repeated multiple times as we increase servers)
+Code is written once for installation and deployed to multiple areas
 One script runs and will have consistent environment
 
 Ansible is a tool that provides
@@ -139,7 +148,9 @@ Ansible is a tool that provides
 3)Automatic Deployment -Applications are deployed automatically on a variety of envs
 
 Pull Configuration:(Master and child server -child have client server config installed) Chef and puppet
-Push Configuration-Ansible is push config server (Master server connected to slave/child servers and push the config to them)
+
+Push Configuration-Ansible is push config server 
+(Master server connected to slave/child servers and push the config to them)
 
 Ansible Architecture: Local Machine ->Nodes (Connect by SSH)
 Modules: Collection of config codes written on local machine
@@ -215,15 +226,16 @@ https://www.tutorialspoint.com/is-finally-block-always-get-executed-in-java
 Different DB's when to use what?
 Caching: If we don't want to query DB then cache data and query cache-key value pairs-Redis,memcache
 FileStore: Blob Storage for images or videos-S3,CDN
-Text Based DB Search engine(Lucene mechanism -Search for word in document and rank accordingly): Elastic search/SOLR - Search with title/description/movie title/genres/cast/uber/fuzzy search-typo
+Text Based DB Search engine(Lucene mechanism -Search for word in document and rank accordingly):
+  Elastic search/SOLR - Search with title/description/movie title/genres/cast/uber/fuzzy search-typo
 Time Series DB (Influx DB,OpenTS DB):Metrics kind of Data(CPU,Throughput,Latency)
 Dataware house (Hadoop) :Lot of info about company and needs to do analytics on Data
 RDBMS(MySQL,Oracle,SQL,Posgres):Structured Data,ACID
 Document DB(Mongo DB): Query on Files like json and store large amounts of data
 Columnar DB (Cassandra,HBase): Every increasing data like Uber/chats/youtube video meta/booking (edited)
 
-Apache Spark Streaming - Does lot of inferences-message classification to tags(politics/sports),what people are talking about-puts data to
-hadoop to run more analytics
+Apache Spark Streaming - Does lot of inferences-message classification to tags(politics/sports),
+what people are talking about-puts data to hadoop to run more analytics
 
 Elastic Search-Search based on index,fast and reliable
 
@@ -241,8 +253,9 @@ An Elasticsearch cluster is a group of nodes that have the same cluster.name att
 the cluster automatically reorganizes itself to evenly distribute the data across the available nodes.
 If you are running a single instance of Elasticsearch, you have a cluster of one node.
 
-Spunk:
-
+Splunk:
+Splunk is used for monitoring and searching through big data. 
+It indexes and correlates information in a container that makes it searchable, and makes it possible to generate alerts, reports and visualizations.
 
 Kafka Messaging Service: https://www.tutorialspoint.com/apache_kafka/apache_kafka_introduction.htm
 What is Kafka?
@@ -288,10 +301,6 @@ Redis is an in-memory data structure store that offers a rich set of features. I
 When storing data, Redis stores data as specific data types, whereas Memcached only stores data as strings. Because of this,
 Redis can change data in place without having to re-upload the entire data value. This reduces network overhead.
 
-Distributed Systems: It is a collection of separate and independent software/hardware components, called nodes,that are networked and work together
-coherently by coordinating and communicating through message passing or events to fulfill one end goal.
-Nodes could be unstructured or highly structured,depending on the system requirements. And the complexities of the system are hidden to end user,
-making the whole system appear as a single computer to it users.
 
 Modules managed by us
 Site: Applications,Data,Runtime,Middleware,O/S,Virtualization,Servers,Storage,Networking
