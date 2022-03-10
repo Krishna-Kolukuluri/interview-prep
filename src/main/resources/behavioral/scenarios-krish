@@ -1,3 +1,15 @@
+19.	Tell me about yourself:
+    a.	I’m S/w engineer with 14+ years’ experience in building/managing s/w products for financial institutions using
+        various technologies i.e., primarily Java/python & c#.Net.
+    b.	In my current role I’m building/supporting trading & risk applications for DB fixed income corporation using
+        Java/python/angular/spring boot
+    c.	Responsible for 3 applications at tech lead/engineering manager capacity
+    d.	Have 9/12 people reporting to me who are working on these three applications
+    e.	I am very adoptable to new technologies and technology agnostic
+    f.	I am curious about new technologies and have appetite for constantly learning new tech & making my applications
+        more efficient
+    g.	I have +ve and never give-up attitude which helped in my career constantly deliver projects on time.
+
 1. What would you consider your area of technical expertise?
     Designing, developing and implementing Restful APIs.
     Designing & architecting distributed systems
@@ -61,8 +73,6 @@
    a reliable and productive member of your organization who can be
    relied upon to deliver results both on time and to the requested standard.
 
-11.Tell Me about yourself?
-
 12.	Success stories:
     a.	KDF: Really went well
         i.	Identifying Problem
@@ -103,6 +113,7 @@
         i.	Onboarding/bringing projects from offshore to onshore & streamline process & reduce complexity.
         ii.	Hire brand new team & train them on application business use cases
         iii.	Turning around a project that had bad reputation for missing deadlines & having production support issues.
+
 13.	Conflict: With peer cross functional
     a.	Rearchitected effort of backend trinity
     b.	Creating separate microservice for authorization VS Having each microservice to have wrapper to make calls to
@@ -110,6 +121,7 @@
     c.	I proposed robust solution to create standalone microservice for authentication/authorization with data cache to
         support downtime by authentication/authorization providers
     d.	Enable ‘OAuth2’ authentication by all intra service communication.
+
 14.	Conflict within team:
     a.	Conflict b/w team members
     b.	Brewed while reviewing each other code and each one has diff philosophies
@@ -119,6 +131,7 @@
         protocol for meeting/code reviews/scrum to eliminated friction point in team
     e.	Then brought both of them to same [age by talking to them separately in group meetings to short out all diff opinions
     f.	In the end ---------- everyone seems to like new process in place.
+
 15.	Difficult reportee:
     a.	Not on time to meetings
     b.	Missing deadlines
@@ -128,6 +141,7 @@
     f.	No improvement/after seeing some issues with personal space, I enquired carefully about personal space, he/she
         opened which helped me to help him/her by moving meetings around after discussing change of timings in team
     g.	After these changes he respected/valued everyone in the team then he came around and was back on track like before
+
 16.	How do you deal with low performance?
     a.	Understand which area he is struggling
     b.	Speak to him about same on weekly one on one
@@ -138,6 +152,7 @@
         to see provide support
     g.	Keep providing continuous constructive feedback which help him to cause correct if needed
     h.	Yes, it happened in my team I had to put a resource under PIP-Performance improvement plan.
+
 17.	Describe a project in the past that was behind schedule and provide concrete steps that you took to remedy the situation:
     a.	Cache manager: Talk about static code vulnerabilities project (401K flows ranging from cross site --------- SQL injection)
     b.	It was behind schedule which published to auditors
@@ -150,6 +165,7 @@
     g.	Suggesting/developed a filter/regulat validation which eliminates the need for changing hundreds of files with
         simple implementation of filter HTML encoder which filters out essentially all 35K+ CSS vulnerabilities.
     h.	That kept the team back on track with initially published timelines for closing these flows in code.
+
 18.	Why MS:
     a.	I can’t think of any company other than MS that made +ve impact across the globe & every human being one way or
         other in last 30 years
@@ -157,17 +173,8 @@
     c.	I started my career with MS tech stack
     d.	On the other side in recent years the growth mindset and embracing the changes adopting/leading from front in
         certain areas excited me when I think of MS.
-19.	Tell me about yourself:
-    a.	I’m S/w engineer with 14+ years’ experience in building/managing s/w products for financial institutions using
-        various technologies i.e., primarily Java/python & c#.Net.
-    b.	In my current role I’m building/supporting trading & risk applications for DB fixed income corporation using
-        Java/python/angular/spring boot
-    c.	Responsible for 3 applications at tech lead/engineering manager capacity
-    d.	Have 9/12 people reporting to me who are working on these three applications
-    e.	I am very adoptable to new technologies and technology agnostic
-    f.	I am curious about new technologies and have appetite for constantly learning new tech & making my applications
-        more efficient
-    g.	I have +ve and never give-up attitude which helped in my career constantly deliver projects on time.
+
+
 20.	What is your favorite MS product and how would you improve it?
     a.	Product: outlook.com email, calendar board
     b.	Search based on attachment size
@@ -189,7 +196,7 @@
         analysis stage of complexity products supported/traded by EM desks
     b.	Find a MVP or work with EM desk heads to see how flexible are their timelines given other migrations in pipeline.
     c.	Had few meetings with team looked at all features in flight for upcoming release and worked product owner of
-        cross functional team, collaboratively/collectively decided reprioritize couple items & repurposed some additional
+        cross functional team, collaboratively/collectively decided prioritize couple items & repurposed some additional
         resource to work on EM task.
     d.	Sent for early feedback from EM business and was able to onboard EM business onto trinity on time & within
         another week was able to release reprioritized items to prod
@@ -218,15 +225,15 @@
     d.	Worked with on one-n-one basis to understand his concerns at work with him if any provide guidance and plan on
         improving his/her performance both with team and deliverable KPI’s
     e.	After few weeks observed improvement in his/her performance but there was still work to do, I further reconstructed
-        his PIP plan according to new resulting which eventually paid off.
-    f.	Problem was he is new to finance space and tech stack we are working with and complex nature of application did
+        his PIP plan according to new results which eventually paid off.
+    f.	Problem was he is new to finance space and tech stack we are working with and complex nature of application didn't
         even help him to get hold of code/architecture.
 26.	How you will be an asset in supporting the career development of those working under you?
     a.	I believe in a leader who leads by example and not just take decisions but works for his/her team and listens to
         them.ie leader not only a great decision maker but should also great listener.
     b.	That is how I operate my team on 1-1’s. I listen to them, ask for their aspirations then will device a plan
         together to make it happen.
-    c.	I constantly provide constructively feedback and help him/her be on the correct trajectory to reach their goal.
+    c.	I constantly provide constructive feedback and help him/her be on the correct trajectory to reach their goal.
     d.	Provide visibility whenever possible so that they will standout in wider organization which will help them with
         much needed exposure which will go long way in career development.
     e.	With this approach I was able to promote 3 of my direct repositories in last few years.
@@ -237,11 +244,11 @@
     c.	Example: Enabling two factor authentications on legacy application
     i.	I listened to what he had to say about his version and applications which are on that path
     ii.	Then requested listen to approach I’m proposing explained gaps b/w both and assumptions in both options and risks.
-    iii.Solving care business need if he willing to get business on board with risked gaps then I said I was okay.
-        If not it will be a risk which I’m not comfortable to take as it will bite us back at later stage for sure based
+    iii.Solving core business need if he(manager & stake holders) willing to get business on board with risks and gaps then I said I was okay.
+        If not it will be a risk which I’m not comfortable to take as it will bite us back at later stage for sure based on
         requirements.
-    iv.	I’ll go with evidence when I’m disagreeing with manager or anyone for that matter even if they still see merit in
-        their approach, I might be missing anything they are seeing.
+    iv.	I’ll go with evidence when I’m disagreeing with manager or anyone for that matter, even after that if they still see merit in
+        their approach, I might be missing anything they are seeing. ask for follow-up sessions to provide evidence supporting their claims.
 28.	Tell me about a time you made an unpopular decision?
     a.	Making everyone part of support rotation/team.
     b.	Prior to this there used to one primary and one secondary support persons for production support.
@@ -249,7 +256,7 @@
         devs who are creating their applications.
     d.	Team was not happy to be kept support rotation initially due to after hours support if there is any issue in app
         in EM/Asia time zones.
-    e.	Tried to explain benefits of get Infront of users and access to users for career development i.e., promotions
-        after couple iterations team got hold of new process and they started seeing positive side of it and long-term
-        benefits to team they finally happy with my decision as couple user recommendations played huge role in getting
-        my resource prompted.
+    e.	Tried to explain benefits of having interaction with users and access to users for career development i.e., promotions
+        after couple rotations team got hold of new process and they started seeing positive side of it and long-term
+        benefits to team they finally happy with my decision as couple of user recommendations played huge role in getting
+        my resources prompted.

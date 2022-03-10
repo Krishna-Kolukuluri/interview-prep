@@ -52,7 +52,7 @@
                     that requires developers attention got reduced by 70%, Hence, by reducing SLA for production support
                     tickets and making systems fully functional with at-most support.
 
-3. Ownership: Behavioural
+3. Ownership:
     3.1. Situation: Inefficient Server Infrastructure usage in Trinity application
     3.2. Task: Reduce Server infrastructure foot print and maximize resource utilization, there by reducing cost.
     3.3. Action: -> Converted all Trinity services into containerized and deployed on Kubernetes cluster, which is hosted
@@ -75,3 +75,35 @@
     4.4. Result:
 
 5. Learn and Be Curious:
+    5.1. Situation: -> storing application event logs in central data store for running analytics and proactively alert
+                       support team, if there are any anomaly detected.
+    5.2. Task: -> Migrating application servers to IAAS (GCP) to simplify server foot print or containerize service to deploy
+                  in Kubernetes cluster
+    5.3. Action: -> Signed-up for GCP training courses which are offered in DB and also registered online learning platforms
+                 -> spent couple weeks to understand all the different services provided GCP like GKE, Cloud Functions and
+                    Cloud Logging and Bigtable along with IAAS.
+                 -> Gave exam to get certified at the end of the course.
+                 -> Identify all service that I can leverage to reduce service foot print and improve application resilience,
+                    Availability and event traceability for support tasks.
+                 -> did POC's around containerizing small/simple microservice and deployed to GKE cluster.
+                 -> Integrated with Cloud Logging for running analytics on live logs and have cloud functions on top of these
+                    log monitors to trigger alerts to support personal.
+    5.4. Result: -> It was great learning curve for me about all the service GCP providing, get certified and do POC's.
+                 -> Eventually created project roadmap to move all our microservices into GKE cluster with docker images.
+                 -> Integrated all microservices with Cloud Logging service
+                 -> All enabled Cloud functions to trigger adhoc/bespoke report generation requests or email notifications
+                    from my applications.
+                 -> Encouraged/insisted and provided helpful resources to all my team members to take time to learn about
+                    GCP and service it has to offer.
+
+6. Hire and Develop the Best:
+    6.1. Situation:
+    6.2. Task:
+    6.3. Action:
+    6.4. Result:
+
+7. Insist on the Highest Standards:
+    7.1. Situation:
+    7.2. Task:
+    7.3. Action:
+    7.4. Result:
