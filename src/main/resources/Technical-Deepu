@@ -86,15 +86,15 @@ docker run -p 8080:8080 deepthijava/docker-demo
  
        
  Reflection API: (Manipulate classes and everything in class)      
- API which is used to examine or modify methods,classes,interfaces at runtime.
- Reflection gives us info about class to which an obj belongs and also the methods
-of that class and which can be executed using obj
- We can invoke methods at runtime irrespective of the access specifier used in them.
- Adv: Extensibility feature(Appl can make use of external user defined classes
- by creating instance of extensibility obj using qualified names)
-  Debugging and testing tools-Debuggers use to examine private methods of class
- DisAdv: Performance overhead
- Exposure of internals-(code breaks abstraction)
+   API which is used to examine or modify methods,classes,interfaces at runtime.
+   Reflection gives us info about class to which an obj belongs and also the methods
+   of that class and which can be executed using obj
+   We can invoke methods at runtime irrespective of the access specifier used in them.
+   Adv: Extensibility feature(Appl can make use of external user defined classes
+    by creating instance of extensibility obj using qualified names)
+    Debugging and testing tools-Debuggers use to examine private methods of class
+   DisAdv: Performance overhead
+   Exposure of internals-(code breaks abstraction)
    
    Production Debugging
    https://www.toptal.com/qa/7-debugging-techniques-prod
@@ -135,7 +135,40 @@ For business impact-Document RCA and preventive action for issue
 Change Request: Business impact and roll back plan/downtime etc should be provided and get the approval
 Validate Fix: Business will validate the fix
 
+Production Issue:
+Biggest Prod Issue in recent times: 
+1) After the content team edited content they were not able to save the data back, multiple saves were stacked in pending in DB..
+ When I looked at the issue the CPU utilization on servers was high and also disk utilization this I figured out  for cloudwatch 
+ metrics on EC2 and also we have New Relic detailed synthesis on our applications which we recently implemented.When I monitored 
+ session in database I figured out there is a batch job which was running from quite a long time and after doing SSH to virtual 
+ boxes I have seen few files which needs to discarded are not getting deleted. I took the screenshot of all the incidents and 
+ documented the defect.After running the issue with my seniors in team and after careful observation I sudo deleted files killed 
+ session on DB and application was back to normal.  I created a JIRA ticket for analysis.
+ 
+ 2) CPC screen is not loading.I know when  we get this kind of error but the exact root cause has to be figured out. First I 
+ communicated with the business team on the right approach to mitigate this kind of issues to happen in future and also I observed 
+ the stack traces for the given period of time and tried to reproduce the same issue in the local environment. This time it was a data 
+ issue so I got approvals from product and business to make the change and submitted a change request document and business impact-in this 
+ case there is nothing and downtime-again nothing.
 
+AWS:
+VPC: Virtual Private Cloud
+Cloud Formation: It is an orchestration or infrastructure or server deployment tool. 
+ Managed server deployment tool takes json as input with everything required to build like vpc's , DB,EC2 etc.
+Route53: To manage DNS,To redirect code,To create(CName etc)
+Best feature of AWS: ASG and ELB
+
+
+CICD: Software development practices that companies incorporated
+CI:Process where Dev freq merge code to shared repo then there will be automated build and tests
+CDelivery:extension of CI where we mimic the process in another env.Test and after manual approval we will deliver to Prod.
+CDeployment: Validates if code changes are stable using automated tests and deployed to prod without explicit approval.
+
+Git: merge and rebase: rebase reapplies commits on top of another base branch”, whereas “merge joins two or more development 
+ histories together”. In other words, the key difference between merge and rebase is that while merge preserves history as it 
+ happened, rebase rewrites it.
+
+Maven build tool:Cycle:Clean build and site.mvn site: generate site doc for project.
 
 Ansible:- Configuration Management Tool
 (without ansible Task need to repeated multiple times as we increase servers)
@@ -157,13 +190,16 @@ Modules: Collection of config codes written on local machine
 Inventory: doc that groups nodes in env
 
 Playbooks: These are core of Ansible
-Set of instructions written in yml
+ Set of instructions written in yml
 
 Secrets vault management in vault.yml File is encrypted using AES256 -
-To edit: ansible-vault edit vault.yml
-To View: ansible-vault view vault.yml
-main.yml -Set of instructions
+ To edit: ansible-vault edit vault.yml
+ To View: ansible-vault view vault.yml
+ main.yml -Set of instructions
 
+Configuration Management tool: 
+ Ansible (Agentless,yml play books)
+ Chef is ruby based tool,open source,agent based,programming lang
 
 Jenkins:
 Continuous integration tool that allows continuous development,test and deployment of newly created codes
@@ -185,7 +221,12 @@ Then update java version
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
 
+Deployment fails-how you roll back
+Jenkins job which basically does the deployment and in the middle of B/g deployment 
+it does check if the services are up and running. SGTP end points of application are running or not.
 
+Jenkins for deployment:Used with plugins which deploy code.Ansible does deployment and jenkins is the orchestration platform
+Plugins in jenkinsMaven,git,slack,sonarqube
 
 New Relic Synthesis: Continuous monitoring for software quality
    
