@@ -1,80 +1,64 @@
 Kubernetes:  Deploying and scaling containers.Container Orchestration S/w. Automating
 deployment,scaling and management of containerized application.
 Docker-deployfile.yml
-If you have distributed application we need efficient communication between them 
+If you have distributed application we need efficient communication between them
 seemlesly to build redundancy for each component.In order to achieve it we need to
 containerize we create new pods of each component and application picks which pod to
 communicate with -That's where K8s comes into picture.
 yaml file contians
-  Node:kubelet communicate with master,runs pods
-  Pod:Runs 1+ Containers,exists on node
-  Service:Handles requests,usually a LB
-  Deployment:Defines desired state-K8S handles the rest.
-  Spec:
-    Containers:
-      name: docker-k8s-demo
-      image:deepthijava/docker-demo
-      ports:
-        containerPort:8080
-  cmd: kubectl apply -f docker-k8s-demo.yml -This will deploy container to cloud
-  
-  
-  
+ Node:kubelet communicate with master,runs pods
+ Pod:Runs 1+ Containers,exists on node
+ Service:Handles requests,usually a LB
+ Deployment:Defines desired state-K8S handles the rest.
+ Spec:
+Containers:
+ name: docker-k8s-demo
+ image:deepthijava/docker-demo
+ ports:
+containerPort:8080
+ cmd: kubectl apply -f docker-k8s-demo.yml -This will deploy container to cloud
+ 
+ 
+ 
   Docker: Containerize(Package) application -[App+libs+etc]
-  Open platform for devs and sys adimin to build ship and run distributed apps 
-  whether on laptops.datacenter VM's or the cloud
-  Package s/w in a format that can run isolated on a shared OS.
-  Docker file-Build process for an image contains all commands necessary to build
-  the image and run your application)
-    from java:8
-    expose 8080
-    add target/docker-demo.jar docker-demo.jar
-    entrypoint ["jave","-jar","docker-demo.jar"]
-    
-  Create image command: docker build -t docker-demo
-  see images command: docker images
-  push docker image: 
-      docker tag docker-demo deepthijava/docker-demo
-      docker push deepthijava/docker-demo
-  Run and pull image
-    docker run -p 8080:8080 deepthijave/docker-demo
-    
+ Open platform for devs and sys adimin to build ship and run distributed apps
+ whether on laptops.datacenter VM's or the cloud
+ Package s/w in a format that can run isolated on a shared OS.
+ Docker file-Build process for an image contains all commands necessary to build
+ the image and run your application)
+from java:8
+expose 8080
+add target/docker-demo.jar docker-demo.jar
+entrypoint ["jave","-jar","docker-demo.jar"]
+
+ Create image command: docker build -t docker-demo
+ see images command: docker images
+ push docker image:
+ docker tag docker-demo deepthijava/docker-demo
+ docker push deepthijava/docker-demo
+ Run and pull image
+docker run -p 8080:8080 deepthijava/docker-demo
+   
    Microservices: Collection of softwares that are highly maintainable and testable,
-   loosely coupled,independently deployed,organized around business capabilities,
-   owned by small team
-   Separate business logic functions,communicate via well defined API's-usually http
+  loosely coupled,independently deployed,organized around business capabilities,
+  owned by small team
+  Separate business logic functions,communicate via well defined API's-usually http
    
-   Jenkins: Github webhook is used to push commit events to jenkins
-   Github plugin: configured in jenkins-config system
-   Github Ip's to be whitelisted on AWS Jenkins Security group
-   Jenkins github config servers-Here do the config setup
    
-   Update jenkins version: 
-   Backup previous version war file by loggin in to Bitvise
-      cmd: sudo -cp /../../
-   Manage prepare mode-Restart jenkins
-        cmd: sudo service stop
-             sudo service start
-    Then update jave version 
-        sudo apt-get update
-        sudo apt-get install openjdk-8-jdk
-        
-  Ansible:- Secrets vault management in vault.yml
-  
    @RequestMapping(method="GET" value="\url" produces="application/json")
    @PreAuthorize(hasAuthority("ROLE ADMIN))
    @postAuthorize(hasPermission(return obj,:hasMatchingSubscriber" etc))
-   Create custom annotation: 
+   Create custom annotation:
         @Target({Type,field,Annotation-type})
         @Retention(RUNTIME)
         @Constraint(validatedBy=EmailValidator.class)-On variable
-        
+       
        Example:  public @interface validEmail(){ //This created @ValidEmail Annotation
           String message() default "Invalid email";
           class<?>[] groups() default{};
           class<? extendspayload>[] payload()
           }
-          
+         
   HTTP Response Status:
   1xx -Info Response
   2xx-Success
@@ -84,6 +68,7 @@ yaml file contians
     401-Unauthorized
     404-Not found
     408-Req Timeout
+429
     440-Login timeout
     495-SSL
    5xx-Server error
@@ -92,15 +77,232 @@ yaml file contians
     503-Service unavailable
     504-Gateway timeout
  
-        
- Reflection API: (Manipulate classes and everything in class)       
-  API which is used to examine or modify methods,classes,interfaces at runtime.
-  Reflection gives us info about class to which an obj belongs and also the methods 
-    of that class and which can be executed using obj
-  We can invoke methods at runtime irrespective of the access specifier used in them.
-  Adv: Extensibility feature(Appl can make use of external user defined classes
-              by creating instance of extensibility obj using qualified names)
-       Debugging and testing tools-Debuggers use to examine private methods of class
-  DisAdv: Performance overhead
-          Exposure of internals-(code breaks abstraction)
+       
+ Reflection API: (Manipulate classes and everything in class)      
+ API which is used to examine or modify methods,classes,interfaces at runtime.
+ Reflection gives us info about class to which an obj belongs and also the methods
+of that class and which can be executed using obj
+ We can invoke methods at runtime irrespective of the access specifier used in them.
+ Adv: Extensibility feature(Appl can make use of external user defined classes
+ by creating instance of extensibility obj using qualified names)
+  Debugging and testing tools-Debuggers use to examine private methods of class
+ DisAdv: Performance overhead
+ Exposure of internals-(code breaks abstraction)
    
+   Production Debugging
+   https://www.toptal.com/qa/7-debugging-techniques-prod
+   Tips:
+   1)Use hypothesis - Get the steps to reproduce defects
+   2)Reproduce the defect before changing code
+   3)Understand stack traces
+   4)Write test cases to reproduce the defect
+   5)Know your error codes
+   6)Print Statements
+   7)Debugging
+   8)Pair Program
+   
+   Slow Prod Application: Check ELB and see if there are any instances down,
+   Logs: Check Application logs /SSH to Application server and look for logs [grep -i -C5 ‘error’ junglediskserver.log | less]
+     
+summary of disk usage: df -h
+run in specific drives for size: sudo du -sh *
+delete files: sudo rm -rf hs*log
+
+Tomcat Troubleshooting:
+see processes : ps aux
+ps aux | grep java
+kill process: kill -9 pid
+9 is to do it automatically
+If jenkins restart doesn't work
+check if nginx is running:
+ps aux | grep nginx
+(nothing returned)
+start nginx service up:
+sudo service nginx start
+
+Identify from where we are getting the exception-File by looking at stack trace
+Debug code from Local and troubleshoot the issue
+
+For business impact-Document RCA and preventive action for issue
+Change Request: Business impact and roll back plan/downtime etc should be provided and get the approval
+Validate Fix: Business will validate the fix
+
+
+
+Ansible:- Configuration Management Tool
+(without ansible Task need to repeated multiple times as we increase servers)Code is written once for installation and deployed to multiple areas
+One script runs and will have consistent environment
+
+Ansible is a tool that provides
+1) IT automation -Instruction written to automate the IT professionals work
+2) Configuration Management - Consistency of all systems in the infrastructure is maintained
+3)Automatic Deployment -Applications are deployed automatically on a variety of envs
+
+Pull Configuration:(Master and child server -child have client server config installed) Chef and puppet
+Push Configuration-Ansible is push config server (Master server connected to slave/child servers and push the config to them)
+
+Ansible Architecture: Local Machine ->Nodes (Connect by SSH)
+Modules: Collection of config codes written on local machine
+Inventory: doc that groups nodes in env
+
+Playbooks: These are core of Ansible
+Set of instructions written in yml
+
+Secrets vault management in vault.yml File is encrypted using AES256 -
+To edit: ansible-vault edit vault.yml
+To View: ansible-vault view vault.yml
+main.yml -Set of instructions
+
+
+Jenkins:
+Continuous integration tool that allows continuous development,test and deployment of newly created codes
+
+  Github webhook is used to push commit events to jenkins
+  Github plugin: configured in jenkins-config system
+  Github Ip's to be whitelisted on AWS Jenkins Security group
+  Jenkins github config servers-Here do the config setup
+  Post Build Actions: Slack Notifications
+  Scripts in configure-deploy-> Env/Tomcat instructions/nodes etc
+ 
+  Update jenkins version:
+  Backup previous version war file by loggin in to Bitvise
+ cmd: sudo -cp /../../
+  Manage prepare mode-Restart jenkins
+cmd: sudo service stop
+sudo service start
+Then update java version
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+
+
+
+New Relic Synthesis: Continuous monitoring for software quality
+   
+   Design Patterns https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
+   1)Singleton
+   2)Facade
+   3)Observer
+   4)Strategy
+   5)MVC
+   6)Composite
+   
+   Garbage Collection
+   https://www.geeksforgeeks.org/garbage-collection-java/
+Types of Garbage Collection
+  What is the young generation?
+The Young Generation is where all new objects are allocated and aged. When the
+young generation fills up, this causes a minor garbage collection. A young generation
+full of dead objects is collected very quickly. Some survived objects are aged and
+eventually move to the old generation.
+  What is the old generation?
+ The Old Generation is used to store long surviving objects. Typically, a threshold is
+ set for young generation object and when that age is met, the object gets moved to the old generation.
+ Eventually the old generation needs to be collected. This event is called a major garbage collection
+  What is the permanent generation?
+ The Permanent generation contains metadata required by the JVM to describe the classes and methods used
+ in the application. The permanent generation is populated by the JVM at runtime based on classes in use
+ by the application.
+
+ Kafka Messaging Service
+https://www.tutorialspoint.com/apache_kafka/apache_kafka_introduction.htm
+   Threads,Thread pool and Executor Service
+  https://www.w3schools.com/java/java_threads.asp
+  https://howtodoinjava.com/java/multi-threading/java-thread-pool-executor-example/
+   Finally-When finally will not be executed
+https://www.tutorialspoint.com/is-finally-block-always-get-executed-in-java
+   
+
+Different DB's when to use what?
+Caching: If we don't want to query DB then cache data and query cache-key value pairs-Redis,memcache
+FileStore: Blob Storage for images or videos-S3,CDN
+Text Based DB Search engine(Lucene mechanism -Search for word in document and rank accordingly): Elastic search/SOLR - Search with title/description/movie title/genres/cast/uber/fuzzy search-typo
+Time Series DB (Influx DB,OpenTS DB):Metrics kind of Data(CPU,Throughput,Latency)
+Dataware house (Hadoop) :Lot of info about company and needs to do analytics on Data
+RDBMS(MySQL,Oracle,SQL,Posgres):Structured Data,ACID
+Document DB(Mongo DB): Query on Files like json and store large amounts of data
+Columnar DB (Cassandra,HBase): Every increasing data like Uber/chats/youtube video meta/booking (edited)
+
+Apache Spark Streaming - Does lot of inferences-message classification to tags(politics/sports),what people are talking about-puts data to
+hadoop to run more analytics
+
+Elastic Search-Search based on index,fast and reliable
+
+Cassandra-Extremely high throughput,spread out across lot of users,easily able to scale to any amount given a number  of traffic
+
+Network protocols:TCP-No Data loss (c send msg to s then s sends ack -s receives packets in order)
+Https-Rest API Uni-TCP/WebSocket-Bidirectional-TCP/UDP(c send p1,p2,p3 to s)
+
+AWS Elastic Search: 
+Elasticsearch allows you to store, search, and analyze huge volumes of data quickly and in near real-time and give back answers in milliseconds.
+It's able to achieve fast search responses because instead of searching the text directly, it searches an index.
+
+Elasticsearch cluster:
+An Elasticsearch cluster is a group of nodes that have the same cluster.name attribute. As nodes join or leave a cluster,
+the cluster automatically reorganizes itself to evenly distribute the data across the available nodes.
+If you are running a single instance of Elasticsearch, you have a cluster of one node.
+
+Spunk:
+
+
+Kafka Messaging Service: https://www.tutorialspoint.com/apache_kafka/apache_kafka_introduction.htm
+What is Kafka?
+Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages
+from one end-point to another.
+Kafka is suitable for both offline and online message consumption.
+Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss.
+Kafka is built on top of the ZooKeeper synchronization service. It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
+
+Benefits
+Following are a few benefits of Kafka −
+
+Reliability − Kafka is distributed, partitioned, replicated and fault tolerance.
+
+Scalability − Kafka messaging system scales easily without down time..
+
+Durability − Kafka uses Distributed commit log which means messages persists on disk as fast as possible, hence it is durable..
+
+Performance − Kafka has high throughput for both publishing and subscribing messages. It maintains stable performance even many TB of messages are stored.
+
+Kafka is very fast and guarantees zero downtime and zero data loss.
+
+Use Cases
+Kafka can be used in many Use Cases. Some of them are listed below −
+
+Metrics − Kafka is often used for operational monitoring data. This involves aggregating statistics from distributed applications
+to produce centralized feeds of operational data.
+
+Log Aggregation Solution − Kafka can be used across an organization to collect logs from multiple services and make them available
+in a standard format to multiple con-sumers.
+
+Stream Processing − Popular frameworks such as Storm and Spark Streaming read data from a topic, processes it, and write processed
+data to a new topic where it becomes available for users and applications. Kafka’s strong durability is also very useful in the context
+of stream processing.
+
+Redis vs Kafka
+Redis is used if you want to deliver messages instantly to the consumer and you can live up with data loss, and the amount of data to deal is less.
+Kafka can be used when you're looking for reliability, high throughput, fault-tolerant, and volume of data is huge.
+
+Memcache vs Redis
+Memcached is a distributed memory caching system designed for ease of use and simplicity and is well-suited as a cache or a session store.
+Redis is an in-memory data structure store that offers a rich set of features. It is useful as a cache, database, message broker, and queue.
+When storing data, Redis stores data as specific data types, whereas Memcached only stores data as strings. Because of this,
+Redis can change data in place without having to re-upload the entire data value. This reduces network overhead.
+
+Distributed Systems: It is a collection of separate and independent software/hardware components, called nodes,that are networked and work together
+coherently by coordinating and communicating through message passing or events to fulfill one end goal.
+Nodes could be unstructured or highly structured,depending on the system requirements. And the complexities of the system are hidden to end user,
+making the whole system appear as a single computer to it users.
+
+Modules managed by us
+Site: Applications,Data,Runtime,Middleware,O/S,Virtualization,Servers,Storage,Networking
+IaaS: Applications,Data,Runtime,Middleware,O/S
+PaaS: Applications,Data
+SaaS: (Everything is managed by cloud)
+
+
+Why Salesforce?
+One Reason: Salesforce is developing products which make positive impact in the society by helping small business grow is something interested me.
+Second important reason as a software engineer: I have learnt Salesforce is a technology agnostic company which is growing rapidly in tech world with the  
+chievements. I see I can  use my expertise and grow along with the company.
+These are the two main reasons for why I am keen in joining salesforce. I approached recruiter by myself because of my interest.
+
