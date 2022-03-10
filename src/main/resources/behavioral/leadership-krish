@@ -107,3 +107,18 @@
     7.2. Task:
     7.3. Action:
     7.4. Result:
+
+8. Think Big:
+    8.1. Situation: -> Traders spending too much time on creating pivot/2d, grouping and correlation reports to find-out
+                       outliers and other insights into live, old trade data. Which is wasting valuable traders time.
+    8.2. Task: -> Provide an interface/module in Flowrisk GUI, which helps traders quickly and intuitively look through
+                  the data for insights.
+               -> Should be flexible and intuitive with minimal learning curve, help users to visualize data quickly.
+    8.3. Action: -> Introduced charts module in Flowrisk GUI, with using existing UI libraries (Infragistics)
+                 -> Solution is so flexible and customizable as per Trader needs and could save there layouts as part of
+                    their workspaces.
+                 -> By using existing libraries, was able to cut timelines drastically and also there is next to none learning
+                    curve for traders to use charts module in Flowrisk GUI, as they are already familiar with charts module
+                 -> Provided training videos on plotting most useful charts based different kinds of data that traders will
+                    come across and interact most often.
+    8.4. Result: -> Helped traders save time by eliminating manual steps of exporting data, converting it to pivot/2d reports 
