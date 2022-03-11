@@ -154,7 +154,10 @@ docker run -p 8080:8080 deepthijava/docker-demo
    Exposure of internals-(code breaks abstraction)
    
  Threads:
-   A thread pool is a collection of pre-initialized threads. Generally, the size of the collection
+ Threads allows a program to operate more efficiently by doing multiple things at the same time.
+ Threads can be used to perform complicated tasks in the background without interrupting the main program.
+  
+  A thread pool is a collection of pre-initialized threads. Generally, the size of the collection
   is fixed, but it is not mandatory. It facilitates the execution of N number of tasks using the same threads.
   If there are more tasks than threads, then tasks need to wait in a queue like structure (FIFO – First in first out).
  
