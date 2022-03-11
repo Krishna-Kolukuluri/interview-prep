@@ -96,6 +96,84 @@ docker run -p 8080:8080 deepthijava/docker-demo
    DisAdv: Performance overhead
    Exposure of internals-(code breaks abstraction)
    
+   Threads:
+   A thread pool is a collection of pre-initialized threads. Generally, the size of the collection
+  is fixed, but it is not mandatory. It facilitates the execution of N number of tasks using the same threads.
+  If there are more tasks than threads, then tasks need to wait in a queue like structure (FIFO – First in first out).
+ 
+  When any thread completes its execution, it can pickup a new task from the queue and execute it.
+  When all tasks are completed the threads remain active and wait for more tasks in the thread pool.
+ 
+  A watcher keep watching queue (usually BlockingQueue) for any new tasks. As soon as tasks come, threads again start picking up tasks and execute them.
+ 
+  We can create following 5 types of thread pool executors with pre-built methods in java.util.concurrent.Executors interface.
+     1. Fixed thread pool executor
+   ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
+     2. Cached thread pool executor: Creates a thread pool that creates new threads as needed,
+   but will reuse previously constructed threads when they are available.
+   ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
+
+     3. Scheduled thread pool executor: Creates a thread pool that can schedule commands to run after a given delay, or to execute periodically.
+   ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newScheduledThreadPool(10);
+
+     4. Single thread pool executor: Creates single thread to execute all tasks. Use it when you have only one task to execute.
+   ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newSingleThreadExecutor();
+
+     5. Work stealing thread pool executor : Creates a thread pool that maintains enough threads to support the given parallelism level.
+   ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newWorkStealingPool(4);
+
+     public static void main(String[] args)
+     {
+       ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
+       for (int i = 1; i <= 5; i++)
+       {
+       Task task = new Task("Task " + i);
+       System.out.println("Created : " + task.getName());
+       executor.execute(task);
+       }
+       executor.shutdown();
+     }
+
+Static Vs Final: 
+  The main difference between static and final is that the static is used to 
+  define the class member that can be used independently of any object of the class. 
+  In contrast, final is used to declare a constant variable or a method that cannot be overridden 
+  or a class that cannot be inherited.
+   Static and final are two keywords that are used in many Object Orientation supporting programming 
+   languages such as Java. Static is used with variables and methods to define that it belongs to the 
+   class, not the object. On the other hand, final is used to restrict the user from accessing a 
+   variable, method or a class.
+   
+Interface Vs Abstract Class:
+  An abstract class allows you to create functionality that subclasses can implement or override. 
+  An interface only allows you to define functionality, not implement it. And whereas a class 
+  can extend only one abstract class, it can take advantage of multiple interfaces.
+  
+Finally: 
+   1) A finally block is always get executed whether the exception has occurred or not.
+   2) If an exception occurs like closing a file or DB connection, then the finally block is used to clean up the code.
+   3) We cannot say the finally block is always executes because sometimes if any statement like System.exit()
+   or some similar code is written into try block then program will automatically terminate and the finally block will not be executed in this case.
+   4) A finally block will not execute due to other conditions like when JVM runs out of memory when our java
+   process is killed forcefully from task manager or console when our machine shuts down due to power failure and deadlock condition in our try block.
+   
+ Garbage Collection
+   https://www.geeksforgeeks.org/garbage-collection-java/
+    Types of Garbage Collection
+      What is the young generation?
+        The Young Generation is where all new objects are allocated and aged. When the
+        young generation fills up, this causes a minor garbage collection. A young generation
+        full of dead objects is collected very quickly. Some survived objects are aged and
+        eventually move to the old generation.
+      What is the old generation?
+         The Old Generation is used to store long surviving objects. Typically, a threshold is
+         set for young generation object and when that age is met, the object gets moved to the old generation.
+         Eventually the old generation needs to be collected. This event is called a major garbage collection
+      What is the permanent generation?
+         The Permanent generation contains metadata required by the JVM to describe the classes and methods used
+         in the application. The permanent generation is populated by the JVM at runtime based on classes in use
+         by the application.
+   
    Production Debugging
    https://www.toptal.com/qa/7-debugging-techniques-prod
    Tips:
@@ -238,30 +316,10 @@ New Relic Synthesis: Continuous monitoring for software quality
    5)MVC
    6)Composite
    
-   Garbage Collection
-   https://www.geeksforgeeks.org/garbage-collection-java/
-Types of Garbage Collection
-  What is the young generation?
-The Young Generation is where all new objects are allocated and aged. When the
-young generation fills up, this causes a minor garbage collection. A young generation
-full of dead objects is collected very quickly. Some survived objects are aged and
-eventually move to the old generation.
-  What is the old generation?
- The Old Generation is used to store long surviving objects. Typically, a threshold is
- set for young generation object and when that age is met, the object gets moved to the old generation.
- Eventually the old generation needs to be collected. This event is called a major garbage collection
-  What is the permanent generation?
- The Permanent generation contains metadata required by the JVM to describe the classes and methods used
- in the application. The permanent generation is populated by the JVM at runtime based on classes in use
- by the application.
-
+  
  Kafka Messaging Service
 https://www.tutorialspoint.com/apache_kafka/apache_kafka_introduction.htm
-   Threads,Thread pool and Executor Service
-  https://www.w3schools.com/java/java_threads.asp
-  https://howtodoinjava.com/java/multi-threading/java-thread-pool-executor-example/
-   Finally-When finally will not be executed
-https://www.tutorialspoint.com/is-finally-block-always-get-executed-in-java
+   
    
 
 Different DB's when to use what?
