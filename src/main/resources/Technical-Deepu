@@ -39,7 +39,7 @@ entrypoint ["jave","-jar","docker-demo.jar"]
  Run and pull image
 docker run -p 8080:8080 deepthijava/docker-demo
    
-   Microservices: Collection of softwares that are highly maintainable and testable,
+ Microservices: Collection of softwares that are highly maintainable and testable,
   loosely coupled,independently deployed,organized around business capabilities,
   owned by small team
   Separate business logic functions,communicate via well defined API's-usually http
@@ -55,6 +55,7 @@ docker run -p 8080:8080 deepthijava/docker-demo
    @RequestMapping(method="GET" value="\url" produces="application/json")
    @PreAuthorize(hasAuthority("ROLE ADMIN))
    @postAuthorize(hasPermission(return obj,:hasMatchingSubscriber" etc))
+   
    Create custom annotation:
         @Target({Type,field,Annotation-type})
         @Retention(RUNTIME)
@@ -65,24 +66,62 @@ docker run -p 8080:8080 deepthijava/docker-demo
           class<?>[] groups() default{};
           class<? extendspayload>[] payload()
           }
+          
+      Compare: On Field in Object
+            public class User implements Comparable<User> {
+               private long id;
+               private String email;
+               private Date createdOn;
+
+               // other getters and setters omitted
+
+               public Date getCreatedOn() {
+                 return createdOn;
+               }
+
+               public void setCreatedOn(Date createdOn) {
+                 this.createdOn = createdOn;
+               }
+
+               @Override
+               public int compareTo(User u) {
+                 if (getCreatedOn() == null || u.getCreatedOn() == null) {
+                   return 0;
+                 }
+                 return getCreatedOn().compareTo(u.getCreatedOn());
+               }
+           }
+           (OR)
+             Collections.sort(users, new Comparator<User>() {
+               @Override
+               public int compare(User u1, User u2) {
+                 return u1.getCreatedOn().compareTo(u2.getCreatedOn());
+               }
+             });
+          (OR)
+               users.sort(Comparator.comparing(User::getCreatedOn));//.reversed())
+          (OR)
+              List<User> sortedUsers = users.stream()
+               .sorted(Comparator.comparing(User::getCreatedOn)) //.reversed())
+               .collect(Collectors.toList());
          
   HTTP Response Status:
-  1xx -Info Response
-  2xx-Success
-  3xx-Redirection
-  4xx-Client Error
-    400-Bad Req
-    401-Unauthorized
-    404-Not found
-    408-Req Timeout
-429
-    440-Login timeout
-    495-SSL
-   5xx-Server error
-    500-Internal Server Error
-    502-Bad Gateway
-    503-Service unavailable
-    504-Gateway timeout
+      1xx -Info Response
+      2xx-Success
+      3xx-Redirection
+      4xx-Client Error
+        400-Bad Req
+        401-Unauthorized
+        404-Not found
+        408-Req Timeout
+        429-Too Many Requests
+        440-Login timeout
+        495-SSL
+       5xx-Server error
+        500-Internal Server Error
+        502-Bad Gateway
+        503-Service unavailable
+        504-Gateway timeout
  
        
  Reflection API: (Manipulate classes and everything in class)      
@@ -96,7 +135,7 @@ docker run -p 8080:8080 deepthijava/docker-demo
    DisAdv: Performance overhead
    Exposure of internals-(code breaks abstraction)
    
-   Threads:
+ Threads:
    A thread pool is a collection of pre-initialized threads. Generally, the size of the collection
   is fixed, but it is not mandatory. It facilitates the execution of N number of tasks using the same threads.
   If there are more tasks than threads, then tasks need to wait in a queue like structure (FIFO – First in first out).
