@@ -1,4 +1,6 @@
 1. Customer Obsession:
+    Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although
+    leaders pay attention to competitors, they obsess over customers.
     1.1. Situation: -> Traders and Flowrisk users spending lot of time in creating reports and layouts with reports
                        everytime Flowrisk GUI gets relaunched/restarted, when they switch machines or travel to different location
     1.2. Task: -> Enable Traders/BookRunners be able to create, save and edit Flowrisk workspaces with customized reports
@@ -19,6 +21,9 @@
                  -> Traders spending more time consuming the data and analyzing it.
 
 2. Invent and Simplify:
+    Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are
+    externally aware, look for new ideas from everywhere, and are not limited by “not invented here." As we do new things,
+    we accept that we may be misunderstood for long periods of time.
     Invent: Flowrisk Mobile UI
     2.1. Situation: -> Providing Traders access to Flowrisk application while they are on the go i.e. via mobile devices
     2.2. Task: -> Making Flowrisk accessible via  Black Berry Workplace(BB Workspace)
@@ -53,6 +58,8 @@
                     tickets and making systems fully functional with at-most support.
 
 3. Ownership:
+    Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. They act on
+    behalf of the entire company, beyond just their own team. They never say “that’s not my job."
     3.1. Situation: Inefficient Server Infrastructure usage in Trinity application
     3.2. Task: Reduce Server infrastructure foot print and maximize resource utilization, there by reducing cost.
     3.3. Action: -> Converted all Trinity services into containerized and deployed on Kubernetes cluster, which is hosted
@@ -69,12 +76,16 @@
                     scale services during heavy traffic load i.e. during peak trade volumes.
 
 4. Are Right, A Lot:
+    Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to
+    disconfirm their beliefs.
     4.1. Situation:
     4.2. Task:
     4.3. Action:
     4.4. Result:
 
 5. Learn and Be Curious:
+    Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and
+    act to explore them.
     5.1. Situation: -> storing application event logs in central data store for running analytics and proactively alert
                        support team, if there are any anomaly detected.
     5.2. Task: -> Migrating application servers to IAAS (GCP) to simplify server foot print or containerize service to deploy
@@ -97,18 +108,26 @@
                     GCP and service it has to offer.
 
 6. Hire and Develop the Best:
+    Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly
+    move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others.
+    We work on behalf of our people to invent mechanisms for development like Career Choice
     6.1. Situation:
     6.2. Task:
     6.3. Action:
     6.4. Result:
 
 7. Insist on the Highest Standards:
+    Leaders have relentlessly high standards — many people may think these standards are unreasonably high. Leaders are
+    continually raising the bar and drive their teams to deliver high quality products, services, and processes. Leaders
+    ensure that defects do not get sent down the line and that problems are fixed so they stay fixed
     7.1. Situation:
     7.2. Task:
     7.3. Action:
     7.4. Result:
 
 8. Think Big:
+    Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results.
+    They think differently and look around corners for ways to serve customers.
     8.1. Situation: -> Traders spending too much time on creating pivot/2d, grouping and correlation reports to find-out
                        outliers and other insights into live, old trade data. Which is wasting valuable traders time.
     8.2. Task: -> Provide an interface/module in Flowrisk GUI, which helps traders quickly and intuitively look through
@@ -121,4 +140,107 @@
                     curve for traders to use charts module in Flowrisk GUI, as they are already familiar with charts module
                  -> Provided training videos on plotting most useful charts based different kinds of data that traders will
                     come across and interact most often.
-    8.4. Result: -> Helped traders save time by eliminating manual steps of exporting data, converting it to pivot/2d reports 
+    8.4. Result: -> Helped traders save time by eliminating manual steps of exporting data, converting it to pivot/2d reports
+                 -> Also, Eliminated need for exporting data out of application, which was a security/regulatory concern for so long.
+                 -> based on user interaction logs, found that more than 80% traders using charts module at-least 10 times per day.
+                 -> There were follow-up enhancement requests from Traders, Desk Heads and Book-runners for providing functionality
+                    like, saving charts part of workspace layout, sharing report with colleagues or desk heads.
+9.  Bias for Action:
+    Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking.
+    9.1. Situation: -> Eliminating manual steps involved in FORP produced Data validation & Providing straight through
+                       process for SL1/SL2/SL3 application support.
+                    -> Retain historical data validation data for audit requirements.
+    9.2. Task: -> Create a platform/application where BAs, Regression Users, Book Runners, Desk Heads and Application
+                  support personal could logon to create, customize, schedule, act on results and triage production
+                  queries or issues from trading desks.
+    9.3. Action: -> Designed and Developed Kannon Data Feeds automation framework( GUI + Distributed Microservices + HDFS +
+                    Database(Cassandra + MySQL)).
+                 -> KDF UI: Users to create tasks/jobs, view and act on results from these jobs.
+                 -> KDF Services: REST API based service to interact with GUI to DB and other microservices to check and
+                    complete jobs on schedule or adhoc jobs
+                 -> KDF Storage: My SQL DB for storing configurations and active job/task results (~3 months data) and
+                    Cassandra for Historical  data, NFS for storing reports.
+    9.4. Result: -> Closed audit gap, with retaining historical data in KDF Store.
+                 -> With Automation and efficiency, around 10 regression Engineers were moved to different projects which
+                    saved atleast 1.5m USD per year
+                 -> With newly introduced data tracking feature across multiple applications in KDF, support requests
+                    that requires developers attention got reduced by 70%, Hence, by reducing SLA for production support
+                    tickets and making systems fully functional with at-most support.
+10. Frugality:
+    Accomplish more with less. Constraints breed resourcefulness, self-sufficiency, and invention. There are no extra
+    points for growing headcount, budget size, or fixed expense.
+    10.1. Situation: -> Get sign-off from security auditors on CashManager application security soundness and avoid potential fines or
+                        or get sited if they found any security vulnerabilities in CashManager
+                     -> This effort was initially tried with operations/support team, but they failed to get it done and
+                        now we are short of time if failed, get fined by MAS or even loose license to operate MAS region
+                     -> I have enough book of work signed-up and agreed with stakeholders to deliver in next three sprints
+    10.2. Task: -> Close 40K+ code vulnerabilities in CashManager application, as part of regulatory requirement to remediate
+                   or close all security gaps in internet facing DB applications with-in 45 days window
+    10.3. Action: -> Categorized vulnerabilities based on severity and type, found 99% of flaws are Cross Site Scripting(XSS)
+                  -> devised a plan to fix all them by designing a encoder module and routing/wrapping all html input data
+                     via newly created HMTL encoder.
+                  -> Doing so saved 90% of efforts needed to make code changes and test those changes which requires to
+                     understanding each feature, data flow scenarios in application.
+    10.4. Result: -> Was able to fix all existing code vulnerabilities, deploy new application version to production
+                  -> Was also, able to deliver features which I originally agreed to with my stake holders, thanks to my team
+                     I was successful in explaining the gravity and importance of this delivery to bank as well as for us
+                     as team and motivate them to put all of their weight behind deliverables and spending couple hours extra
+                     here and there.
+                  -> These delivery also, brought lot attention to our team from senior management and lot of positive feedback
+                     senior leadership on great work.
+
+11. Earn Trust:
+    Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when
+    doing so is awkward or embarrassing. Leaders do not believe their or their team’s body odor smells of perfume.
+    They benchmark themselves and their teams against the best
+    11.1. Situation:
+    11.2. Task:
+    11.3. Action:
+    11.4. Result:
+
+12. Dive Deep:
+    Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and
+    anecdote differ. No task is beneath them
+    12.1. Situation: -> Unrealistic/inflated timelines proposed for breaking-down Trinity application into microservices.
+                     -> Primarily due to lack of SME on Trinity application and new to Tech Stack we intended to move
+                        Trinity application.
+    12.2. Task: -> Identifying, categorizing domain object and create  reusable template framework for one of the
+                   microservice which can be extended to other microservices of Trinity application
+    12.3. Action: -> As I'm the SME of Trinity application and having hands on experience in creating Spring Boot Rest APIs, gRPC APIs.
+                  -> Took responsibility of task to breaking down Trinity app into multiple microservice and defining service boundaries,
+                     domain objects, and creating schema specific to each service.
+                  -> Documented all details about each module in the template framework I created and left with example on
+                     how to extend it.
+                  -> Presented framework to entire team and explained my reasons in making certain decisions as part of design
+                     to help them with my thought process.
+    12.4. Result: -> Was able to achieve same end result of creating template framework of breaking down application into
+                     microservice architecture with 60% less number of days from original proposal
+                  -> Framework(steps or Workflow) helped us/team in migration other applications journey into microservice
+                     and containerizing the services.
+
+13. Have Backbone; Disagree and Commit:
+    Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or
+    exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once
+    a decision is determined, they commit wholly.
+    13.1. Situation: -> Get sign-off from MAS regulatory body on enabling Two factor authentication for Trinity application
+                        which is required for all all Trade life cycle related applications. My manager wants to onboard
+                        Trinity onto Autobahn platform(DB app store) and get done with it.
+                     -> I was against this idea, as users(traders) still can access application via urls(website) without
+                        2FA.
+                     -> Disagreed with my manager and provide alternative approaches to address 2FA functionality in app.
+    13.2. Task: -> Enable 2FA in Trinity application
+    13.3. Action: -> Redesigned Trinity UI with latest frameworks/libraries i.e. React
+                  -> Enabled 2FA functionality by Integrating UI with RSA token service with-in DB.
+    13.4. Result: -> Effectively close 2FA audit findings/requirements from MAS regulators
+                  -> redesigned/refactored UI to mitigate risks related to out of support UI tech stack(Structs, JSP, Beans)
+                     to React, Redux.
+                  -> Redesigned UI with latest UI frameworks opened doors for another innovation i.e. allowing users to
+                     access the application from mobile devices which are connected to DB networks i.e. DB iOS devices.
+
+14. Deliver Results:
+    Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion.
+    Despite setbacks, they rise to the occasion and never settle.
+    14.1. Situation:
+    14.2. Task:
+    14.3. Action:
+    14.4. Result:
