@@ -1,4 +1,4 @@
-package shopify;
+package sorting;
 
 import java.util.Date;
 

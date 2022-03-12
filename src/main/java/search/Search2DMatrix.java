@@ -1,4 +1,4 @@
-package shopify;
+package search;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package shopify;
+package sorting;
 
 //Java Code to sort 2D Matrix
 //according to any Column

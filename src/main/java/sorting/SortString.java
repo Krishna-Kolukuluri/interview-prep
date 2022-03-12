@@ -1,4 +1,4 @@
-package shopify;
+package sorting;
 
 public class SortString {
  // Java program to sort
