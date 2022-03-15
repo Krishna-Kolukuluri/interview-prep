@@ -19,13 +19,16 @@ Experience -
 
 Initial 20 minutes they will ask you LP questions only. Its not like they will ask just one or two questions on LP.
 
-Next 20 minutes will be dedicated to coding. Links to coding platform will be shared. They wont be able to compile the code, but will see the way you are coding. One thing common in all rounds were they wanted me to write the code in OOD format. It was not like i just wrote the method and its done. They wanted me to write the object creation, function calls etc. I was not done with full implementation in round 1 and round 3, they stopped me like 2 minutes before 20 minutes are completed and asked me to write the OOD format for whole code.
+Next 20 minutes will be dedicated to coding. Links to coding platform will be shared. They wont be able to compile the code, but will see the way you are coding.
+One thing common in all rounds were they wanted me to write the code in OOD format. It was not like i just wrote the method and its done. They wanted me to write the object creation, function calls etc. I was not done with full implementation in round 1 and round 3, they stopped me like 2 minutes before 20 minutes are completed and asked me to write the OOD format for whole code.
 
-NOTE - I was not able to complete full implementation but i explained the approach very well, step by step. Its okay to go back and forth sometimes, just tell them i am thinking out loud, i am making connections to find optimal way :)
+NOTE - I was not able to complete full implementation but i explained the approach very well, step by step.
+Its okay to go back and forth sometimes, just tell them i am thinking out loud, i am making connections to find optimal way :)
 
 3 Last five minutes were just if i have any questions for them.
 
-Finally I would suggest anyone who is appearing for the Amazon technical interview to focus on proper naming of variables and code readability and reusabality aspects as well.
+Finally I would suggest anyone who is appearing for the Amazon technical interview to focus on proper naming of variables
+and code readability and reusabality aspects as well.
 
 Questions
 Old https://leetcode.com/discuss/interview-question/488887/amazon-final-interview-questions-sde1 Amazon Final Interview Questions | SDE1 - Google Docs
@@ -60,9 +63,13 @@ https://leetcode.com/problems/min-stack/ However, it came with the constraint th
 
 First round: 2-3 behavioral questions followed by a coding question. The question was given a binary tree find a subtree within the binary tree that adds up to a certain target sum.
 
-Second round: 2-3 behavoral questions followed by an OOD question. The question was a bit vague and I had a hard time understanding their english but essentially it was to design a wharehouse class that had certain constraints such that the particular wharehouse could only store certain products.
+Second round: 2-3 behavoral questions followed by an OOD question. The question was a bit vague and I had a hard time
+understanding their english but essentially it was to design a wharehouse class that had certain constraints such that
+the particular wharehouse could only store certain products.
 
-Fourth round: 2-3 behavioral questions. This was another coding round, which involved taking a string that say said "This sweater cost $40 dollars." The objective was to take that number and apply a 20% discount and return the string back with the updated price, i.e., "This sweater cost $32 dollars.".
+Fourth round: 2-3 behavioral questions. This was another coding round, which involved taking a string that say said
+"This sweater cost $40 dollars." The objective was to take that number and apply a 20% discount and return the string
+back with the updated price, i.e., "This sweater cost $32 dollars.".
 
 This round was interesting since it was not any of the Leetcode questions. I was given certain conditions for a valid transaction and I had to write a function that will determine if the transaction is valid or not. The goal of this round was to see how I can write a maintainable and scalable code. For example, how can we add more conditions for a valid transaction and still not alter the main function very much. I had LP questions as part of this round also.
 

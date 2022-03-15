@@ -62,8 +62,7 @@
     behalf of the entire company, beyond just their own team. They never say “that’s not my job."
     3.1. Situation: Inefficient Server Infrastructure usage in Trinity application
     3.2. Task: Reduce Server infrastructure foot print and maximize resource utilization, there by reducing cost.
-    3.3. Action: -> Converted all Trinity services into containerized and deployed on Kubernetes cluster, which is hosted
-                    DB private cloud.
+    3.3. Action: -> containerized all Trinity services and deployed on Kubernetes cluster, which is hosted on DB private cloud.
                  -> Able to co-host multiple micro services(Authentication, Authorization and Static Data) which doesn't
                     require too many resource there by efficiently using cluster resources.
                  -> Maintaining different cluster sizes across different regions based on load/capacity estimations, which
@@ -186,8 +185,8 @@
                      I was successful in explaining the gravity and importance of this delivery to bank as well as for us
                      as team and motivate them to put all of their weight behind deliverables and spending couple hours extra
                      here and there.
-                  -> These delivery also, brought lot attention to our team from senior management and lot of positive feedback
-                     senior leadership on great work.
+                  -> This delivery also, brought lot attention to our team from senior management and lot of positive feedback
+                     from senior leadership on great work.
 
 11. Earn Trust:
     Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when
@@ -215,7 +214,7 @@
                      to help them with my thought process.
     12.4. Result: -> Was able to achieve same end result of creating template framework of breaking down application into
                      microservice architecture with 60% less number of days from original proposal
-                  -> Framework(steps or Workflow) helped us/team in migration other applications journey into microservice
+                  -> Framework(steps or Workflow) helped us/team in migrating other applications journey into microservice
                      and containerizing the services.
 
 13. Have Backbone; Disagree and Commit:
@@ -223,11 +222,11 @@
     exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once
     a decision is determined, they commit wholly.
     13.1. Situation: -> Get sign-off from MAS regulatory body on enabling Two factor authentication for Trinity application
-                        which is required for all all Trade life cycle related applications. My manager wants to onboard
+                        which is required for all Trade life cycle related applications. My manager wants to onboard
                         Trinity onto Autobahn platform(DB app store) and get done with it.
                      -> I was against this idea, as users(traders) still can access application via urls(website) without
                         2FA.
-                     -> Disagreed with my manager and provide alternative approaches to address 2FA functionality in app.
+                     -> Disagreed with my manager and provided alternative approaches to address 2FA functionality in app.
     13.2. Task: -> Enable 2FA in Trinity application
     13.3. Action: -> Redesigned Trinity UI with latest frameworks/libraries i.e. React
                   -> Enabled 2FA functionality by Integrating UI with RSA token service with-in DB.
