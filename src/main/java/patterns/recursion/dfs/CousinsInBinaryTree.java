@@ -21,7 +21,50 @@ Output: true
 Output: false
 * */
 public class CousinsInBinaryTree {
+    int recordedDepth = -1;
+    boolean isCousin = false;
     public boolean isCousins(TreeNode root, int x, int y) {
-        return false;
+        dfs(root, 0,x,y);
+        return isCousin;
     }
+    public boolean dfs(TreeNode node, int depth, int x, int y){
+        if(node == null){
+            return false;
+        }
+        // Don't go beyond the depth restricted by the first node found.
+        if(recordedDepth != -1 && depth > recordedDepth){
+            return false;
+        }
+        if(node.val == x || node.val == y){
+            if(recordedDepth == -1){
+                // Save depth for the first node found.
+                recordedDepth = depth;
+            }
+            // Return true, if the second node is found at the same depth.
+            return recordedDepth == depth;
+        }
+        boolean left = dfs(node.left, depth + 1, x , y);
+        boolean right = dfs(node.right, depth + 1, x, y);
+        // this.recordedDepth != depth + 1 would ensure node x and y are not
+        // immediate child nodes, otherwise they would become siblings.
+        if(left && right &&  recordedDepth != depth + 1){
+            isCousin = true;
+        }
+        return left || right;
+    }
+    /*
+    *
+    * Complexity Analysis:
+        Time Complexity: O(N), where NN is the number of nodes in the binary tree. In the worst case, we might have
+        to visit all the nodes of the binary tree.
+
+        Let's look into one such scenario. When both Node x and Node y are the leaf nodes and at the last level of the tree,
+        the algorithm has no reasons to prune the recursion. It can only come to a conclusion once it visits both the nodes.
+        If one of these nodes is the last node to be discovered the algorithm inevitably goes through each and every node in the tree.
+
+      Space Complexity: O(N). This is because the maximum amount of space utilized by the recursion stack would be N,
+                        as the height of a skewed binary tree could be, at worst, N. For a left skewed or a right skewed
+                        binary tree, where the desired nodes are lying at the maximum depth possible, the algorithm would
+                        have to maintain a recursion stack of the height of the tree.
+    * */
 }

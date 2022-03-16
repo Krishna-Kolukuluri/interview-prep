@@ -3,11 +3,25 @@ package datastructures.dstype.treeType;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
-
+/*
+* https://leetcode.com/problems/symmetric-tree/
+* Symmetric Tree
+* Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+*
+* */
 public class SymmetricTree {
     public boolean isSymmetricTree(TreeNode root){
         return root==null || isSymmetricBreadthFirstSearch(root.left,root.right);
     }
+    /*
+    * Complexity Analysis:
+        Time complexity : O(n). Because we traverse the entire input tree once, the total run time is O(n),
+                          where n is the total number of nodes in the tree.
+
+        Space complexity : The number of recursive calls is bound by the height of the tree. In the worst case, the tree
+                           is linear and the height is in O(n). Therefore, space complexity due to recursive calls on
+                           the stack is O(n) in the worst case.
+    * */
     public boolean isSymmetricBreadthFirstSearch(TreeNode left, TreeNode right){
         if(left == null && right == null){
             return true;

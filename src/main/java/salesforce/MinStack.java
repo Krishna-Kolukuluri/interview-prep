@@ -2,15 +2,24 @@ package salesforce;
 
 import java.util.*;
 
+/*
+* https://leetcode.com/problems/min-stack/solution/
+* Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+Implement the MinStack class:
+    MinStack() initializes the stack object.
+    void push(int val) pushes the element val onto the stack.
+    void pop() removes the element on the top of the stack.
+    int top() gets the top element of the stack.
+    int getMin() retrieves the minimum element in the stack.
+* */
 public class MinStack {
+    private Stack<Integer> stack;
+    private Stack<int[]> minStack;
 
-    
-    private Stack<Integer> stack = new Stack<>();
-    private Stack<int[]> minStack = new Stack<>();
-    
-    
-    public MinStack() { }
-    
+    public MinStack() {
+        Stack<Integer> stack = new Stack<>();
+        Stack<int[]> minStack = new Stack<>();
+    }
     
     public void push(int x) {
         
@@ -29,8 +38,7 @@ public class MinStack {
             minStack.peek()[1]++;
         }
     }
-    
-    
+
     public void pop() {
         
         // If the top of min stack is the same as the top of stack
@@ -48,14 +56,31 @@ public class MinStack {
         // And like before, pop the top of the main stack.
         stack.pop();
     }
-    
-    
+
     public int top() {
         return stack.peek();
     }
 
-    
     public int getMin() {
         return minStack.peek()[0];
     }
 }
+/*
+* Complexity Analysis
+
+Let nn be the total number of operations performed.
+
+Time Complexity : O(1)O(1) for all operations.
+
+push(...): Checking the top of a Stack, comparing numbers, and pushing to the top of a Stack (or adding to the end of an Array or List) are all O(1)O(1) operations. Therefore, this overall is an O(1)O(1) operation.
+
+pop(...): Popping from a Stack (or removing from the end of an Array, or List) is an O(1)O(1) operation.
+
+top(...): Looking at the top of a Stack is an O(1)O(1) operation.
+
+getMin(...): Same as above. This operation is O(1)O(1) because we do not need to compare values to find it. If we had not kept track of it on the Stack, and instead had to search for it each time, the overall time complexity would have been O(n)O(n).
+
+Space Complexity : O(n)O(n).
+
+Worst case is that all the operations are push. In this case, there will be O(2 \cdot n) = O(n)O(2⋅n)=O(n) space used.
+* */

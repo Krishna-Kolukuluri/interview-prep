@@ -1,5 +1,12 @@
 package datastructures.dstype.linkedListType;
-
+/*
+* https://leetcode.com/problems/linked-list-cycle/
+* Given head, the head of a linked list, determine if the linked list has a cycle in it
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following
+the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to.
+Note that pos is not passed as a parameter.
+Return true if there is a cycle in the linked list. Otherwise, return false.
+* */
 public class LinkedListCycle {
     public static boolean hasCycle(ListNode head){
         if(head == null){
@@ -124,7 +131,10 @@ public class LinkedListCycle {
         head.next = null;
         return reversedHead;
     }
-
+    /*
+    * https://leetcode.com/problems/remove-linked-list-elements/
+    * Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+    * */
     public ListNode removeElements(ListNode head, int val){
         ListNode fakeHead = new ListNode(-1);
         fakeHead.next = head;
@@ -140,6 +150,12 @@ public class LinkedListCycle {
         }
         return fakeHead.next;
     }
+    /*
+    * Complexity Analysis:
+        Time complexity: O(N), it's one pass solution.
+        Space complexity: O(1), it's a constant space solution.
+    * */
+
 
     public ListNode oddEvenList(ListNode head){
         if(head == null || head.next == null){
@@ -187,6 +203,5 @@ public class LinkedListCycle {
         }
         return prev;
     }
-
 }
 

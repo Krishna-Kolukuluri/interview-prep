@@ -47,16 +47,8 @@ public class AddStrings {
                 result.append(",");
                 digitCount = 0;
             }
-            int val1 = 0;
-            int val2 = 0;
-            if(num1.charAt(index1) != ','){
-                val1 = index1>=0?num1.charAt(index1) - '0' : 0;
-            }
-            if(num2.charAt(index2) != ','){
-                val2 = index2>=0?num2.charAt(index2) - '0' : 0;
-            }
-            //int val1 = index1>=0?num1.charAt(index1) - '0' : 0;
-            //int val2 = index2>=0?num2.charAt(index2) - '0' : 0;
+            int val1 = index1>=0?num1.charAt(index1) - '0' : 0;
+            int val2 = index2>=0?num2.charAt(index2) - '0' : 0;
             int val = (val1 + val2 + carry) % 10;
             carry = (val1 + val2 + carry) / 10;
             result.append(val);
