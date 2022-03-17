@@ -193,6 +193,7 @@
         by business by using less resources(server)
     d.	Another instance to help flowrisk users with head start for their day by rebooting applications automatically on
         their machines to capture real-time data to be ready by the time traders start their day.
+
 22.	Tell me about a time you learned from your mistake
     a.	Estimated timelines for onboarding EM business onto new trinity platform was incorrect due to a wrong assumptions in
         analysis stage of complex products supported/traded by EM desks
@@ -204,12 +205,14 @@
         another week of originally agreed timelines, was able to release re-prioritized items to prod.
     e.	Lessons learned, break down features/tasks as granular as possible then start analyzing if any assumptions are
         made get them verified by business even if I’m the SME of the application, as early in the process as possible.
+
 23.	What has been your biggest accomplishment so far?
     a.	Talk about trinity redesign
     b.	Talk about flowrisk application/journey to microservices and solving latency problems/making system distributed
         and highly available
     c.	Helping FIC business by reducing cost by 10 million year by designing a framework to automate manual task done
         by desk analysis and support folk for these applications.
+
 24.	Tell me about a time you had to drive a feature through?
     a.	Talk about gap in release cycle between risk engine and trinity flowrisk
     b.	Proposed solution ie KDF system to solve the problem or gap
@@ -220,6 +223,7 @@
         on time which in turn helped trading desk with trading confidently and hedge better
     f.	Constant communication was key between all involved parties in successfully delivering this application/feature.
     g.	/this feature/appl is also helping reduce pressure/workload on SL1/SL2/SL3 support teams.
+
 25.	Did you ever fire someone? Did you ever put someone on PIP? Why?
     a.	No, I never had to fire anyone, but I’ve worked with one of the reportee/resource on improving his/her performance.
     b.	Reason for PIP was continuously not able to complete task assigned to him/her and when he/she does complete,
@@ -231,6 +235,7 @@
         his PIP plan according to new results which eventually paid off.
     f.	Problem was he is new to finance space and tech stack we are working with and complex nature of application didn't
         even help him to get hold of code/architecture.
+
 26.	How you will be an asset in supporting the career development of those working under you?
     a.	I believe in a leader who leads by example and not just take decisions but works for his/her team by upholding
         organizations principles highest standards and listens to them. i.e. leader not only a great decision maker but
@@ -241,6 +246,7 @@
     d.	Provide visibility whenever possible so that they will standout in broader organization which will help them with
         much needed exposure which will go long way in career development.
     e.	With this approach I was able to promote 3 of my direct repositories in last few years.
+
 27.	How would disagree with your manager?
     a.	This happened with me and my manager on couple occasions where we had contrasting opinions on how to approach a
         particular initiative
@@ -253,6 +259,7 @@
         requirements.
     iv.	I’ll go with evidence when I’m disagreeing with manager or anyone for that matter, even after that if they still see merit in
         their approach, I might be missing something they are seeing. ask for follow-up sessions to provide evidence supporting their claims.
+
 28.	Tell me about a time you made an unpopular decision?
     a.	Making everyone part of support rotation/team.
     b.	Prior to this there used to be one primary and one secondary support persons for production support.
@@ -264,3 +271,55 @@
         after couple rotations team got hold of new process and they started seeing positive side of it and long-term
         benefits to team. They finally happy with my decision as couple of user recommendations played huge role in getting
         my resources prompted.
+
+29. What do you look for in a resume?
+    a. Minimum skills required to be successful on the role
+    b. Diverse experiences and Specifics about any impactful deliverables
+    c. Progressive career depending on role I'm hiring for.
+
+30. How do you ensure you are hiring a healthy spread of diverse thinking in your team?
+    a. Right mix of seniority's in team i.e. Interns, Jr, Mid, Sr and Lead engineers
+    b. People from diverse backgrounds i.e. from different domains whenever possible
+    c. People with inclusive and positive attitude.
+    d. Team players
+
+31. You have to ramp up your team headcount quickly. Would you prefer waiting for the right candidate? Why or why not?
+    a. Build diverse candidate pool by working with various sourcing channels like internal mobility, recruiters both
+       internal and external, social network channels and referrals.
+    b. Conduct interviews parallel as a priority
+    c. After identifying potential candidates for the roles, take time to personally speak with each candidate to sale the
+       role and project that we are working.
+    d. Yes, I do want to wait for right candidate for the role, if not he may struggle in the role and will impact the
+       overall performance and velocity of the team which is not good outcome I wanted to with any new hire.
+
+32. What goes into a project plan?
+    A typical project plan consists of
+    a. A statement of work
+    b. a resource list
+    c. work breakdown structure
+    d. a project schedule and a risk plan
+
+33. What is WBS (work breakdown structure)? How would you use it?
+    Work breakdown structure is a helpful project management tool for several reasons. First, it breaks down the project
+    into bite-size components, making the project less overwhelming and more manageable.
+
+    Second, it provides a roadmap for the different individuals and teams working on the project. Many projects involve
+    different teams moving in tandem, all of which need to coordinate and integrate for project completion. By using a WBS,
+    the various individuals and teams can focus on their specific tasks and deliverables while also seeing how their piece
+    fits into the project as a whole.
+
+    Finally, a WBS is an excellent tool for measuring project completion, identifying milestones and allocating budget
+    resources. By using the 100% rule, project managers can be confident that the project is properly budgeted and that
+    they won’t run into any roadblocks due to a “surprise” deliverable.
+
+    Some commonly used terms used with WBS project management include:
+    Acceptance Criteria: Standards to be met to achieve customer or other stakeholder requirements
+    Budget: Expenses associated with the project, which can be broken down by deliverables or phases
+    Deliverables: The product, service or results created at various stages of the project. For instance, in a website
+                  design project, a deliverable-based WBS would be structured around deliverables such as URL, layout and
+                  written content
+    Milestones: Critical stages of the project identified in the WBS
+    Phases: The various stages of a project. For instance, in a website design project, a phase-based WBS would be
+            structured around things like discovery, design and launch, rather than specific deliverables
+    WBS: Work breakdown structure
+
