@@ -29,10 +29,10 @@
 
 4. Please describe your experience leading (either formally or informally) a group/team in a project?
     I believe a great leader is someone who can make good decisions while
-    also taking into account opinions and feelings of
-    his team members. Also, willing to admit when he is wrong and adopt.
+    also taking into account opinions, feelings of
+    his team members and willing to admit when he is wrong and adopt.
 
-    In my current role, I’m responsible for leading a team of 12 engineers with different roles, which
+    In my current role, I’m responsible for leading a team of 9 engineers with different roles, which
     includes supervising, managing, training and mentoring them. I enjoy the
     responsibility of leadership and I strive to make my team and project/product
     successful and create a positive impact in the organization.
@@ -97,7 +97,7 @@
     d.	Flowrisk
         i.	Added graph feature across all the reports in the app to support/help traders make/find outliers quickly
             than going through data grids
-        ii.	Introduced tow-dimensional correlation reports to help them draw report against relevant fields.
+        ii.	Introduced two-dimensional correlation reports to help them draw report against relevant fields.
         iii.These two features are proposed by me which provided edge to traders to see the data in 2D, graphs help
             them spend less time finding anomaly's/outliers in their portfolios.
     e.	Hiring:
@@ -128,9 +128,9 @@
     b.	Brewed while reviewing each other code and each one has diff clean code philosophies.
     c.	Identified the conflict while observing their interactions/conversations in team meetings and talked to each one
         of them separately and learned about what’s happening
-    d.	After couple of meetings with each one of them then got to root cause of the problem. Create standard working
-        protocol for meeting/code reviews/scrum to eliminate friction or score for disagreement while they collaborate.
-    e.	Then brought both of them to same [page by talking to them separately and In group meetings to sort-out all different opinions
+    d.	After couple of meetings with each one of them then got to root cause of the problem. Created standard working
+        protocol for meeting/code-reviews/scrum to eliminate friction or scope for disagreement while they collaborate.
+    e.	Then brought both of them to same page by talking to them separately and In group meetings to sort-out all different opinions
     f.	In the end of this exercise, everyone seems to like new process in place.
 
 15.	Difficult reportee:
@@ -144,11 +144,11 @@
     g.	After these changes he respected/valued everyone in the team then he came around and was back on track like before
 
 16.	How do you deal with low performance?
-    a.	Understand which area he is struggling
-    b.	Speak to him about same on weekly one on one
-    c.	Learn if there are any concerns/problems that he wants to discuss with me
+    a.	Learn if there are any concerns/problems that he wants to discuss with me
+    b.	Understand which area he/she is struggling
+    c.	Speak to him about same on weekly one on one
     d.	If he is lacking or needs help with tech-stuff provide resource and guidance on improving his/her skills
-    e.	Checking him on his/her progress frequently and extending help
+    e.	Keep checking his/her progress frequently and extending help
     f.	If his problems are related to personal space cautiously approach and offer his/her help/assistance as a manager
         to provide support
     g.	Keep providing continuous constructive feedback which help him/her to course correct if needed
@@ -172,9 +172,8 @@
         other in last 30 years
     b.	MS even touched me in my college days that inspired me to be a software engineer
     c.	I started my career with MS tech stack
-    d.	On the other side in recent years the growth mindset and embracing the changes adopting/leading from front in
-        certain areas excited me when I think of MS.
-
+    d.	On the other side in recent years the Growth Mindset, One Microsoft approach and embracing the changes
+        adopting/leading from front in certain areas excites me when I think of MS.
 
 20.	What is your favorite MS product and how would you improve it?
     a.	Product: outlook.com email, calendar board
@@ -227,7 +226,7 @@
 25.	Did you ever fire someone? Did you ever put someone on PIP? Why?
     a.	No, I never had to fire anyone, but I’ve worked with one of the reportee/resource on improving his/her performance.
     b.	Reason for PIP was continuously not able to complete task assigned to him/her and when he/she does complete,
-        they caused bugs at testing phase instance at prod stage.
+        they caused bugs at testing phase or at prod stage.
     c.	Also, not punctual to meetings or team activities.
     d.	Worked with resource/reportee one-n-one basis to understand his concerns at work with him if any? provided guidance
         and plan on improving his/her performance both with team and deliverable KPI’s
@@ -238,16 +237,16 @@
 
 26.	How you will be an asset in supporting the career development of those working under you?
     a.	I believe in a leader who leads by example and not just take decisions but works for his/her team by upholding
-        organizations principles highest standards and listens to them. i.e. leader not only a great decision maker but
+        organizations principles to highest standards and good listener. i.e. leader not only a great decision maker but
         should also be great listener.
     b.	That is how I operate my team on 1-1’s. I listen to them, ask for their aspirations then will device a plan
         together to make it happen.
-    c.	I constantly provide constructive feedback and help him/her be on the correct trajectory to reach their goal.
+    c.	I constantly provide constructive feedback and help them to be on the correct trajectory to reach their goal.
     d.	Provide visibility whenever possible so that they will standout in broader organization which will help them with
         much needed exposure which will go long way in career development.
     e.	With this approach I was able to promote 3 of my direct repositories in last few years.
 
-27.	How would disagree with your manager?
+27.	How would you disagree with your manager?
     a.	This happened with me and my manager on couple occasions where we had contrasting opinions on how to approach a
         particular initiative
     b.	Or talk about rating resources for promotions from pool of resources and comparison to my employee to others in his org.
@@ -287,8 +286,8 @@
     a. Build diverse candidate pool by working with various sourcing channels like internal mobility, recruiters both
        internal and external, social network channels and referrals.
     b. Conduct interviews parallel as a priority
-    c. After identifying potential candidates for the roles, take time to personally speak with each candidate to sale the
-       role and project that we are working.
+    c. After identifying potential candidates for the roles, take time to personally speak with each candidate to sell the
+       role and project that we are hiring.
     d. Yes, I do want to wait for right candidate for the role, if not he may struggle in the role and will impact the
        overall performance and velocity of the team which is not good outcome I wanted to with any new hire.
 
